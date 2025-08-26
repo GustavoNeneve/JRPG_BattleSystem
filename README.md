@@ -9,6 +9,14 @@ LATEST VERSION GAMEPLAY VIDEO: https://youtu.be/1Xyi3ChHLVo
 --------------
 Latest Updates:
 
+Aug/25:
+- Replaced the multiplayer system:
+    - Removed all Photon PUN references;
+    - Added NGO (Network For GameObjects);
+
+Jul/25:
+- Updated the project to Unity 6.0;
+
 Jan/23:
 - This game is now using Unity's new Input System and can be played either using keyboard arrows/WASD or a gamepad.
 

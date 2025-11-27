@@ -58,6 +58,8 @@ public class CombatManager : NetworkBehaviour
     private void Awake()
     {
         instance = this;
+
+        Debug.LogWarning("KJSDKFDGKJ");
     }
 
     public void AddPlayerOnField(CharacterBehaviour playerToAdd)

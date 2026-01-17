@@ -180,7 +180,7 @@ public class StartMenuUIController : MonoBehaviour
 
     void AssignButtons()
     {
-        contents[0].contentButtons[0].onClick.AddListener(delegate { FadeToDustAndLoadScene(1); });
+        contents[0].contentButtons[0].onClick.AddListener(delegate { FadeToDustAndLoadScene("World"); });
         contents[0].contentButtons[1].onClick.AddListener(delegate { FadeToDustAndLoadScene(2); });
     }
 
@@ -200,6 +200,24 @@ public class StartMenuUIController : MonoBehaviour
         dustStorm.PlayParticles();
         fadeAndLoadSequence.AppendInterval(2.25f);
         fadeAndLoadSequence.OnComplete(() => SceneManager.LoadScene(sceneIndex));
+    }
+
+    public void FadeToDustAndLoadScene(string sceneName)
+    {
+        foreach (TextMeshProUGUI item in objsToFadeOut)
+        {
+            var _canvasGrp = item.GetComponent<CanvasGroup>();
+
+            if (_canvasGrp)
+                _canvasGrp.DOFade(0, 0.5f);
+            else item.DOFade(0, 0.5f);
+        }
+
+        Sequence fadeAndLoadSequence = DOTween.Sequence();
+        fadeAndLoadSequence.Append(currentContent.contentContainer.GetComponent<CanvasGroup>().DOFade(0, .5f));
+        dustStorm.PlayParticles();
+        fadeAndLoadSequence.AppendInterval(2.25f);
+        fadeAndLoadSequence.OnComplete(() => SceneManager.LoadScene(sceneName));
     }
 
     public void ShowErrorMessage(string text)

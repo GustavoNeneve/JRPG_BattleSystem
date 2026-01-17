@@ -67,6 +67,54 @@ public class CombatManager : NetworkBehaviour
     {
         instance = this;
     }
+    private void Start()
+    {
+        // If EncounterManager exists and has enemies, spawn them!
+        if (EncounterManager.instance != null && EncounterManager.instance.EnemiesToSpawn.Count > 0)
+        {
+            SetupEncounter(EncounterManager.instance.EnemiesToSpawn);
+
+            // Set Background
+            if (EncounterManager.instance.CurrentBackground != null)
+            {
+                // Assuming there is a background object or Camera Stack
+                // For now, we just log it as we need a reference to the background sprite renderer
+                Debug.Log("Should set background to: " + EncounterManager.instance.CurrentBackground.name);
+                var bgObj = GameObject.Find("BattleBackground"); // Example name, or just log for now
+                if (bgObj && bgObj.GetComponent<SpriteRenderer>())
+                    bgObj.GetComponent<SpriteRenderer>().sprite = EncounterManager.instance.CurrentBackground;
+            }
+
+            // Play Music
+            if (EncounterManager.instance.CurrentBattleMusic != null)
+            {
+                var audioCtrl = FindObjectOfType<NewBark.Audio.AudioController>();
+                if (audioCtrl)
+                {
+                    audioCtrl.PlayBgmTransition(EncounterManager.instance.CurrentBattleMusic);
+                }
+            }
+        }
+    }
+
+    private void SetupEncounter(List<EnemyBehaviour> enemies)
+    {
+        // Clear default enemies if any (though Start runs after Awake/Enable, so be careful of race conditions if they auto-register)
+        // Since EnemyBehaviour registers itself in Start/Initialize, we normally just instantiate the prefabs.
+
+        // Disable any pre-existing enemies in the scene if we are loading dynamic ones?
+        // Actually, if we load a fresh scene, it might be empty or have test enemies.
+        // Let's assume we want to instantiate new ones.
+
+        foreach (var enemyPrefab in enemies)
+        {
+            // Determine position
+            Vector3 spawnPos = enemiesParent.position; // Basic logic, needs to be offset
+                                                       // Add offsets based on count
+
+            Instantiate(enemyPrefab, enemiesParent);
+        }
+    }
 
     /// <summary>
     /// Registers a player character to the field.
@@ -109,8 +157,8 @@ public class CombatManager : NetworkBehaviour
         }
 
         return false;
-    }   
-    
+    }
+
     public EnemyBehaviour CurrentReadyEnemy()
     {
         if (enemiesOnField.Count == 1)
@@ -382,6 +430,9 @@ public class CombatManager : NetworkBehaviour
         if (enemiesOnField.Count == 0)
         {
             GameManager.instance.EndGame();
+
+            if (EncounterManager.instance != null)
+                EncounterManager.instance.EndEncounter(true);
         }
     }
 
@@ -394,7 +445,7 @@ public class CombatManager : NetworkBehaviour
                 return false;
             }
         }
-        return true;   
+        return true;
     }
 
     public IEnumerator ShowGameOverIfNeeded_Coroutine()
@@ -404,7 +455,15 @@ public class CombatManager : NetworkBehaviour
         if (AllPlayersDead())
         {
             yield return new WaitForSeconds(1);
-            gameOverScreen.ShowGameOverScreen();
+
+            if (EncounterManager.instance != null)
+            {
+                EncounterManager.instance.EndEncounter(false);
+            }
+            else
+            {
+                gameOverScreen.ShowGameOverScreen();
+            }
         }
     }
 

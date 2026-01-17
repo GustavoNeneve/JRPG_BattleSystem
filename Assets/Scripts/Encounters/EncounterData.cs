@@ -22,7 +22,7 @@ public class EncounterData : ScriptableObject
 [Serializable]
 public struct WeightedEnemy
 {
-    public EnemyBehaviour enemyPrefab;
+    public EnemyBehaviour enemyIdentifier;
     [Tooltip("Higher value = Higher chance to appear")]
     [Range(1, 100)] public int spawnWeight;
 }

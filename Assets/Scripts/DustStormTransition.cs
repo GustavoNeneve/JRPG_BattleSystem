@@ -1,4 +1,5 @@
 using UnityEngine;
+using NewBark.Support;
 using DG.Tweening;
 
 public class DustStormTransition : MonoBehaviour
@@ -8,6 +9,8 @@ public class DustStormTransition : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        UniquePersistent uniquePersistent = gameObject.AddComponent<UniquePersistent>();
+        uniquePersistent.uniqueID = "dust_storm_transition";
         particles = GetComponent<ParticleSystem>();
     }
 

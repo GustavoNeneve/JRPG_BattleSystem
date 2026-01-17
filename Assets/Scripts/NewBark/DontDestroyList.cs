@@ -1,4 +1,5 @@
 using UnityEngine;
+using NewBark.Support;
 
 namespace NewBark
 {
@@ -10,6 +11,8 @@ namespace NewBark
             foreach (var obj in objects)
             {
                 DontDestroyOnLoad(obj);
+                UniquePersistent uniquePersistent = obj.AddComponent<UniquePersistent>();
+                uniquePersistent.uniqueID = obj.name;
             }
         }
     }

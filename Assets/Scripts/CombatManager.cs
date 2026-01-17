@@ -97,22 +97,36 @@ public class CombatManager : NetworkBehaviour
         }
     }
 
-    private void SetupEncounter(List<EnemyBehaviour> enemies)
+    [SerializeField] List<Transform> enemySpawnSpots;
+
+    private void SetupEncounter(List<GameObject> enemies)
     {
-        // Clear default enemies if any (though Start runs after Awake/Enable, so be careful of race conditions if they auto-register)
-        // Since EnemyBehaviour registers itself in Start/Initialize, we normally just instantiate the prefabs.
-
-        // Disable any pre-existing enemies in the scene if we are loading dynamic ones?
-        // Actually, if we load a fresh scene, it might be empty or have test enemies.
-        // Let's assume we want to instantiate new ones.
-
-        foreach (var enemyPrefab in enemies)
+        // 1. Validate Spots
+        if (enemySpawnSpots == null || enemySpawnSpots.Count == 0)
         {
-            // Determine position
-            Vector3 spawnPos = enemiesParent.position; // Basic logic, needs to be offset
-                                                       // Add offsets based on count
+            enemySpawnSpots = new List<Transform>();
+            // Try to find them by name if not assigned
+            var s1 = enemiesParent.Find("Spot 1");
+            var s2 = enemiesParent.Find("Spot 2");
+            var s3 = enemiesParent.Find("Spot 3");
+            if (s1) enemySpawnSpots.Add(s1);
+            if (s2) enemySpawnSpots.Add(s2);
+            if (s3) enemySpawnSpots.Add(s3);
+        }
 
-            Instantiate(enemyPrefab, enemiesParent);
+        // 2. Spawn Enemies
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            if (i >= enemySpawnSpots.Count)
+            {
+                Debug.LogWarning("Not enough spawn spots for all enemies!");
+                break;
+            }
+
+            var enemyPrefab = enemies[i];
+
+            // Instantiate at Spot Position, but keep in EnemiesParent
+            Instantiate(enemyPrefab, enemySpawnSpots[i].position, Quaternion.identity, enemiesParent);
         }
     }
 

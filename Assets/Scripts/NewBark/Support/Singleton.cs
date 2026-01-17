@@ -31,7 +31,7 @@ namespace NewBark.Support
                     if (_instance == null)
                     {
                         // Search for existing instance.
-                        _instance = (T) FindObjectOfType(typeof(T));
+                        _instance = (T)FindObjectOfType(typeof(T));
 
                         // Create new instance if one doesn't already exist.
                         if (_instance != null)
@@ -49,6 +49,8 @@ namespace NewBark.Support
 
                         // Make instance persistent.
                         DontDestroyOnLoad(singletonObject);
+                        UniquePersistent uniquePersistent = singletonObject.AddComponent<UniquePersistent>();
+                        uniquePersistent.uniqueID = typeof(T).Name;
                     }
 
                     return _instance;

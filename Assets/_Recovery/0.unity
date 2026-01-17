@@ -290,7 +290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 62840428}
   - component: {fileID: 62840431}
-  - component: {fileID: 62840430}
   - component: {fileID: 62840429}
   m_Layer: 0
   m_Name: zona
@@ -329,28 +328,6 @@ MonoBehaviour:
   zoneData: {fileID: 11400000, guid: d9074d14e4d5343478d0e5bf833953c5, type: 2}
   stepDistanceThreshold: 1.5
   alwaysTriggerForTesting: 1
---- !u!114 &62840430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62840427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27c27099d587f44eada0cd04ffc7bcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EncounterManager
-  currentEncounterData: {fileID: 11400000, guid: d9074d14e4d5343478d0e5bf833953c5, type: 2}
-  enemiesToSpawn:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  lastWorldPosition: {x: 0, y: 0, z: 0}
-  lastWorldSceneName: 
-  lastWorldMusic: {fileID: 0}
-  hospitalSceneName: World
-  hospitalPosition: {x: 0, y: 0, z: 0}
 --- !u!61 &62840431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -101046,6 +101023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1683139083}
   - component: {fileID: 1683139084}
+  - component: {fileID: 1683139085}
   m_Layer: 0
   m_Name: Dex
   m_TagString: Untagged
@@ -101084,6 +101062,25 @@ MonoBehaviour:
   - {fileID: 8900923260625967869, guid: cf3cdf112fbaba846a8b9f356457b99c, type: 3}
   - {fileID: 537072853643609338, guid: affefd7bb3bb6a4488555b314ccbf51d, type: 3}
   - {fileID: 8008911636120275913, guid: be61edd0f1e6987458a583e3605a33c3, type: 3}
+--- !u!114 &1683139085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683139082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27c27099d587f44eada0cd04ffc7bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EncounterManager
+  currentEncounterData: {fileID: 11400000, guid: d9074d14e4d5343478d0e5bf833953c5, type: 2}
+  enemiesToSpawn: []
+  lastWorldPosition: {x: 0, y: 0, z: 0}
+  lastWorldSceneName: 
+  lastWorldMusic: {fileID: 0}
+  hospitalSceneName: World
+  hospitalPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &1703834550
 Transform:
   m_ObjectHideFlags: 0

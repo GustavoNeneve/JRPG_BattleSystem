@@ -3,6 +3,10 @@ using System.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
+/// <summary>
+/// Controls enemy AI logic, including target selection and random attacks.
+/// Controla a lógica de IA do inimigo, incluindo seleção de alvo e ataques aleatórios.
+/// </summary>
 public class EnemyBehaviour : CharacterBehaviour
 {
     [Header("ENEMY SPECIFIC PARAMETERS")]
@@ -49,6 +53,10 @@ public class EnemyBehaviour : CharacterBehaviour
     }
 
 
+    /// <summary>
+    /// Selects a random player target from the list of alive players.
+    /// Seleciona um alvo jogador aleatório da lista de jogadores vivos.
+    /// </summary>
     public void SetRandomTarget()
     {
         if (CombatManager.instance.AllPlayersDead())
@@ -65,6 +73,11 @@ public class EnemyBehaviour : CharacterBehaviour
         SetTarget(CombatManager.instance.PlayersOnField[_randomPlayerIndex]);
     }
 
+    /// <summary>
+    /// Sets a specific target for this enemy.
+    /// Define um alvo específico para este inimigo.
+    /// </summary>
+    /// <param name="target">The target character.</param>
     public void SetTarget(CharacterBehaviour target)
     {
         currentPlayerTarget = target;

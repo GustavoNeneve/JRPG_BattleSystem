@@ -18,6 +18,10 @@ public enum BattleState
     NULL
 }
 
+/// <summary>
+/// Manages the turn-based battle system, including turn order, victory conditions, and network synchronization.
+/// Gerencia o sistema de batalha por turnos, incluindo ordem de turnos, condições de vitória e sincronização de rede.
+/// </summary>
 public class CombatManager : NetworkBehaviour
 {
     [SerializeField] Transform playersParent;
@@ -53,6 +57,10 @@ public class CombatManager : NetworkBehaviour
         set => combatQueue = value;
     }
 
+    /// <summary>
+    /// Singleton instance of the CombatManager.
+    /// Instância Singleton do CombatManager.
+    /// </summary>
     public static CombatManager instance;
 
     private void Awake()
@@ -60,6 +68,11 @@ public class CombatManager : NetworkBehaviour
         instance = this;
     }
 
+    /// <summary>
+    /// Registers a player character to the field.
+    /// Registra um personagem jogador no campo.
+    /// </summary>
+    /// <param name="playerToAdd">The player character to add.</param>
     public void AddPlayerOnField(CharacterBehaviour playerToAdd)
     {
         playersOnField.Add(playerToAdd);
@@ -135,6 +148,11 @@ public class CombatManager : NetworkBehaviour
         return combatQueue[0] == c;
     }
 
+    /// <summary>
+    /// Adds a character to the combat queue, indicating they are waiting to act.
+    /// Adiciona um personagem à fila de combate, indicando que ele está esperando para agir.
+    /// </summary>
+    /// <param name="characterToAdd">The character to add.</param>
     public void AddToCombatQueue(CharacterBehaviour characterToAdd)
     {
         if (!GameManager.IsOnline())
@@ -242,6 +260,11 @@ public class CombatManager : NetworkBehaviour
         currentActivePlayer = null;
     }
 
+    /// <summary>
+    /// Sets the character who is currently taking their turn (UI input phase).
+    /// Define o personagem que está atualmente jogando (fase de input de UI).
+    /// </summary>
+    /// <param name="c">The character to be active.</param>
     public void SetCurrentActivePlayer(CharacterBehaviour c)
     {
         currentActivePlayer = c;

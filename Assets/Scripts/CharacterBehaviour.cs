@@ -4,10 +4,19 @@ using System.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
+/// <summary>
+/// Base class for all characters in battle (Players and Enemies). Handles stats, movement, and battle logic.
+/// Classe base para todos os personagens em batalha (Jogadores e Inimigos). Gerencia status, movimento e lógica de batalha.
+/// </summary>
 public class CharacterBehaviour : NetworkBehaviour
 {
     [field: SerializeField] public Transform GetAttackedPos { get; private set; }
     [SerializeField] protected SpriteEffects combatEffects;
+    
+    /// <summary>
+    /// The current state of the character in the Battle State Machine.
+    /// O estado atual do personagem na Máquina de Estados da Batalha.
+    /// </summary>
     [field: SerializeField] public BattleState CurrentBattlePhase { get; set; }
 
     [Header("Character ID")]
@@ -106,6 +115,11 @@ public class CharacterBehaviour : NetworkBehaviour
         mainBattlePanel.ShowHideSwapCharsIndicator(CombatManager.instance.ReadyPlayersAmount() > 1);
     }
 
+    /// <summary>
+    /// Increases current HP.
+    /// Aumenta o HP atual.
+    /// </summary>
+    /// <param name="amount">Amount to heal.</param>
     public void IncreaseHP(int amount)
     {
         currentHP += amount;
@@ -166,6 +180,13 @@ public class CharacterBehaviour : NetworkBehaviour
         }
     }
 
+    /// <summary>
+    /// Receives damage or healing.
+    /// Recebe dano ou cura.
+    /// </summary>
+    /// <param name="amount">Amount value.</param>
+    /// <param name="dmgType">Type of damage (Harmful, Healing, Mana)</param>
+    /// <param name="isCrit">Is it a critical hit?</param>
     public virtual void TakeDamageOrHeal(int amount, DamageType dmgType, bool isCrit)
     {
         if (dmgType == DamageType.HARMFUL)
@@ -253,6 +274,12 @@ public class CharacterBehaviour : NetworkBehaviour
         characterUIController.HideUI();
     }
 
+    /// <summary>
+    /// Returns the CombatActionSO for a specific ActionType.
+    /// Retorna o CombatActionSO para um ActionType específico.
+    /// </summary>
+    /// <param name="type">Type of action to search for.</param>
+    /// <returns>The CombatActionSO found or null.</returns>
     public CombatActionSO SelectAction(ActionType type)
     {
 
@@ -305,6 +332,11 @@ public class CharacterBehaviour : NetworkBehaviour
         ChangeBattleState(BattleState.PICKING_TARGET);
     }
 
+    /// <summary>
+    /// Executes the current pre-selected action on a target.
+    /// Executa a ação pré-selecionada atual em um alvo.
+    /// </summary>
+    /// <param name="target">The target character.</param>
     public virtual void ExecuteActionOn(CharacterBehaviour target)
     {
         if (!GameManager.IsOnline() || IsOwner)
@@ -441,6 +473,11 @@ public class CharacterBehaviour : NetworkBehaviour
         ChangeBattleState(BattleState.RECHARGING);
     }
     
+    /// <summary>
+    /// Changes the character's battle state.
+    /// Altera o estado de batalha do personagem.
+    /// </summary>
+    /// <param name="phase">The new BattleState.</param>
     public void ChangeBattleState(BattleState phase)
     {
         StartCoroutine(ChangeBattleStateCoroutine(phase));

@@ -1,0 +1,321 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: slaking
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 289
+  dbSymbol: slaking
+  forms:
+  - form: 0
+    height: 2
+    weight: 130.5
+    type1: normal
+    type2: __undef__
+    baseHp: 150
+    baseAtk: 160
+    baseDfe: 100
+    baseSpd: 100
+    baseAts: 95
+    baseDfs: 65
+    evHp: 3
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 252
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 3840
+    babyDbSymbol: slakoth
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - truant
+    - truant
+    - truant
+    frontOffsetY: 0
+    resources:
+      icon: 0289
+      iconF: 
+      iconShiny: 0289s
+      iconShinyF: 
+      front: 0289
+      frontF: 
+      frontShiny: 0289s
+      frontShinyF: 
+      back: 0289
+      backF: 
+      backShiny: 0289s
+      backShinyF: 
+      footprint: 0289
+      character: 0289
+      characterF: 
+      characterShiny: 0289s
+      characterShinyF: 
+      cry: 0289.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 1
+    - move: encore
+      klass: LevelLearnableMove
+      level: 1
+    - move: yawn
+      klass: LevelLearnableMove
+      level: 1
+    - move: slack_off
+      klass: LevelLearnableMove
+      level: 1
+    - move: hammer_arm
+      klass: LevelLearnableMove
+      level: 1
+    - move: fling
+      klass: LevelLearnableMove
+      level: 1
+    - move: punishment
+      klass: LevelLearnableMove
+      level: 1
+    - move: encore
+      klass: LevelLearnableMove
+      level: 6
+    - move: slack_off
+      klass: LevelLearnableMove
+      level: 9
+    - move: feint_attack
+      klass: LevelLearnableMove
+      level: 14
+    - move: amnesia
+      klass: LevelLearnableMove
+      level: 17
+    - move: covet
+      klass: LevelLearnableMove
+      level: 23
+    - move: chip_away
+      klass: LevelLearnableMove
+      level: 27
+    - move: counter
+      klass: LevelLearnableMove
+      level: 33
+    - move: flail
+      klass: LevelLearnableMove
+      level: 39
+    - move: fling
+      klass: LevelLearnableMove
+      level: 47
+    - move: punishment
+      klass: LevelLearnableMove
+      level: 53
+    - move: hammer_arm
+      klass: LevelLearnableMove
+      level: 61
+    - move: fire_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: bulk_up
+      klass: TechLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: gunk_shot
+      klass: TutorLearnableMove
+      level: 0
+    - move: smack_down
+      klass: TechLearnableMove
+      level: 0
+    - move: low_sweep
+      klass: TechLearnableMove
+      level: 0
+    - move: after_you
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: quash
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: stomping_tantrum
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 365
+      description: 0

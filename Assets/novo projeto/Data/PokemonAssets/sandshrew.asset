@@ -1,0 +1,608 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: sandshrew
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 27
+  dbSymbol: sandshrew
+  forms:
+  - form: 0
+    height: 0.6
+    weight: 12
+    type1: ground
+    type2: __undef__
+    baseHp: 50
+    baseAtk: 75
+    baseDfe: 85
+    baseSpd: 40
+    baseAts: 20
+    baseDfs: 30
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 22
+    experienceType: 1
+    baseExperience: 60
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: sandshrew
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sand_veil
+    - sand_veil
+    - sand_rush
+    frontOffsetY: 0
+    resources:
+      icon: 0027
+      iconF: 
+      iconShiny: 0027s
+      iconShinyF: 
+      front: 0027
+      frontF: 
+      frontShiny: 0027s
+      frontShinyF: 
+      back: 0027
+      backF: 
+      backShiny: 0027s
+      backShinyF: 
+      footprint: 0027
+      character: 0027
+      characterF: 
+      characterShiny: 0027s
+      characterShinyF: 
+      cry: 0027.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 1
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 3
+    - move: poison_sting
+      klass: LevelLearnableMove
+      level: 5
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 7
+    - move: rapid_spin
+      klass: LevelLearnableMove
+      level: 9
+    - move: fury_cutter
+      klass: LevelLearnableMove
+      level: 11
+    - move: magnitude
+      klass: LevelLearnableMove
+      level: 14
+    - move: swift
+      klass: LevelLearnableMove
+      level: 17
+    - move: fury_swipes
+      klass: LevelLearnableMove
+      level: 20
+    - move: sand_tomb
+      klass: LevelLearnableMove
+      level: 23
+    - move: slash
+      klass: LevelLearnableMove
+      level: 26
+    - move: dig
+      klass: LevelLearnableMove
+      level: 30
+    - move: gyro_ball
+      klass: LevelLearnableMove
+      level: 34
+    - move: swords_dance
+      klass: LevelLearnableMove
+      level: 38
+    - move: sandstorm
+      klass: LevelLearnableMove
+      level: 42
+    - move: earthquake
+      klass: LevelLearnableMove
+      level: 46
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: counter
+      klass: BreedLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: flail
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: rapid_spin
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: metal_claw
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: crush_claw
+      klass: BreedLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: mud_shot
+      klass: BreedLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: night_slash
+      klass: BreedLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: BreedLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: hone_claws
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: chip_away
+      klass: BreedLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: rototiller
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: stomping_tantrum
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 42
+      description: 0
+  - form: 1
+    height: 0.7
+    weight: 40
+    type1: ice
+    type2: steel
+    baseHp: 50
+    baseAtk: 75
+    baseDfe: 90
+    baseSpd: 40
+    baseAts: 10
+    baseDfs: 35
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 1
+      conditions:
+      - type: stone
+        value: ice_stone
+    experienceType: 1
+    baseExperience: 60
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: sandshrew
+    babyForm: 1
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - snow_cloak
+    - snow_cloak
+    - slush_rush
+    frontOffsetY: 0
+    resources:
+      icon: 0027_01
+      iconF: 
+      iconShiny: 0027s_01
+      iconShinyF: 
+      front: 0027_01
+      frontF: 
+      frontShiny: 0027s_01
+      frontShinyF: 
+      back: 0027_01
+      backF: 
+      backShiny: 0027s_01
+      backShinyF: 
+      footprint: 0027
+      character: 0027_01
+      characterF: 
+      characterShiny: 0027s_01
+      characterShinyF: 
+      cry: 0027.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 1
+    - move: bide
+      klass: LevelLearnableMove
+      level: 3
+    - move: powder_snow
+      klass: LevelLearnableMove
+      level: 5
+    - move: ice_ball
+      klass: LevelLearnableMove
+      level: 7
+    - move: rapid_spin
+      klass: LevelLearnableMove
+      level: 9
+    - move: fury_cutter
+      klass: LevelLearnableMove
+      level: 11
+    - move: metal_claw
+      klass: LevelLearnableMove
+      level: 14
+    - move: swift
+      klass: LevelLearnableMove
+      level: 17
+    - move: fury_swipes
+      klass: LevelLearnableMove
+      level: 20
+    - move: iron_defense
+      klass: LevelLearnableMove
+      level: 23
+    - move: slash
+      klass: LevelLearnableMove
+      level: 26
+    - move: iron_head
+      klass: LevelLearnableMove
+      level: 30
+    - move: gyro_ball
+      klass: LevelLearnableMove
+      level: 34
+    - move: swords_dance
+      klass: LevelLearnableMove
+      level: 38
+    - move: hail
+      klass: LevelLearnableMove
+      level: 42
+    - move: blizzard
+      klass: LevelLearnableMove
+      level: 46
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: counter
+      klass: BreedLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: amnesia
+      klass: BreedLearnableMove
+      level: 0
+    - move: leech_life
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: curse
+      klass: BreedLearnableMove
+      level: 0
+    - move: flail
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: metal_claw
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: crush_claw
+      klass: BreedLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: icicle_spear
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: night_slash
+      klass: BreedLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: hone_claws
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: chip_away
+      klass: BreedLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: frost_breath
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: icicle_crash
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: throat_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: aurora_veil
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 43
+      description: 17

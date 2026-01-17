@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: carnivine
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 455
+  dbSymbol: carnivine
+  forms:
+  - form: 0
+    height: 1.4
+    weight: 27
+    type1: grass
+    type2: __undef__
+    baseHp: 74
+    baseAtk: 100
+    baseDfe: 72
+    baseSpd: 46
+    baseAts: 90
+    baseDfs: 72
+    evHp: 0
+    evAtk: 2
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 159
+    baseLoyalty: 70
+    catchRate: 200
+    femaleRate: 50
+    breedGroups: 0700000007000000
+    hatchSteps: 6400
+    babyDbSymbol: carnivine
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - levitate
+    - levitate
+    - levitate
+    frontOffsetY: 0
+    resources:
+      icon: 0455
+      iconF: 
+      iconShiny: 0455s
+      iconShinyF: 
+      front: 0455
+      frontF: 
+      frontShiny: 0455s
+      frontShinyF: 
+      back: 0455
+      backF: 
+      backShiny: 0455s
+      backShinyF: 
+      footprint: 0455
+      character: 0455
+      characterF: 
+      characterShiny: 0455s
+      characterShinyF: 
+      cry: 0455.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: bind
+      klass: LevelLearnableMove
+      level: 1
+    - move: growth
+      klass: LevelLearnableMove
+      level: 1
+    - move: bite
+      klass: LevelLearnableMove
+      level: 7
+    - move: vine_whip
+      klass: LevelLearnableMove
+      level: 11
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 17
+    - move: ingrain
+      klass: LevelLearnableMove
+      level: 21
+    - move: feint_attack
+      klass: LevelLearnableMove
+      level: 27
+    - move: leaf_tornado
+      klass: LevelLearnableMove
+      level: 31
+    - move: stockpile
+      klass: LevelLearnableMove
+      level: 37
+    - move: spit_up
+      klass: LevelLearnableMove
+      level: 37
+    - move: swallow
+      klass: LevelLearnableMove
+      level: 37
+    - move: crunch
+      klass: LevelLearnableMove
+      level: 41
+    - move: wring_out
+      klass: LevelLearnableMove
+      level: 47
+    - move: power_whip
+      klass: LevelLearnableMove
+      level: 50
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: bind
+      klass: TutorLearnableMove
+      level: 0
+    - move: slam
+      klass: BreedLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: leech_seed
+      klass: BreedLearnableMove
+      level: 0
+    - move: razor_leaf
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: stun_spore
+      klass: BreedLearnableMove
+      level: 0
+    - move: sleep_powder
+      klass: BreedLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: BreedLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: synthesis
+      klass: BreedLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_whistle
+      klass: BreedLearnableMove
+      level: 0
+    - move: magical_leaf
+      klass: BreedLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: gastro_acid
+      klass: TutorLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: BreedLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: bug_bite
+      klass: TutorLearnableMove
+      level: 0
+    - move: rage_powder
+      klass: BreedLearnableMove
+      level: 0
+    - move: acid_spray
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    - move: throat_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 565
+      description: 0

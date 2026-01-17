@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: shaymin
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 492
+  dbSymbol: shaymin
+  forms:
+  - form: 0
+    height: 0.2
+    weight: 2.1
+    type1: grass
+    type2: __undef__
+    baseHp: 100
+    baseAtk: 100
+    baseDfe: 100
+    baseSpd: 100
+    baseAts: 100
+    baseDfs: 100
+    evHp: 3
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 270
+    baseLoyalty: 100
+    catchRate: 45
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: shaymin
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - natural_cure
+    - natural_cure
+    - natural_cure
+    frontOffsetY: 0
+    resources:
+      icon: 0492
+      iconF: 
+      iconShiny: 0492s
+      iconShinyF: 
+      front: 0492
+      frontF: 
+      frontShiny: 0492s
+      frontShinyF: 
+      back: 0492
+      backF: 
+      backShiny: 0492s
+      backShinyF: 
+      footprint: 0492
+      character: 0492
+      characterF: 
+      characterShiny: 0492s
+      characterShinyF: 
+      cry: 0492.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: growth
+      klass: LevelLearnableMove
+      level: 1
+    - move: magical_leaf
+      klass: LevelLearnableMove
+      level: 10
+    - move: leech_seed
+      klass: LevelLearnableMove
+      level: 19
+    - move: synthesis
+      klass: LevelLearnableMove
+      level: 28
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 37
+    - move: natural_gift
+      klass: LevelLearnableMove
+      level: 46
+    - move: worry_seed
+      klass: LevelLearnableMove
+      level: 55
+    - move: aromatherapy
+      klass: LevelLearnableMove
+      level: 64
+    - move: energy_ball
+      klass: LevelLearnableMove
+      level: 73
+    - move: sweet_kiss
+      klass: LevelLearnableMove
+      level: 82
+    - move: healing_wish
+      klass: LevelLearnableMove
+      level: 91
+    - move: seed_flare
+      klass: LevelLearnableMove
+      level: 100
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: laser_focus
+      klass: TutorLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 610
+      description: 0
+  - form: 1
+    height: 0.4
+    weight: 5.2
+    type1: grass
+    type2: flying
+    baseHp: 100
+    baseAtk: 103
+    baseDfe: 75
+    baseSpd: 127
+    baseAts: 120
+    baseDfs: 75
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 3
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 270
+    baseLoyalty: 100
+    catchRate: 45
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: shaymin
+    babyForm: 1
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - serene_grace
+    - serene_grace
+    - serene_grace
+    frontOffsetY: 0
+    resources:
+      icon: 0492_01
+      iconF: 
+      iconShiny: 0492s_01
+      iconShinyF: 
+      front: 0492_01
+      frontF: 
+      frontShiny: 0492s_01
+      frontShinyF: 
+      back: 0492_01
+      backF: 
+      backShiny: 0492s_01
+      backShinyF: 
+      footprint: 0492
+      character: 0492_01
+      characterF: 
+      characterShiny: 0492s_01
+      characterShinyF: 
+      cry: 0492_01.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: growth
+      klass: LevelLearnableMove
+      level: 1
+    - move: magical_leaf
+      klass: LevelLearnableMove
+      level: 10
+    - move: leech_seed
+      klass: LevelLearnableMove
+      level: 19
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 28
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 37
+    - move: natural_gift
+      klass: LevelLearnableMove
+      level: 46
+    - move: worry_seed
+      klass: LevelLearnableMove
+      level: 55
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 64
+    - move: energy_ball
+      klass: LevelLearnableMove
+      level: 73
+    - move: sweet_kiss
+      klass: LevelLearnableMove
+      level: 82
+    - move: leaf_storm
+      klass: LevelLearnableMove
+      level: 91
+    - move: seed_flare
+      klass: LevelLearnableMove
+      level: 100
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: laser_focus
+      klass: TutorLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 611
+      description: 120

@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: pyukumuku
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 771
+  dbSymbol: pyukumuku
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 1.2
+    type1: water
+    type2: __undef__
+    baseHp: 55
+    baseAtk: 60
+    baseDfe: 130
+    baseSpd: 5
+    baseAts: 30
+    baseDfs: 130
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 2
+    evolutions: []
+    experienceType: 0
+    baseExperience: 144
+    baseLoyalty: 70
+    catchRate: 60
+    femaleRate: 50
+    breedGroups: 0200000002000000
+    hatchSteps: 3840
+    babyDbSymbol: pyukumuku
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - innards_out
+    - innards_out
+    - unaware
+    frontOffsetY: 0
+    resources:
+      icon: 0771
+      iconF: 
+      iconShiny: 0771s
+      iconShinyF: 
+      front: 0771
+      frontF: 
+      frontShiny: 0771s
+      frontShinyF: 
+      back: 0771
+      backF: 
+      backShiny: 0771s
+      backShinyF: 
+      footprint: 0771
+      character: 0771
+      characterF: 
+      characterShiny: 0771s
+      characterShinyF: 
+      cry: 0771.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: harden
+      klass: LevelLearnableMove
+      level: 1
+    - move: bide
+      klass: LevelLearnableMove
+      level: 1
+    - move: baton_pass
+      klass: LevelLearnableMove
+      level: 1
+    - move: mud_sport
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_sport
+      klass: LevelLearnableMove
+      level: 1
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 5
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 9
+    - move: safeguard
+      klass: LevelLearnableMove
+      level: 13
+    - move: counter
+      klass: LevelLearnableMove
+      level: 17
+    - move: purify
+      klass: LevelLearnableMove
+      level: 21
+    - move: curse
+      klass: LevelLearnableMove
+      level: 25
+    - move: gastro_acid
+      klass: LevelLearnableMove
+      level: 29
+    - move: pain_split
+      klass: LevelLearnableMove
+      level: 33
+    - move: recover
+      klass: LevelLearnableMove
+      level: 37
+    - move: soak
+      klass: LevelLearnableMove
+      level: 41
+    - move: toxic
+      klass: LevelLearnableMove
+      level: 45
+    - move: memento
+      klass: LevelLearnableMove
+      level: 49
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: spite
+      klass: BreedLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: pain_split
+      klass: TutorLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: tickle
+      klass: BreedLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: gastro_acid
+      klass: TutorLearnableMove
+      level: 0
+    - move: quash
+      klass: TechLearnableMove
+      level: 0
+    - move: bestow
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: venom_drench
+      klass: BreedLearnableMove
+      level: 0
+    formTextId:
+      name: 988
+      description: 0

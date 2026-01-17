@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: xerneas
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 716
+  dbSymbol: xerneas
+  forms:
+  - form: 0
+    height: 3
+    weight: 215
+    type1: fairy
+    type2: __undef__
+    baseHp: 126
+    baseAtk: 131
+    baseDfe: 95
+    baseSpd: 99
+    baseAts: 131
+    baseDfs: 98
+    evHp: 3
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 306
+    baseLoyalty: 0
+    catchRate: 45
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: xerneas
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - fairy_aura
+    - fairy_aura
+    - fairy_aura
+    frontOffsetY: 0
+    resources:
+      icon: 0716
+      iconF: 
+      iconShiny: 0716s
+      iconShinyF: 
+      front: 0716
+      frontF: 
+      frontShiny: 0716s
+      frontShinyF: 
+      back: 0716
+      backF: 
+      backShiny: 0716s
+      backShinyF: 
+      footprint: 0716
+      character: 0716
+      characterF: 
+      characterShiny: 0716s
+      characterShinyF: 
+      cry: 0716.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 1
+    - move: ingrain
+      klass: LevelLearnableMove
+      level: 1
+    - move: aromatherapy
+      klass: LevelLearnableMove
+      level: 1
+    - move: heal_pulse
+      klass: LevelLearnableMove
+      level: 1
+    - move: light_screen
+      klass: LevelLearnableMove
+      level: 5
+    - move: aurora_beam
+      klass: LevelLearnableMove
+      level: 10
+    - move: gravity
+      klass: LevelLearnableMove
+      level: 18
+    - move: geomancy
+      klass: LevelLearnableMove
+      level: 26
+    - move: moonblast
+      klass: LevelLearnableMove
+      level: 35
+    - move: megahorn
+      klass: LevelLearnableMove
+      level: 44
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 51
+    - move: horn_leech
+      klass: LevelLearnableMove
+      level: 55
+    - move: psych_up
+      klass: LevelLearnableMove
+      level: 59
+    - move: misty_terrain
+      klass: LevelLearnableMove
+      level: 63
+    - move: nature_power
+      klass: LevelLearnableMove
+      level: 72
+    - move: close_combat
+      klass: LevelLearnableMove
+      level: 80
+    - move: giga_impact
+      klass: LevelLearnableMove
+      level: 88
+    - move: outrage
+      klass: LevelLearnableMove
+      level: 93
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: outrage
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: hyper_voice
+      klass: TutorLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: wonder_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: psyshock
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: laser_focus
+      klass: TutorLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 922
+      description: 0

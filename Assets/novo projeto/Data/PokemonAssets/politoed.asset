@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: politoed
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 186
+  dbSymbol: politoed
+  forms:
+  - form: 0
+    height: 1.1
+    weight: 33.9
+    type1: water
+    type2: __undef__
+    baseHp: 90
+    baseAtk: 75
+    baseDfe: 75
+    baseSpd: 70
+    baseAts: 90
+    baseDfs: 100
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 3
+    evolutions: []
+    experienceType: 3
+    baseExperience: 225
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 50
+    breedGroups: 0200000002000000
+    hatchSteps: 5120
+    babyDbSymbol: poliwag
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - damp
+    - water_absorb
+    - drizzle
+    frontOffsetY: 0
+    resources:
+      icon: 0186
+      iconF: 0186
+      iconShiny: 0186s
+      iconShinyF: 0186s
+      front: 0186
+      frontF: 0186f
+      frontShiny: 0186s
+      frontShinyF: 0186sf
+      back: 0186
+      backF: 0186f
+      backShiny: 0186s
+      backShinyF: 0186sf
+      footprint: 0186
+      character: 0186
+      characterF: 0186
+      characterShiny: 0186s
+      characterShinyF: 0186s
+      cry: 0186.ogg
+      hasFemale: 1
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: double_slap
+      klass: LevelLearnableMove
+      level: 1
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: hypnosis
+      klass: LevelLearnableMove
+      level: 1
+    - move: perish_song
+      klass: LevelLearnableMove
+      level: 1
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 27
+    - move: bounce
+      klass: LevelLearnableMove
+      level: 37
+    - move: hyper_voice
+      klass: LevelLearnableMove
+      level: 48
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: hyper_voice
+      klass: TutorLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 226
+      description: 0

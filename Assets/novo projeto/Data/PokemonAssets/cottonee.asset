@@ -1,0 +1,271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: cottonee
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 546
+  dbSymbol: cottonee
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 0.6
+    type1: grass
+    type2: fairy
+    baseHp: 40
+    baseAtk: 27
+    baseDfe: 60
+    baseSpd: 66
+    baseAts: 37
+    baseDfs: 50
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: stone
+        value: sun_stone
+    experienceType: 1
+    baseExperience: 56
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0600000007000000
+    hatchSteps: 5120
+    babyDbSymbol: cottonee
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - prankster
+    - infiltrator
+    - chlorophyll
+    frontOffsetY: 0
+    resources:
+      icon: 0546
+      iconF: 
+      iconShiny: 0546s
+      iconShinyF: 
+      front: 0546
+      frontF: 
+      frontShiny: 0546s
+      frontShinyF: 
+      back: 0546
+      backF: 
+      backShiny: 0546s
+      backShinyF: 
+      footprint: 0546
+      character: 0546
+      characterF: 
+      characterShiny: 0546s
+      characterShinyF: 
+      cry: 0546.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: absorb
+      klass: LevelLearnableMove
+      level: 1
+    - move: fairy_wind
+      klass: LevelLearnableMove
+      level: 1
+    - move: growth
+      klass: LevelLearnableMove
+      level: 4
+    - move: leech_seed
+      klass: LevelLearnableMove
+      level: 8
+    - move: stun_spore
+      klass: LevelLearnableMove
+      level: 10
+    - move: mega_drain
+      klass: LevelLearnableMove
+      level: 13
+    - move: cotton_spore
+      klass: LevelLearnableMove
+      level: 17
+    - move: razor_leaf
+      klass: LevelLearnableMove
+      level: 19
+    - move: poison_powder
+      klass: LevelLearnableMove
+      level: 22
+    - move: giga_drain
+      klass: LevelLearnableMove
+      level: 26
+    - move: charm
+      klass: LevelLearnableMove
+      level: 28
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 31
+    - move: energy_ball
+      klass: LevelLearnableMove
+      level: 35
+    - move: cotton_guard
+      klass: LevelLearnableMove
+      level: 37
+    - move: sunny_day
+      klass: LevelLearnableMove
+      level: 40
+    - move: endeavor
+      klass: LevelLearnableMove
+      level: 44
+    - move: solar_beam
+      klass: LevelLearnableMove
+      level: 46
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: encore
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: beat_up
+      klass: BreedLearnableMove
+      level: 0
+    - move: memento
+      klass: BreedLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: fake_tears
+      klass: BreedLearnableMove
+      level: 0
+    - move: grass_whistle
+      klass: BreedLearnableMove
+      level: 0
+    - move: tickle
+      klass: BreedLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: natural_gift
+      klass: BreedLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: BreedLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: switcheroo
+      klass: BreedLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: captivate
+      klass: BreedLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: misty_terrain
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 683
+      description: 0

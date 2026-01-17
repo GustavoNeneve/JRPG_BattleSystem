@@ -1,0 +1,304 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: mienfoo
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 619
+  dbSymbol: mienfoo
+  forms:
+  - form: 0
+    height: 0.9
+    weight: 20
+    type1: fighting
+    type2: __undef__
+    baseHp: 45
+    baseAtk: 85
+    baseDfe: 50
+    baseSpd: 65
+    baseAts: 55
+    baseDfs: 50
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 50
+    experienceType: 3
+    baseExperience: 70
+    baseLoyalty: 70
+    catchRate: 180
+    femaleRate: 50
+    breedGroups: 0500000008000000
+    hatchSteps: 6400
+    babyDbSymbol: mienfoo
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - inner_focus
+    - regenerator
+    - reckless
+    frontOffsetY: 0
+    resources:
+      icon: 0619
+      iconF: 
+      iconShiny: 0619s
+      iconShinyF: 
+      front: 0619
+      frontF: 
+      frontShiny: 0619s
+      frontShinyF: 
+      back: 0619
+      backF: 
+      backShiny: 0619s
+      backShinyF: 
+      footprint: 0619
+      character: 0619
+      characterF: 
+      characterShiny: 0619s
+      characterShinyF: 
+      cry: 0619.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: pound
+      klass: LevelLearnableMove
+      level: 1
+    - move: meditate
+      klass: LevelLearnableMove
+      level: 5
+    - move: detect
+      klass: LevelLearnableMove
+      level: 9
+    - move: fake_out
+      klass: LevelLearnableMove
+      level: 13
+    - move: double_slap
+      klass: LevelLearnableMove
+      level: 17
+    - move: swift
+      klass: LevelLearnableMove
+      level: 21
+    - move: calm_mind
+      klass: LevelLearnableMove
+      level: 25
+    - move: force_palm
+      klass: LevelLearnableMove
+      level: 29
+    - move: drain_punch
+      klass: LevelLearnableMove
+      level: 33
+    - move: jump_kick
+      klass: LevelLearnableMove
+      level: 37
+    - move: u_turn
+      klass: LevelLearnableMove
+      level: 41
+    - move: quick_guard
+      klass: LevelLearnableMove
+      level: 45
+    - move: bounce
+      klass: LevelLearnableMove
+      level: 49
+    - move: high_jump_kick
+      klass: LevelLearnableMove
+      level: 50
+    - move: reversal
+      klass: LevelLearnableMove
+      level: 57
+    - move: aura_sphere
+      klass: LevelLearnableMove
+      level: 61
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: low_kick
+      klass: BreedLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: baton_pass
+      klass: BreedLearnableMove
+      level: 0
+    - move: vital_throw
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: smelling_salts
+      klass: BreedLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: BreedLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: bulk_up
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: feint
+      klass: BreedLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: me_first
+      klass: BreedLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: drain_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: low_sweep
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: BreedLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: dual_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 764
+      description: 0

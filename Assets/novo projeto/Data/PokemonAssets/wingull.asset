@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: wingull
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 278
+  dbSymbol: wingull
+  forms:
+  - form: 0
+    height: 0.6
+    weight: 9.5
+    type1: water
+    type2: flying
+    baseHp: 40
+    baseAtk: 30
+    baseDfe: 30
+    baseSpd: 85
+    baseAts: 55
+    baseDfs: 30
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 25
+    experienceType: 1
+    baseExperience: 54
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0200000004000000
+    hatchSteps: 5120
+    babyDbSymbol: wingull
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - keen_eye
+    - hydration
+    - rain_dish
+    frontOffsetY: 0
+    resources:
+      icon: 0278
+      iconF: 
+      iconShiny: 0278s
+      iconShinyF: 
+      front: 0278
+      frontF: 
+      frontShiny: 0278s
+      frontShinyF: 
+      back: 0278
+      backF: 
+      backShiny: 0278s
+      backShinyF: 
+      footprint: 0278
+      character: 0278
+      characterF: 
+      characterShiny: 0278s
+      characterShinyF: 
+      cry: 0278.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: growl
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_gun
+      klass: LevelLearnableMove
+      level: 1
+    - move: supersonic
+      klass: LevelLearnableMove
+      level: 5
+    - move: wing_attack
+      klass: LevelLearnableMove
+      level: 8
+    - move: mist
+      klass: LevelLearnableMove
+      level: 12
+    - move: water_pulse
+      klass: LevelLearnableMove
+      level: 15
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 19
+    - move: air_cutter
+      klass: LevelLearnableMove
+      level: 22
+    - move: pursuit
+      klass: LevelLearnableMove
+      level: 26
+    - move: aerial_ace
+      klass: LevelLearnableMove
+      level: 29
+    - move: roost
+      klass: LevelLearnableMove
+      level: 33
+    - move: agility
+      klass: LevelLearnableMove
+      level: 36
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 40
+    - move: hurricane
+      klass: LevelLearnableMove
+      level: 43
+    - move: gust
+      klass: BreedLearnableMove
+      level: 0
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: mist
+      klass: BreedLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: agility
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_attack
+      klass: TutorLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: twister
+      klass: BreedLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: BreedLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: water_sport
+      klass: BreedLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: roost
+      klass: BreedLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: brine
+      klass: BreedLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: aqua_ring
+      klass: BreedLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: wide_guard
+      klass: BreedLearnableMove
+      level: 0
+    - move: soak
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 353
+      description: 0

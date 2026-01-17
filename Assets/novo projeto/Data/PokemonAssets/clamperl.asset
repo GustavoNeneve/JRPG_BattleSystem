@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: clamperl
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 366
+  dbSymbol: clamperl
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 52.5
+    type1: water
+    type2: __undef__
+    baseHp: 35
+    baseAtk: 64
+    baseDfe: 85
+    baseSpd: 32
+    baseAts: 74
+    baseDfs: 55
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: trade
+        value: true
+      - type: itemHold
+        value: deep_sea_tooth
+    - form: 0
+      conditions:
+      - type: trade
+        value: true
+      - type: itemHold
+        value: deep_sea_scale
+    experienceType: 4
+    baseExperience: 69
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0200000002000000
+    hatchSteps: 5120
+    babyDbSymbol: clamperl
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shell_armor
+    - shell_armor
+    - rattled
+    frontOffsetY: 0
+    resources:
+      icon: 0366
+      iconF: 
+      iconShiny: 0366s
+      iconShinyF: 
+      front: 0366
+      frontF: 
+      frontShiny: 0366s
+      frontShinyF: 
+      back: 0366
+      backF: 
+      backShiny: 0366s
+      backShinyF: 
+      footprint: 0366
+      character: 0366
+      characterF: 
+      characterShiny: 0366s
+      characterShinyF: 
+      cry: 0366.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: water_gun
+      klass: LevelLearnableMove
+      level: 1
+    - move: clamp
+      klass: LevelLearnableMove
+      level: 1
+    - move: whirlpool
+      klass: LevelLearnableMove
+      level: 1
+    - move: iron_defense
+      klass: LevelLearnableMove
+      level: 1
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 50
+    - move: body_slam
+      klass: BreedLearnableMove
+      level: 0
+    - move: supersonic
+      klass: BreedLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: confuse_ray
+      klass: BreedLearnableMove
+      level: 0
+    - move: barrier
+      klass: BreedLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: refresh
+      klass: BreedLearnableMove
+      level: 0
+    - move: mud_sport
+      klass: BreedLearnableMove
+      level: 0
+    - move: muddy_water
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: BreedLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: brine
+      klass: BreedLearnableMove
+      level: 0
+    - move: aqua_ring
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 456
+      description: 0

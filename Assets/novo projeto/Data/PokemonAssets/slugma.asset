@@ -1,0 +1,268 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: slugma
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 218
+  dbSymbol: slugma
+  forms:
+  - form: 0
+    height: 0.7
+    weight: 35
+    type1: fire
+    type2: __undef__
+    baseHp: 40
+    baseAtk: 40
+    baseDfe: 40
+    baseSpd: 20
+    baseAts: 70
+    baseDfs: 40
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 38
+    experienceType: 1
+    baseExperience: 50
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0b0000000b000000
+    hatchSteps: 5120
+    babyDbSymbol: slugma
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - magma_armor
+    - flame_body
+    - weak_armor
+    frontOffsetY: 0
+    resources:
+      icon: 0218
+      iconF: 
+      iconShiny: 0218s
+      iconShinyF: 
+      front: 0218
+      frontF: 
+      frontShiny: 0218s
+      frontShinyF: 
+      back: 0218
+      backF: 
+      backShiny: 0218s
+      backShinyF: 
+      footprint: 0218
+      character: 0218
+      characterF: 
+      characterShiny: 0218s
+      characterShinyF: 
+      cry: 0218.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: smog
+      klass: LevelLearnableMove
+      level: 1
+    - move: yawn
+      klass: LevelLearnableMove
+      level: 1
+    - move: ember
+      klass: LevelLearnableMove
+      level: 6
+    - move: rock_throw
+      klass: LevelLearnableMove
+      level: 8
+    - move: harden
+      klass: LevelLearnableMove
+      level: 13
+    - move: incinerate
+      klass: LevelLearnableMove
+      level: 15
+    - move: clear_smog
+      klass: LevelLearnableMove
+      level: 20
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 22
+    - move: flame_burst
+      klass: LevelLearnableMove
+      level: 27
+    - move: rock_slide
+      klass: LevelLearnableMove
+      level: 29
+    - move: lava_plume
+      klass: LevelLearnableMove
+      level: 34
+    - move: amnesia
+      klass: LevelLearnableMove
+      level: 36
+    - move: body_slam
+      klass: LevelLearnableMove
+      level: 41
+    - move: recover
+      klass: LevelLearnableMove
+      level: 43
+    - move: flamethrower
+      klass: LevelLearnableMove
+      level: 48
+    - move: earth_power
+      klass: LevelLearnableMove
+      level: 50
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: smokescreen
+      klass: BreedLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: acid_armor
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: curse
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: rollout
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: pain_split
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: stockpile
+      klass: BreedLearnableMove
+      level: 0
+    - move: spit_up
+      klass: BreedLearnableMove
+      level: 0
+    - move: swallow
+      klass: BreedLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: BreedLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: memento
+      klass: BreedLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: overheat
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: guard_swap
+      klass: BreedLearnableMove
+      level: 0
+    - move: earth_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: after_you
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: inferno
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 288
+      description: 0

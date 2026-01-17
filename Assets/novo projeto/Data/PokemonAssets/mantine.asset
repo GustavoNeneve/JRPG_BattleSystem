@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: mantine
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 226
+  dbSymbol: mantine
+  forms:
+  - form: 0
+    height: 2.1
+    weight: 220
+    type1: water
+    type2: flying
+    baseHp: 85
+    baseAtk: 40
+    baseDfe: 70
+    baseSpd: 70
+    baseAts: 80
+    baseDfs: 140
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 2
+    evolutions: []
+    experienceType: 2
+    baseExperience: 170
+    baseLoyalty: 70
+    catchRate: 25
+    femaleRate: 50
+    breedGroups: 0200000002000000
+    hatchSteps: 6400
+    babyDbSymbol: mantine
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - water_absorb
+    - swift_swim
+    - water_veil
+    frontOffsetY: 0
+    resources:
+      icon: 0226
+      iconF: 
+      iconShiny: 0226s
+      iconShinyF: 
+      front: 0226
+      frontF: 
+      frontShiny: 0226s
+      frontShinyF: 
+      back: 0226
+      backF: 
+      backShiny: 0226s
+      backShinyF: 
+      footprint: 0226
+      character: 0226
+      characterF: 
+      characterShiny: 0226s
+      characterShinyF: 
+      cry: 0226.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: supersonic
+      klass: LevelLearnableMove
+      level: 1
+    - move: psybeam
+      klass: LevelLearnableMove
+      level: 1
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: bubble
+      klass: LevelLearnableMove
+      level: 1
+    - move: signal_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: bullet_seed
+      klass: LevelLearnableMove
+      level: 1
+    - move: roost
+      klass: LevelLearnableMove
+      level: 1
+    - move: supersonic
+      klass: LevelLearnableMove
+      level: 3
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 7
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 11
+    - move: wing_attack
+      klass: LevelLearnableMove
+      level: 14
+    - move: headbutt
+      klass: LevelLearnableMove
+      level: 16
+    - move: water_pulse
+      klass: LevelLearnableMove
+      level: 19
+    - move: wide_guard
+      klass: LevelLearnableMove
+      level: 23
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 27
+    - move: agility
+      klass: LevelLearnableMove
+      level: 32
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 36
+    - move: aqua_ring
+      klass: LevelLearnableMove
+      level: 39
+    - move: bounce
+      klass: LevelLearnableMove
+      level: 46
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 49
+    - move: slam
+      klass: BreedLearnableMove
+      level: 0
+    - move: hydro_pump
+      klass: BreedLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: haze
+      klass: BreedLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: amnesia
+      klass: BreedLearnableMove
+      level: 0
+    - move: splash
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: twister
+      klass: BreedLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: mirror_coat
+      klass: BreedLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: mud_sport
+      klass: BreedLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_sport
+      klass: BreedLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: gunk_shot
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: wide_guard
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 296
+      description: 0

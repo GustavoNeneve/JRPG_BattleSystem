@@ -1,0 +1,297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: volbeat
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 313
+  dbSymbol: volbeat
+  forms:
+  - form: 0
+    height: 0.7
+    weight: 17.7
+    type1: bug
+    type2: __undef__
+    baseHp: 65
+    baseAtk: 73
+    baseDfe: 75
+    baseSpd: 85
+    baseAts: 47
+    baseDfs: 85
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 4
+    baseExperience: 151
+    baseLoyalty: 70
+    catchRate: 150
+    femaleRate: 0
+    breedGroups: 0300000008000000
+    hatchSteps: 3840
+    babyDbSymbol: volbeat
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - illuminate
+    - swarm
+    - prankster
+    frontOffsetY: 0
+    resources:
+      icon: 0313
+      iconF: 
+      iconShiny: 0313s
+      iconShinyF: 
+      front: 0313
+      frontF: 
+      frontShiny: 0313s
+      frontShinyF: 
+      back: 0313
+      backF: 
+      backShiny: 0313s
+      backShinyF: 
+      footprint: 0313
+      character: 0313
+      characterF: 
+      characterShiny: 0313s
+      characterShinyF: 
+      cry: 0313.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: flash
+      klass: LevelLearnableMove
+      level: 1
+    - move: double_team
+      klass: LevelLearnableMove
+      level: 5
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 8
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 12
+    - move: struggle_bug
+      klass: LevelLearnableMove
+      level: 15
+    - move: moonlight
+      klass: LevelLearnableMove
+      level: 19
+    - move: tail_glow
+      klass: LevelLearnableMove
+      level: 22
+    - move: signal_beam
+      klass: LevelLearnableMove
+      level: 26
+    - move: protect
+      klass: LevelLearnableMove
+      level: 29
+    - move: zen_headbutt
+      klass: LevelLearnableMove
+      level: 33
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 36
+    - move: bug_buzz
+      klass: LevelLearnableMove
+      level: 40
+    - move: play_rough
+      klass: LevelLearnableMove
+      level: 43
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 47
+    - move: infestation
+      klass: LevelLearnableMove
+      level: 50
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: seismic_toss
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: dizzy_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: baton_pass
+      klass: BreedLearnableMove
+      level: 0
+    - move: encore
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: trick
+      klass: BreedLearnableMove
+      level: 0
+    - move: trick
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: silver_wind
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: bug_buzz
+      klass: BreedLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: bug_bite
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    - move: lunge
+      klass: BreedLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 394
+      description: 0

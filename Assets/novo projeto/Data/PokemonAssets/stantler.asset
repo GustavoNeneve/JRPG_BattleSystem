@@ -1,0 +1,321 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: stantler
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 234
+  dbSymbol: stantler
+  forms:
+  - form: 0
+    height: 1.4
+    weight: 71.2
+    type1: normal
+    type2: __undef__
+    baseHp: 73
+    baseAtk: 95
+    baseDfe: 62
+    baseSpd: 85
+    baseAts: 85
+    baseDfs: 65
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 163
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: stantler
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - intimidate
+    - frisk
+    - sap_sipper
+    frontOffsetY: 0
+    resources:
+      icon: 0234
+      iconF: 
+      iconShiny: 0234s
+      iconShinyF: 
+      front: 0234
+      frontF: 
+      frontShiny: 0234s
+      frontShinyF: 
+      back: 0234
+      backF: 
+      backShiny: 0234s
+      backShinyF: 
+      footprint: 0234
+      character: 0234
+      characterF: 
+      characterShiny: 0234s
+      characterShinyF: 
+      cry: 0234.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: me_first
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 3
+    - move: astonish
+      klass: LevelLearnableMove
+      level: 7
+    - move: hypnosis
+      klass: LevelLearnableMove
+      level: 10
+    - move: stomp
+      klass: LevelLearnableMove
+      level: 13
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 16
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 21
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 23
+    - move: calm_mind
+      klass: LevelLearnableMove
+      level: 27
+    - move: role_play
+      klass: LevelLearnableMove
+      level: 33
+    - move: zen_headbutt
+      klass: LevelLearnableMove
+      level: 38
+    - move: jump_kick
+      klass: LevelLearnableMove
+      level: 43
+    - move: imprison
+      klass: LevelLearnableMove
+      level: 49
+    - move: captivate
+      klass: LevelLearnableMove
+      level: 50
+    - move: me_first
+      klass: LevelLearnableMove
+      level: 55
+    - move: double_kick
+      klass: BreedLearnableMove
+      level: 0
+    - move: thrash
+      klass: BreedLearnableMove
+      level: 0
+    - move: bite
+      klass: BreedLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: disable
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: rage
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: BreedLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: megahorn
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: TutorLearnableMove
+      level: 0
+    - move: mud_sport
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: extrasensory
+      klass: BreedLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: me_first
+      klass: BreedLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: BreedLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: trick_room
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: psyshock
+      klass: TechLearnableMove
+      level: 0
+    - move: magic_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: throat_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 305
+      description: 0

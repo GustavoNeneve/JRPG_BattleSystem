@@ -1,0 +1,277 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: bunnelby
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 659
+  dbSymbol: bunnelby
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 5
+    type1: normal
+    type2: __undef__
+    baseHp: 38
+    baseAtk: 36
+    baseDfe: 38
+    baseSpd: 57
+    baseAts: 32
+    baseDfs: 36
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 20
+    experienceType: 1
+    baseExperience: 47
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 3840
+    babyDbSymbol: bunnelby
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - pickup
+    - cheek_pouch
+    - huge_power
+    frontOffsetY: 0
+    resources:
+      icon: 0659
+      iconF: 
+      iconShiny: 0659s
+      iconShinyF: 
+      front: 0659
+      frontF: 
+      frontShiny: 0659s
+      frontShinyF: 
+      back: 0659
+      backF: 
+      backShiny: 0659s
+      backShinyF: 
+      footprint: 0659
+      character: 0659
+      characterF: 
+      characterShiny: 0659s
+      characterShinyF: 
+      cry: 0659.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: agility
+      klass: LevelLearnableMove
+      level: 1
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 7
+    - move: double_slap
+      klass: LevelLearnableMove
+      level: 10
+    - move: mud_slap
+      klass: LevelLearnableMove
+      level: 13
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 15
+    - move: mud_shot
+      klass: LevelLearnableMove
+      level: 18
+    - move: double_kick
+      klass: LevelLearnableMove
+      level: 20
+    - move: odor_sleuth
+      klass: LevelLearnableMove
+      level: 25
+    - move: flail
+      klass: LevelLearnableMove
+      level: 29
+    - move: dig
+      klass: LevelLearnableMove
+      level: 33
+    - move: bounce
+      klass: LevelLearnableMove
+      level: 38
+    - move: super_fang
+      klass: LevelLearnableMove
+      level: 42
+    - move: facade
+      klass: LevelLearnableMove
+      level: 47
+    - move: earthquake
+      klass: LevelLearnableMove
+      level: 49
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: defense_curl
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: spikes
+      klass: BreedLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: rollout
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: bulk_up
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: smack_down
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 816
+      description: 0

@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: fletchinder
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 662
+  dbSymbol: fletchinder
+  forms:
+  - form: 0
+    height: 0.7
+    weight: 16
+    type1: fire
+    type2: flying
+    baseHp: 62
+    baseAtk: 73
+    baseDfe: 55
+    baseSpd: 84
+    baseAts: 56
+    baseDfs: 52
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 2
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 35
+    experienceType: 3
+    baseExperience: 134
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 50
+    breedGroups: 0400000004000000
+    hatchSteps: 3840
+    babyDbSymbol: fletchling
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - flame_body
+    - flame_body
+    - gale_wings
+    frontOffsetY: 0
+    resources:
+      icon: 0662
+      iconF: 
+      iconShiny: 0662s
+      iconShinyF: 
+      front: 0662
+      frontF: 
+      frontShiny: 0662s
+      frontShinyF: 
+      back: 0662
+      backF: 
+      backShiny: 0662s
+      backShinyF: 
+      footprint: 0662
+      character: 0662
+      characterF: 
+      characterShiny: 0662s
+      characterShinyF: 
+      cry: 0662.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: growl
+      klass: LevelLearnableMove
+      level: 1
+    - move: ember
+      klass: LevelLearnableMove
+      level: 1
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 6
+    - move: peck
+      klass: LevelLearnableMove
+      level: 10
+    - move: agility
+      klass: LevelLearnableMove
+      level: 13
+    - move: flail
+      klass: LevelLearnableMove
+      level: 16
+    - move: roost
+      klass: LevelLearnableMove
+      level: 25
+    - move: razor_wind
+      klass: LevelLearnableMove
+      level: 27
+    - move: natural_gift
+      klass: LevelLearnableMove
+      level: 31
+    - move: flame_charge
+      klass: LevelLearnableMove
+      level: 38
+    - move: acrobatics
+      klass: LevelLearnableMove
+      level: 42
+    - move: me_first
+      klass: LevelLearnableMove
+      level: 46
+    - move: tailwind
+      klass: LevelLearnableMove
+      level: 51
+    - move: steel_wing
+      klass: LevelLearnableMove
+      level: 55
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: ember
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: overheat
+      klass: TechLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 819
+      description: 0

@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: qwilfish
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 211
+  dbSymbol: qwilfish
+  forms:
+  - form: 0
+    height: 0.5
+    weight: 3.9
+    type1: water
+    type2: poison
+    baseHp: 65
+    baseAtk: 95
+    baseDfe: 85
+    baseSpd: 85
+    baseAts: 55
+    baseDfs: 55
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 1
+    baseExperience: 88
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 50
+    breedGroups: 0c0000000c000000
+    hatchSteps: 5120
+    babyDbSymbol: qwilfish
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - swift_swim
+    - poison_point
+    - intimidate
+    frontOffsetY: 0
+    resources:
+      icon: 0211
+      iconF: 
+      iconShiny: 0211s
+      iconShinyF: 
+      front: 0211
+      frontF: 
+      frontShiny: 0211s
+      frontShinyF: 
+      back: 0211
+      backF: 
+      backShiny: 0211s
+      backShinyF: 
+      footprint: 0211
+      character: 0211
+      characterF: 
+      characterShiny: 0211s
+      characterShinyF: 
+      cry: 0211.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: poison_sting
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_gun
+      klass: LevelLearnableMove
+      level: 1
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 1
+    - move: spikes
+      klass: LevelLearnableMove
+      level: 1
+    - move: destiny_bond
+      klass: LevelLearnableMove
+      level: 1
+    - move: fell_stinger
+      klass: LevelLearnableMove
+      level: 1
+    - move: harden
+      klass: LevelLearnableMove
+      level: 9
+    - move: minimize
+      klass: LevelLearnableMove
+      level: 9
+    - move: bubble
+      klass: LevelLearnableMove
+      level: 13
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 17
+    - move: toxic_spikes
+      klass: LevelLearnableMove
+      level: 21
+    - move: stockpile
+      klass: LevelLearnableMove
+      level: 25
+    - move: spit_up
+      klass: LevelLearnableMove
+      level: 25
+    - move: revenge
+      klass: LevelLearnableMove
+      level: 29
+    - move: brine
+      klass: LevelLearnableMove
+      level: 33
+    - move: pin_missile
+      klass: LevelLearnableMove
+      level: 37
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 41
+    - move: aqua_tail
+      klass: LevelLearnableMove
+      level: 45
+    - move: poison_jab
+      klass: LevelLearnableMove
+      level: 49
+    - move: destiny_bond
+      klass: LevelLearnableMove
+      level: 53
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 57
+    - move: fell_stinger
+      klass: LevelLearnableMove
+      level: 60
+    - move: supersonic
+      klass: BreedLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: bubble_beam
+      klass: BreedLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: haze
+      klass: BreedLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: flail
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: pain_split
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: astonish
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: BreedLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: brine
+      klass: BreedLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: aqua_jet
+      klass: BreedLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: acid_spray
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: throat_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 279
+      description: 0

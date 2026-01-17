@@ -1,0 +1,294 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: drifblim
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 426
+  dbSymbol: drifblim
+  forms:
+  - form: 0
+    height: 1.2
+    weight: 15
+    type1: ghost
+    type2: flying
+    baseHp: 150
+    baseAtk: 80
+    baseDfe: 44
+    baseSpd: 80
+    baseAts: 90
+    baseDfs: 54
+    evHp: 2
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 5
+    baseExperience: 174
+    baseLoyalty: 70
+    catchRate: 60
+    femaleRate: 50
+    breedGroups: 0b0000000b000000
+    hatchSteps: 7680
+    babyDbSymbol: drifloon
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - aftermath
+    - unburden
+    - flare_boost
+    frontOffsetY: 0
+    resources:
+      icon: 0426
+      iconF: 
+      iconShiny: 0426s
+      iconShinyF: 
+      front: 0426
+      frontF: 
+      frontShiny: 0426s
+      frontShinyF: 
+      back: 0426
+      backF: 
+      backShiny: 0426s
+      backShinyF: 
+      footprint: 0426
+      character: 0426
+      characterF: 
+      characterShiny: 0426s
+      characterShinyF: 
+      cry: 0426.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: gust
+      klass: LevelLearnableMove
+      level: 1
+    - move: minimize
+      klass: LevelLearnableMove
+      level: 1
+    - move: constrict
+      klass: LevelLearnableMove
+      level: 1
+    - move: astonish
+      klass: LevelLearnableMove
+      level: 1
+    - move: phantom_force
+      klass: LevelLearnableMove
+      level: 1
+    - move: astonish
+      klass: LevelLearnableMove
+      level: 4
+    - move: gust
+      klass: LevelLearnableMove
+      level: 8
+    - move: focus_energy
+      klass: LevelLearnableMove
+      level: 13
+    - move: payback
+      klass: LevelLearnableMove
+      level: 16
+    - move: ominous_wind
+      klass: LevelLearnableMove
+      level: 20
+    - move: stockpile
+      klass: LevelLearnableMove
+      level: 25
+    - move: hex
+      klass: LevelLearnableMove
+      level: 27
+    - move: spit_up
+      klass: LevelLearnableMove
+      level: 34
+    - move: swallow
+      klass: LevelLearnableMove
+      level: 34
+    - move: shadow_ball
+      klass: LevelLearnableMove
+      level: 40
+    - move: amnesia
+      klass: LevelLearnableMove
+      level: 46
+    - move: baton_pass
+      klass: LevelLearnableMove
+      level: 52
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 60
+    - move: phantom_force
+      klass: LevelLearnableMove
+      level: 65
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: bind
+      klass: TutorLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: pain_split
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: trick
+      klass: TutorLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: embargo
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 533
+      description: 0

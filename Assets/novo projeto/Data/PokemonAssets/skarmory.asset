@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: skarmory
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 227
+  dbSymbol: skarmory
+  forms:
+  - form: 0
+    height: 1.7
+    weight: 50.5
+    type1: steel
+    type2: flying
+    baseHp: 65
+    baseAtk: 80
+    baseDfe: 140
+    baseSpd: 70
+    baseAts: 40
+    baseDfs: 70
+    evHp: 0
+    evAtk: 0
+    evDfe: 2
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 163
+    baseLoyalty: 70
+    catchRate: 25
+    femaleRate: 50
+    breedGroups: 0400000004000000
+    hatchSteps: 6400
+    babyDbSymbol: skarmory
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sturdy
+    - keen_eye
+    - weak_armor
+    frontOffsetY: 0
+    resources:
+      icon: 0227
+      iconF: 
+      iconShiny: 0227s
+      iconShinyF: 
+      front: 0227
+      frontF: 
+      frontShiny: 0227s
+      frontShinyF: 
+      back: 0227
+      backF: 
+      backShiny: 0227s
+      backShinyF: 
+      footprint: 0227
+      character: 0227
+      characterF: 
+      characterShiny: 0227s
+      characterShinyF: 
+      cry: 0227.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: peck
+      klass: LevelLearnableMove
+      level: 1
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 6
+    - move: metal_claw
+      klass: LevelLearnableMove
+      level: 9
+    - move: air_cutter
+      klass: LevelLearnableMove
+      level: 12
+    - move: fury_attack
+      klass: LevelLearnableMove
+      level: 17
+    - move: feint
+      klass: LevelLearnableMove
+      level: 20
+    - move: swift
+      klass: LevelLearnableMove
+      level: 23
+    - move: spikes
+      klass: LevelLearnableMove
+      level: 28
+    - move: agility
+      klass: LevelLearnableMove
+      level: 31
+    - move: steel_wing
+      klass: LevelLearnableMove
+      level: 34
+    - move: slash
+      klass: LevelLearnableMove
+      level: 39
+    - move: metal_sound
+      klass: LevelLearnableMove
+      level: 42
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 45
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 50
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 53
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: whirlwind
+      klass: BreedLearnableMove
+      level: 0
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: drill_peck
+      klass: BreedLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_attack
+      klass: BreedLearnableMove
+      level: 0
+    - move: sky_attack
+      klass: TutorLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: curse
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: pursuit
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: assurance
+      klass: BreedLearnableMove
+      level: 0
+    - move: guard_swap
+      klass: BreedLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: brave_bird
+      klass: BreedLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: BreedLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_drop
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 297
+      description: 0

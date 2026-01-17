@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: venonat
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 48
+  dbSymbol: venonat
+  forms:
+  - form: 0
+    height: 1
+    weight: 30
+    type1: bug
+    type2: poison
+    baseHp: 60
+    baseAtk: 55
+    baseDfe: 50
+    baseSpd: 45
+    baseAts: 40
+    baseDfs: 55
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 1
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 31
+    experienceType: 1
+    baseExperience: 61
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0300000003000000
+    hatchSteps: 5120
+    babyDbSymbol: venonat
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - compound_eyes
+    - tinted_lens
+    - run_away
+    frontOffsetY: 0
+    resources:
+      icon: 0048
+      iconF: 
+      iconShiny: 0048s
+      iconShinyF: 
+      front: 0048
+      frontF: 
+      frontShiny: 0048s
+      frontShinyF: 
+      back: 0048
+      backF: 
+      backShiny: 0048s
+      backShinyF: 
+      footprint: 0048
+      character: 0048
+      characterF: 
+      characterShiny: 0048s
+      characterShinyF: 
+      cry: 0048.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: disable
+      klass: LevelLearnableMove
+      level: 1
+    - move: foresight
+      klass: LevelLearnableMove
+      level: 1
+    - move: supersonic
+      klass: LevelLearnableMove
+      level: 5
+    - move: confusion
+      klass: LevelLearnableMove
+      level: 11
+    - move: poison_powder
+      klass: LevelLearnableMove
+      level: 13
+    - move: psybeam
+      klass: LevelLearnableMove
+      level: 17
+    - move: stun_spore
+      klass: LevelLearnableMove
+      level: 23
+    - move: signal_beam
+      klass: LevelLearnableMove
+      level: 25
+    - move: sleep_powder
+      klass: LevelLearnableMove
+      level: 29
+    - move: leech_life
+      klass: LevelLearnableMove
+      level: 35
+    - move: zen_headbutt
+      klass: LevelLearnableMove
+      level: 37
+    - move: poison_fang
+      klass: LevelLearnableMove
+      level: 41
+    - move: psychic
+      klass: LevelLearnableMove
+      level: 47
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: agility
+      klass: BreedLearnableMove
+      level: 0
+    - move: screech
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: leech_life
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: BreedLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: baton_pass
+      klass: BreedLearnableMove
+      level: 0
+    - move: morning_sun
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: BreedLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: TutorLearnableMove
+      level: 0
+    - move: secret_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: toxic_spikes
+      klass: BreedLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: bug_bite
+      klass: BreedLearnableMove
+      level: 0
+    - move: bug_bite
+      klass: TutorLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: rage_powder
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 67
+      description: 0

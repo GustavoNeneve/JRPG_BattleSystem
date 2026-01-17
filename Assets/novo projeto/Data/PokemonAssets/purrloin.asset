@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: purrloin
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 509
+  dbSymbol: purrloin
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 10.1
+    type1: dark
+    type2: __undef__
+    baseHp: 41
+    baseAtk: 50
+    baseDfe: 37
+    baseSpd: 66
+    baseAts: 50
+    baseDfs: 37
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 20
+    experienceType: 1
+    baseExperience: 56
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: purrloin
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - limber
+    - unburden
+    - prankster
+    frontOffsetY: 0
+    resources:
+      icon: 0509
+      iconF: 
+      iconShiny: 0509s
+      iconShinyF: 
+      front: 0509
+      frontF: 
+      frontShiny: 0509s
+      frontShinyF: 
+      back: 0509
+      backF: 
+      backShiny: 0509s
+      backShinyF: 
+      footprint: 0509
+      character: 0509
+      characterF: 
+      characterShiny: 0509s
+      characterShinyF: 
+      cry: 0509.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: growl
+      klass: LevelLearnableMove
+      level: 3
+    - move: assist
+      klass: LevelLearnableMove
+      level: 6
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 10
+    - move: fury_swipes
+      klass: LevelLearnableMove
+      level: 12
+    - move: pursuit
+      klass: LevelLearnableMove
+      level: 15
+    - move: torment
+      klass: LevelLearnableMove
+      level: 19
+    - move: fake_out
+      klass: LevelLearnableMove
+      level: 21
+    - move: hone_claws
+      klass: LevelLearnableMove
+      level: 24
+    - move: assurance
+      klass: LevelLearnableMove
+      level: 28
+    - move: slash
+      klass: LevelLearnableMove
+      level: 30
+    - move: captivate
+      klass: LevelLearnableMove
+      level: 33
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 37
+    - move: snatch
+      klass: LevelLearnableMove
+      level: 39
+    - move: nasty_plot
+      klass: LevelLearnableMove
+      level: 42
+    - move: sucker_punch
+      klass: LevelLearnableMove
+      level: 46
+    - move: play_rough
+      klass: LevelLearnableMove
+      level: 49
+    - move: pay_day
+      klass: BreedLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: feint_attack
+      klass: BreedLearnableMove
+      level: 0
+    - move: charm
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: encore
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: trick
+      klass: TutorLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: yawn
+      klass: BreedLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: hyper_voice
+      klass: TutorLearnableMove
+      level: 0
+    - move: fake_tears
+      klass: BreedLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: covet
+      klass: BreedLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: embargo
+      klass: TechLearnableMove
+      level: 0
+    - move: copycat
+      klass: BreedLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: gunk_shot
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: foul_play
+      klass: BreedLearnableMove
+      level: 0
+    - move: foul_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: snarl
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 645
+      description: 0

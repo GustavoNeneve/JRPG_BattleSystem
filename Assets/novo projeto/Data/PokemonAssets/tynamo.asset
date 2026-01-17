@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: tynamo
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 602
+  dbSymbol: tynamo
+  forms:
+  - form: 0
+    height: 0.2
+    weight: 0.3
+    type1: electric
+    type2: __undef__
+    baseHp: 35
+    baseAtk: 55
+    baseDfe: 40
+    baseSpd: 60
+    baseAts: 45
+    baseDfs: 40
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 39
+    experienceType: 2
+    baseExperience: 55
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0b0000000b000000
+    hatchSteps: 5120
+    babyDbSymbol: tynamo
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - levitate
+    - levitate
+    - levitate
+    frontOffsetY: 0
+    resources:
+      icon: 0602
+      iconF: 
+      iconShiny: 0602s
+      iconShinyF: 
+      front: 0602
+      frontF: 
+      frontShiny: 0602s
+      frontShinyF: 
+      back: 0602
+      backF: 
+      backShiny: 0602s
+      backShinyF: 
+      footprint: 0602
+      character: 0602
+      characterF: 
+      characterShiny: 0602s
+      characterShinyF: 
+      cry: 0602.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 1
+    - move: spark
+      klass: LevelLearnableMove
+      level: 1
+    - move: charge_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 747
+      description: 0

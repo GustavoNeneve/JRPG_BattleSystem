@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: eelektross
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 604
+  dbSymbol: eelektross
+  forms:
+  - form: 0
+    height: 2.1
+    weight: 80.5
+    type1: electric
+    type2: __undef__
+    baseHp: 85
+    baseAtk: 115
+    baseDfe: 80
+    baseSpd: 50
+    baseAts: 105
+    baseDfs: 80
+    evHp: 0
+    evAtk: 3
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 232
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: 50
+    breedGroups: 0b0000000b000000
+    hatchSteps: 5120
+    babyDbSymbol: tynamo
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - levitate
+    - levitate
+    - levitate
+    frontOffsetY: 0
+    resources:
+      icon: 0604
+      iconF: 
+      iconShiny: 0604s
+      iconShinyF: 
+      front: 0604
+      frontF: 
+      frontShiny: 0604s
+      frontShinyF: 
+      back: 0604
+      backF: 
+      backShiny: 0604s
+      backShinyF: 
+      footprint: 0604
+      character: 0604
+      characterF: 
+      characterShiny: 0604s
+      characterShinyF: 
+      cry: 0604.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: headbutt
+      klass: LevelLearnableMove
+      level: 1
+    - move: thrash
+      klass: LevelLearnableMove
+      level: 1
+    - move: acid
+      klass: LevelLearnableMove
+      level: 1
+    - move: zap_cannon
+      klass: LevelLearnableMove
+      level: 1
+    - move: crunch
+      klass: LevelLearnableMove
+      level: 1
+    - move: crush_claw
+      klass: LevelLearnableMove
+      level: 1
+    - move: gastro_acid
+      klass: LevelLearnableMove
+      level: 1
+    - move: discharge
+      klass: LevelLearnableMove
+      level: 1
+    - move: coil
+      klass: LevelLearnableMove
+      level: 1
+    - move: ion_deluge
+      klass: LevelLearnableMove
+      level: 1
+    - move: fire_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: bind
+      klass: TutorLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: outrage
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: dragon_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: gastro_acid
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: dragon_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: drain_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_tail
+      klass: TechLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: throat_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 749
+      description: 0

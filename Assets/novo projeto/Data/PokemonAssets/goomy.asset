@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: goomy
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 704
+  dbSymbol: goomy
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 2.8
+    type1: dragon
+    type2: __undef__
+    baseHp: 45
+    baseAtk: 50
+    baseDfe: 35
+    baseSpd: 40
+    baseAts: 55
+    baseDfs: 75
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 1
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 40
+    experienceType: 2
+    baseExperience: 60
+    baseLoyalty: 35
+    catchRate: 45
+    femaleRate: 50
+    breedGroups: 0e0000000e000000
+    hatchSteps: 10240
+    babyDbSymbol: goomy
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sap_sipper
+    - hydration
+    - gooey
+    frontOffsetY: 0
+    resources:
+      icon: 0704
+      iconF: 
+      iconShiny: 0704s
+      iconShinyF: 
+      front: 0704
+      frontF: 
+      frontShiny: 0704s
+      frontShinyF: 
+      back: 0704
+      backF: 
+      backShiny: 0704s
+      backShinyF: 
+      footprint: 0704
+      character: 0704
+      characterF: 
+      characterShiny: 0704s
+      characterShinyF: 
+      cry: 0704.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: bubble
+      klass: LevelLearnableMove
+      level: 1
+    - move: absorb
+      klass: LevelLearnableMove
+      level: 5
+    - move: protect
+      klass: LevelLearnableMove
+      level: 9
+    - move: bide
+      klass: LevelLearnableMove
+      level: 13
+    - move: dragon_breath
+      klass: LevelLearnableMove
+      level: 18
+    - move: rain_dance
+      klass: LevelLearnableMove
+      level: 25
+    - move: flail
+      klass: LevelLearnableMove
+      level: 28
+    - move: body_slam
+      klass: LevelLearnableMove
+      level: 32
+    - move: muddy_water
+      klass: LevelLearnableMove
+      level: 38
+    - move: dragon_pulse
+      klass: LevelLearnableMove
+      level: 42
+    - move: counter
+      klass: BreedLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: acid_armor
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: curse
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: outrage
+      klass: TutorLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_tail
+      klass: BreedLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: dragon_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: draco_meteor
+      klass: TutorLearnableMove
+      level: 0
+    - move: sludge_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 904
+      description: 0

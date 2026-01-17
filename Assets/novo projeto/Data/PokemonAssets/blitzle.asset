@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: blitzle
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 522
+  dbSymbol: blitzle
+  forms:
+  - form: 0
+    height: 0.8
+    weight: 29.8
+    type1: electric
+    type2: __undef__
+    baseHp: 45
+    baseAtk: 60
+    baseDfe: 32
+    baseSpd: 76
+    baseAts: 50
+    baseDfs: 32
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 27
+    experienceType: 1
+    baseExperience: 59
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: blitzle
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - lightning_rod
+    - motor_drive
+    - sap_sipper
+    frontOffsetY: 0
+    resources:
+      icon: 0522
+      iconF: 
+      iconShiny: 0522s
+      iconShinyF: 
+      front: 0522
+      frontF: 
+      frontShiny: 0522s
+      frontShinyF: 
+      back: 0522
+      backF: 
+      backShiny: 0522s
+      backShinyF: 
+      footprint: 0522
+      character: 0522
+      characterF: 
+      characterShiny: 0522s
+      characterShinyF: 
+      cry: 0522.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: tail_whip
+      klass: LevelLearnableMove
+      level: 4
+    - move: charge
+      klass: LevelLearnableMove
+      level: 8
+    - move: shock_wave
+      klass: LevelLearnableMove
+      level: 11
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 15
+    - move: flame_charge
+      klass: LevelLearnableMove
+      level: 18
+    - move: pursuit
+      klass: LevelLearnableMove
+      level: 22
+    - move: spark
+      klass: LevelLearnableMove
+      level: 25
+    - move: stomp
+      klass: LevelLearnableMove
+      level: 29
+    - move: discharge
+      klass: LevelLearnableMove
+      level: 32
+    - move: agility
+      klass: LevelLearnableMove
+      level: 36
+    - move: wild_charge
+      klass: LevelLearnableMove
+      level: 39
+    - move: thrash
+      klass: LevelLearnableMove
+      level: 43
+    - move: double_kick
+      klass: BreedLearnableMove
+      level: 0
+    - move: sand_attack
+      klass: BreedLearnableMove
+      level: 0
+    - move: take_down
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_edge
+      klass: BreedLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: rage
+      klass: BreedLearnableMove
+      level: 0
+    - move: screech
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: endure
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: snatch
+      klass: BreedLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: BreedLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: feint
+      klass: BreedLearnableMove
+      level: 0
+    - move: me_first
+      klass: BreedLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 658
+      description: 0

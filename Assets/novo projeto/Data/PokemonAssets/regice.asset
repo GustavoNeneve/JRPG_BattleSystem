@@ -1,0 +1,288 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: regice
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 378
+  dbSymbol: regice
+  forms:
+  - form: 0
+    height: 1.8
+    weight: 175
+    type1: ice
+    type2: __undef__
+    baseHp: 80
+    baseAtk: 50
+    baseDfe: 100
+    baseSpd: 50
+    baseAts: 100
+    baseDfs: 200
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 3
+    evolutions: []
+    experienceType: 2
+    baseExperience: 261
+    baseLoyalty: 35
+    catchRate: 3
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 20480
+    babyDbSymbol: regice
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - clear_body
+    - clear_body
+    - ice_body
+    frontOffsetY: 0
+    resources:
+      icon: 0378
+      iconF: 
+      iconShiny: 0378s
+      iconShinyF: 
+      front: 0378
+      frontF: 
+      frontShiny: 0378s
+      frontShinyF: 
+      back: 0378
+      backF: 
+      backShiny: 0378s
+      backShinyF: 
+      footprint: 0378
+      character: 0378
+      characterF: 
+      characterShiny: 0378s
+      characterShinyF: 
+      cry: 0378.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: stomp
+      klass: LevelLearnableMove
+      level: 1
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 1
+    - move: icy_wind
+      klass: LevelLearnableMove
+      level: 1
+    - move: charge_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: bulldoze
+      klass: LevelLearnableMove
+      level: 1
+    - move: icy_wind
+      klass: LevelLearnableMove
+      level: 7
+    - move: charge_beam
+      klass: LevelLearnableMove
+      level: 13
+    - move: bulldoze
+      klass: LevelLearnableMove
+      level: 19
+    - move: curse
+      klass: LevelLearnableMove
+      level: 25
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 31
+    - move: amnesia
+      klass: LevelLearnableMove
+      level: 37
+    - move: ice_beam
+      klass: LevelLearnableMove
+      level: 43
+    - move: hammer_arm
+      klass: LevelLearnableMove
+      level: 49
+    - move: zap_cannon
+      klass: LevelLearnableMove
+      level: 55
+    - move: lock_on
+      klass: LevelLearnableMove
+      level: 55
+    - move: superpower
+      klass: LevelLearnableMove
+      level: 61
+    - move: hyper_beam
+      klass: LevelLearnableMove
+      level: 67
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: frost_breath
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: aurora_veil
+      klass: TechLearnableMove
+      level: 0
+    - move: stomping_tantrum
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 470
+      description: 0

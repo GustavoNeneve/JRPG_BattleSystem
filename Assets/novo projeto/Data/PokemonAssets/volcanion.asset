@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: volcanion
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 721
+  dbSymbol: volcanion
+  forms:
+  - form: 0
+    height: 1.7
+    weight: 195
+    type1: fire
+    type2: water
+    baseHp: 80
+    baseAtk: 110
+    baseDfe: 120
+    baseSpd: 70
+    baseAts: 130
+    baseDfs: 90
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 3
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 270
+    baseLoyalty: 100
+    catchRate: 3
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: volcanion
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - water_absorb
+    - water_absorb
+    - water_absorb
+    frontOffsetY: 0
+    resources:
+      icon: 0721
+      iconF: 
+      iconShiny: 0721s
+      iconShinyF: 
+      front: 0721
+      frontF: 
+      frontShiny: 0721s
+      frontShinyF: 
+      back: 0721
+      backF: 
+      backShiny: 0721s
+      backShinyF: 
+      footprint: 0721
+      character: 0721
+      characterF: 
+      characterShiny: 0721s
+      characterShinyF: 
+      cry: 0721.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 1
+    - move: flare_blitz
+      klass: LevelLearnableMove
+      level: 1
+    - move: steam_eruption
+      klass: LevelLearnableMove
+      level: 1
+    - move: mist
+      klass: LevelLearnableMove
+      level: 8
+    - move: haze
+      klass: LevelLearnableMove
+      level: 11
+    - move: flame_charge
+      klass: LevelLearnableMove
+      level: 15
+    - move: water_pulse
+      klass: LevelLearnableMove
+      level: 21
+    - move: stomp
+      klass: LevelLearnableMove
+      level: 28
+    - move: scald
+      klass: LevelLearnableMove
+      level: 32
+    - move: weather_ball
+      klass: LevelLearnableMove
+      level: 40
+    - move: body_slam
+      klass: LevelLearnableMove
+      level: 46
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 50
+    - move: flare_blitz
+      klass: LevelLearnableMove
+      level: 58
+    - move: overheat
+      klass: LevelLearnableMove
+      level: 65
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 76
+    - move: steam_eruption
+      klass: LevelLearnableMove
+      level: 85
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: overheat
+      klass: TechLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: smack_down
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: stomping_tantrum
+      klass: TutorLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 931
+      description: 0

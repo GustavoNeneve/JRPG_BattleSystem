@@ -1,0 +1,534 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: keldeo
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 647
+  dbSymbol: keldeo
+  forms:
+  - form: 0
+    height: 1.4
+    weight: 48.5
+    type1: water
+    type2: fighting
+    baseHp: 91
+    baseAtk: 72
+    baseDfe: 90
+    baseSpd: 108
+    baseAts: 129
+    baseDfs: 90
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 3
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 261
+    baseLoyalty: 35
+    catchRate: 3
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 20480
+    babyDbSymbol: keldeo
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - justified
+    - justified
+    - justified
+    frontOffsetY: 0
+    resources:
+      icon: 0647
+      iconF: 
+      iconShiny: 0647s
+      iconShinyF: 
+      front: 0647
+      frontF: 
+      frontShiny: 0647s
+      frontShinyF: 
+      back: 0647
+      backF: 
+      backShiny: 0647s
+      backShinyF: 
+      footprint: 0647
+      character: 0647
+      characterF: 
+      characterShiny: 0647s
+      characterShinyF: 
+      cry: 0647.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: double_kick
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: aqua_jet
+      klass: LevelLearnableMove
+      level: 1
+    - move: double_kick
+      klass: LevelLearnableMove
+      level: 7
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 13
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 19
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 25
+    - move: retaliate
+      klass: LevelLearnableMove
+      level: 31
+    - move: aqua_tail
+      klass: LevelLearnableMove
+      level: 37
+    - move: sacred_sword
+      klass: LevelLearnableMove
+      level: 43
+    - move: swords_dance
+      klass: LevelLearnableMove
+      level: 49
+    - move: quick_guard
+      klass: LevelLearnableMove
+      level: 55
+    - move: work_up
+      klass: LevelLearnableMove
+      level: 61
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 67
+    - move: close_combat
+      klass: LevelLearnableMove
+      level: 73
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: false_swipe
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: secret_sword
+      klass: TutorLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 797
+      description: 0
+  - form: 1
+    height: 1.4
+    weight: 48.5
+    type1: water
+    type2: fighting
+    baseHp: 91
+    baseAtk: 72
+    baseDfe: 90
+    baseSpd: 108
+    baseAts: 129
+    baseDfs: 90
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 3
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 261
+    baseLoyalty: 35
+    catchRate: 3
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 20480
+    babyDbSymbol: keldeo
+    babyForm: 1
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - justified
+    - justified
+    - justified
+    frontOffsetY: 0
+    resources:
+      icon: 0647_01
+      iconF: 
+      iconShiny: 0647s_01
+      iconShinyF: 
+      front: 0647_01
+      frontF: 
+      frontShiny: 0647s_01
+      frontShinyF: 
+      back: 0647_01
+      backF: 
+      backShiny: 0647s_01
+      backShinyF: 
+      footprint: 0647
+      character: 0647_01
+      characterF: 
+      characterShiny: 0647s_01
+      characterShinyF: 
+      cry: 0647.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: double_kick
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 1
+    - move: aqua_jet
+      klass: LevelLearnableMove
+      level: 1
+    - move: double_kick
+      klass: LevelLearnableMove
+      level: 7
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 13
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 19
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 25
+    - move: retaliate
+      klass: LevelLearnableMove
+      level: 31
+    - move: aqua_tail
+      klass: LevelLearnableMove
+      level: 37
+    - move: sacred_sword
+      klass: LevelLearnableMove
+      level: 43
+    - move: swords_dance
+      klass: LevelLearnableMove
+      level: 49
+    - move: quick_guard
+      klass: LevelLearnableMove
+      level: 55
+    - move: work_up
+      klass: LevelLearnableMove
+      level: 61
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 67
+    - move: close_combat
+      klass: LevelLearnableMove
+      level: 73
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: false_swipe
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: secret_sword
+      klass: TutorLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 798
+      description: 152

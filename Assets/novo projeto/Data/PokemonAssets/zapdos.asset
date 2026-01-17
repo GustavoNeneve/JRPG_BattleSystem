@@ -1,0 +1,255 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: zapdos
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 145
+  dbSymbol: zapdos
+  forms:
+  - form: 0
+    height: 1.6
+    weight: 52.6
+    type1: electric
+    type2: flying
+    baseHp: 90
+    baseAtk: 90
+    baseDfe: 85
+    baseSpd: 100
+    baseAts: 125
+    baseDfs: 90
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 3
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 261
+    baseLoyalty: 35
+    catchRate: 3
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 20480
+    babyDbSymbol: zapdos
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - pressure
+    - pressure
+    - static
+    frontOffsetY: 15
+    resources:
+      icon: 0145
+      iconF: 
+      iconShiny: 0145s
+      iconShinyF: 
+      front: 0145
+      frontF: 
+      frontShiny: 0145s
+      frontShinyF: 
+      back: 0145
+      backF: 
+      backShiny: 0145s
+      backShinyF: 
+      footprint: 0145
+      character: 0145
+      characterF: 
+      characterShiny: 0145s
+      characterShinyF: 
+      cry: 0145.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: peck
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_shock
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 8
+    - move: detect
+      klass: LevelLearnableMove
+      level: 15
+    - move: pluck
+      klass: LevelLearnableMove
+      level: 22
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 29
+    - move: charge
+      klass: LevelLearnableMove
+      level: 36
+    - move: agility
+      klass: LevelLearnableMove
+      level: 43
+    - move: discharge
+      klass: LevelLearnableMove
+      level: 50
+    - move: rain_dance
+      klass: LevelLearnableMove
+      level: 57
+    - move: light_screen
+      klass: LevelLearnableMove
+      level: 64
+    - move: drill_peck
+      klass: LevelLearnableMove
+      level: 71
+    - move: thunder
+      klass: LevelLearnableMove
+      level: 78
+    - move: roost
+      klass: LevelLearnableMove
+      level: 85
+    - move: magnetic_flux
+      klass: LevelLearnableMove
+      level: 92
+    - move: zap_cannon
+      klass: LevelLearnableMove
+      level: 99
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_attack
+      klass: TutorLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_drop
+      klass: TechLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: laser_focus
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 182
+      description: 0

@@ -1,0 +1,319 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: psyduck
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 54
+  dbSymbol: psyduck
+  forms:
+  - form: 0
+    height: 0.8
+    weight: 19.6
+    type1: water
+    type2: __undef__
+    baseHp: 50
+    baseAtk: 52
+    baseDfe: 48
+    baseSpd: 55
+    baseAts: 65
+    baseDfs: 50
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 33
+    experienceType: 1
+    baseExperience: 64
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0200000005000000
+    hatchSteps: 5120
+    babyDbSymbol: psyduck
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - damp
+    - cloud_nine
+    - swift_swim
+    frontOffsetY: 0
+    resources:
+      icon: 0054
+      iconF: 
+      iconShiny: 0054s
+      iconShinyF: 
+      front: 0054
+      frontF: 
+      frontShiny: 0054s
+      frontShinyF: 
+      back: 0054
+      backF: 
+      backShiny: 0054s
+      backShinyF: 
+      footprint: 0054
+      character: 0054
+      characterF: 
+      characterShiny: 0054s
+      characterShinyF: 
+      cry: 0054.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_sport
+      klass: LevelLearnableMove
+      level: 1
+    - move: tail_whip
+      klass: LevelLearnableMove
+      level: 4
+    - move: water_gun
+      klass: LevelLearnableMove
+      level: 7
+    - move: confusion
+      klass: LevelLearnableMove
+      level: 10
+    - move: fury_swipes
+      klass: LevelLearnableMove
+      level: 13
+    - move: water_pulse
+      klass: LevelLearnableMove
+      level: 16
+    - move: disable
+      klass: LevelLearnableMove
+      level: 19
+    - move: screech
+      klass: LevelLearnableMove
+      level: 22
+    - move: zen_headbutt
+      klass: LevelLearnableMove
+      level: 25
+    - move: aqua_tail
+      klass: LevelLearnableMove
+      level: 28
+    - move: soak
+      klass: LevelLearnableMove
+      level: 31
+    - move: psych_up
+      klass: LevelLearnableMove
+      level: 34
+    - move: amnesia
+      klass: LevelLearnableMove
+      level: 37
+    - move: hydro_pump
+      klass: LevelLearnableMove
+      level: 40
+    - move: wonder_room
+      klass: LevelLearnableMove
+      level: 43
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: psybeam
+      klass: BreedLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: hypnosis
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: confuse_ray
+      klass: BreedLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: foresight
+      klass: BreedLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: BreedLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: encore
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: cross_chop
+      klass: BreedLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: future_sight
+      klass: BreedLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: yawn
+      klass: BreedLearnableMove
+      level: 0
+    - move: refresh
+      klass: BreedLearnableMove
+      level: 0
+    - move: secret_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: mud_bomb
+      klass: BreedLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: wonder_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: psyshock
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: synchronoise
+      klass: BreedLearnableMove
+      level: 0
+    - move: simple_beam
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: clear_smog
+      klass: BreedLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 77
+      description: 0

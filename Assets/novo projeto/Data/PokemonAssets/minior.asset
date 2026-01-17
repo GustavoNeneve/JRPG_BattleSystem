@@ -1,0 +1,1962 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: minior
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 774
+  dbSymbol: minior
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 40
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 60
+    baseDfe: 100
+    baseSpd: 60
+    baseAts: 60
+    baseDfs: 100
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 1
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774
+      iconF: 
+      iconShiny: 0774s
+      iconShinyF: 
+      front: 0774
+      frontF: 
+      frontShiny: 0774s
+      frontShinyF: 
+      back: 0774
+      backF: 
+      backShiny: 0774s
+      backShinyF: 
+      footprint: 0774
+      character: 0774
+      characterF: 
+      characterShiny: 0774s
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1008
+      description: 0
+  - form: 1
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 1
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_01
+      iconF: 
+      iconShiny: 0774s_01
+      iconShinyF: 
+      front: 0774_01
+      frontF: 
+      frontShiny: 0774s_01
+      frontShinyF: 
+      back: 0774_01
+      backF: 
+      backShiny: 0774s_01
+      backShinyF: 
+      footprint: 0774
+      character: 0774_01
+      characterF: 
+      characterShiny: 0774s_01
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1009
+      description: 236
+  - form: 2
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 2
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_02
+      iconF: 
+      iconShiny: 0774s_02
+      iconShinyF: 
+      front: 0774_02
+      frontF: 
+      frontShiny: 0774s_02
+      frontShinyF: 
+      back: 0774_02
+      backF: 
+      backShiny: 0774s_02
+      backShinyF: 
+      footprint: 0774
+      character: 0774_02
+      characterF: 
+      characterShiny: 0774s_02
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1010
+      description: 237
+  - form: 3
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 3
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_03
+      iconF: 
+      iconShiny: 0774s_03
+      iconShinyF: 
+      front: 0774_03
+      frontF: 
+      frontShiny: 0774s_03
+      frontShinyF: 
+      back: 0774_03
+      backF: 
+      backShiny: 0774s_03
+      backShinyF: 
+      footprint: 0774
+      character: 0774_03
+      characterF: 
+      characterShiny: 0774s_03
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1011
+      description: 238
+  - form: 4
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 4
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_04
+      iconF: 
+      iconShiny: 0774s_04
+      iconShinyF: 
+      front: 0774_04
+      frontF: 
+      frontShiny: 0774s_04
+      frontShinyF: 
+      back: 0774_04
+      backF: 
+      backShiny: 0774s_04
+      backShinyF: 
+      footprint: 0774
+      character: 0774_04
+      characterF: 
+      characterShiny: 0774s_04
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1012
+      description: 239
+  - form: 5
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 5
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_05
+      iconF: 
+      iconShiny: 0774s_05
+      iconShinyF: 
+      front: 0774_05
+      frontF: 
+      frontShiny: 0774s_05
+      frontShinyF: 
+      back: 0774_05
+      backF: 
+      backShiny: 0774s_05
+      backShinyF: 
+      footprint: 0774
+      character: 0774_05
+      characterF: 
+      characterShiny: 0774s_05
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1013
+      description: 240
+  - form: 6
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 6
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_06
+      iconF: 
+      iconShiny: 0774s_06
+      iconShinyF: 
+      front: 0774_06
+      frontF: 
+      frontShiny: 0774s_06
+      frontShinyF: 
+      back: 0774_06
+      backF: 
+      backShiny: 0774s_06
+      backShinyF: 
+      footprint: 0774
+      character: 0774_06
+      characterF: 
+      characterShiny: 0774s_06
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1014
+      description: 241
+  - form: 7
+    height: 0.3
+    weight: 0.3
+    type1: rock
+    type2: flying
+    baseHp: 60
+    baseAtk: 100
+    baseDfe: 60
+    baseSpd: 120
+    baseAts: 100
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 154
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 6424
+    babyDbSymbol: minior
+    babyForm: 7
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - shields_down
+    - shields_down
+    - shields_down
+    frontOffsetY: 0
+    resources:
+      icon: 0774_07
+      iconF: 
+      iconShiny: 0774s_07
+      iconShinyF: 
+      front: 0774_07
+      frontF: 
+      frontShiny: 0774s_07
+      frontShinyF: 
+      back: 0774_07
+      backF: 
+      backShiny: 0774s_07
+      backShinyF: 
+      footprint: 0774
+      character: 0774_07
+      characterF: 
+      characterShiny: 0774s_07
+      characterShinyF: 
+      cry: 0774.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 3
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 8
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 10
+    - move: swift
+      klass: LevelLearnableMove
+      level: 15
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 17
+    - move: self_destruct
+      klass: LevelLearnableMove
+      level: 22
+    - move: stealth_rock
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 36
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 38
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 43
+    - move: shell_smash
+      klass: LevelLearnableMove
+      level: 45
+    - move: explosion
+      klass: LevelLearnableMove
+      level: 50
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: gyro_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1015
+      description: 242

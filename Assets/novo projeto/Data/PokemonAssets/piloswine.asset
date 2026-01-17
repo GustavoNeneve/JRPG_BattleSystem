@@ -1,0 +1,259 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: piloswine
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 221
+  dbSymbol: piloswine
+  forms:
+  - form: 0
+    height: 1.1
+    weight: 55.8
+    type1: ice
+    type2: ground
+    baseHp: 100
+    baseAtk: 100
+    baseDfe: 80
+    baseSpd: 50
+    baseAts: 60
+    baseDfs: 60
+    evHp: 1
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: skill1
+        value: ancient_power
+    experienceType: 2
+    baseExperience: 158
+    baseLoyalty: 70
+    catchRate: 75
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: swinub
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - oblivious
+    - snow_cloak
+    - thick_fat
+    frontOffsetY: 0
+    resources:
+      icon: 0221
+      iconF: 0221
+      iconShiny: 0221s
+      iconShinyF: 0221s
+      front: 0221
+      frontF: 0221f
+      frontShiny: 0221s
+      frontShinyF: 0221sf
+      back: 0221
+      backF: 0221f
+      backShiny: 0221s
+      backShinyF: 0221sf
+      footprint: 0221
+      character: 0221
+      characterF: 0221
+      characterShiny: 0221s
+      characterShinyF: 0221s
+      cry: 0221.ogg
+      hasFemale: 1
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: fury_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: peck
+      klass: LevelLearnableMove
+      level: 1
+    - move: powder_snow
+      klass: LevelLearnableMove
+      level: 1
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 1
+    - move: mud_sport
+      klass: LevelLearnableMove
+      level: 1
+    - move: odor_sleuth
+      klass: LevelLearnableMove
+      level: 1
+    - move: mud_sport
+      klass: LevelLearnableMove
+      level: 5
+    - move: powder_snow
+      klass: LevelLearnableMove
+      level: 8
+    - move: mud_slap
+      klass: LevelLearnableMove
+      level: 11
+    - move: endure
+      klass: LevelLearnableMove
+      level: 14
+    - move: mud_bomb
+      klass: LevelLearnableMove
+      level: 18
+    - move: icy_wind
+      klass: LevelLearnableMove
+      level: 21
+    - move: ice_fang
+      klass: LevelLearnableMove
+      level: 24
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 28
+    - move: mist
+      klass: LevelLearnableMove
+      level: 37
+    - move: thrash
+      klass: LevelLearnableMove
+      level: 41
+    - move: earthquake
+      klass: LevelLearnableMove
+      level: 46
+    - move: blizzard
+      klass: LevelLearnableMove
+      level: 52
+    - move: amnesia
+      klass: LevelLearnableMove
+      level: 58
+    - move: fury_attack
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: stomping_tantrum
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 291
+      description: 0

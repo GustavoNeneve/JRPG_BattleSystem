@@ -1,0 +1,306 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: flygon
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 330
+  dbSymbol: flygon
+  forms:
+  - form: 0
+    height: 2
+    weight: 82
+    type1: ground
+    type2: dragon
+    baseHp: 80
+    baseAtk: 100
+    baseDfe: 80
+    baseSpd: 100
+    baseAts: 80
+    baseDfs: 80
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 2
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 3
+    baseExperience: 234
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 50
+    breedGroups: 0300000003000000
+    hatchSteps: 5120
+    babyDbSymbol: trapinch
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - levitate
+    - levitate
+    - levitate
+    frontOffsetY: 0
+    resources:
+      icon: 0330
+      iconF: 
+      iconShiny: 0330s
+      iconShinyF: 
+      front: 0330
+      frontF: 
+      frontShiny: 0330s
+      frontShinyF: 
+      back: 0330
+      backF: 
+      backShiny: 0330s
+      backShinyF: 
+      footprint: 0330
+      character: 0330
+      characterF: 
+      characterShiny: 0330s
+      characterShinyF: 
+      cry: 0330.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: sonic_boom
+      klass: LevelLearnableMove
+      level: 1
+    - move: bide
+      klass: LevelLearnableMove
+      level: 1
+    - move: feint_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: dragon_breath
+      klass: LevelLearnableMove
+      level: 1
+    - move: dragon_claw
+      klass: LevelLearnableMove
+      level: 1
+    - move: dragon_dance
+      klass: LevelLearnableMove
+      level: 1
+    - move: mud_slap
+      klass: LevelLearnableMove
+      level: 5
+    - move: bulldoze
+      klass: LevelLearnableMove
+      level: 8
+    - move: sand_tomb
+      klass: LevelLearnableMove
+      level: 12
+    - move: rock_slide
+      klass: LevelLearnableMove
+      level: 15
+    - move: supersonic
+      klass: LevelLearnableMove
+      level: 19
+    - move: screech
+      klass: LevelLearnableMove
+      level: 22
+    - move: earth_power
+      klass: LevelLearnableMove
+      level: 26
+    - move: dragon_tail
+      klass: LevelLearnableMove
+      level: 29
+    - move: earthquake
+      klass: LevelLearnableMove
+      level: 33
+    - move: sandstorm
+      klass: LevelLearnableMove
+      level: 36
+    - move: uproar
+      klass: LevelLearnableMove
+      level: 40
+    - move: hyper_beam
+      klass: LevelLearnableMove
+      level: 43
+    - move: dragon_rush
+      klass: LevelLearnableMove
+      level: 47
+    - move: fire_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: outrage
+      klass: TutorLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: superpower
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_claw
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: dragon_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: draco_meteor
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: bug_bite
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_tail
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: laser_focus
+      klass: TutorLearnableMove
+      level: 0
+    - move: throat_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: brutal_swing
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 413
+      description: 0

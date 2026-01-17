@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: salandit
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 757
+  dbSymbol: salandit
+  forms:
+  - form: 0
+    height: 0.6
+    weight: 4.8
+    type1: poison
+    type2: fire
+    baseHp: 48
+    baseAtk: 44
+    baseDfe: 40
+    baseSpd: 77
+    baseAts: 71
+    baseDfs: 40
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 33
+      - type: gender
+        value: 2
+    experienceType: 1
+    baseExperience: 64
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 12
+    breedGroups: 0e00000001000000
+    hatchSteps: 5120
+    babyDbSymbol: salandit
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - corrosion
+    - corrosion
+    - oblivious
+    frontOffsetY: 0
+    resources:
+      icon: 0757
+      iconF: 
+      iconShiny: 0757s
+      iconShinyF: 
+      front: 0757
+      frontF: 
+      frontShiny: 0757s
+      frontShinyF: 
+      back: 0757
+      backF: 
+      backShiny: 0757s
+      backShinyF: 
+      footprint: 0757
+      character: 0757
+      characterF: 
+      characterShiny: 0757s
+      characterShinyF: 
+      cry: 0757.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: poison_gas
+      klass: LevelLearnableMove
+      level: 1
+    - move: ember
+      klass: LevelLearnableMove
+      level: 5
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 8
+    - move: dragon_rage
+      klass: LevelLearnableMove
+      level: 13
+    - move: smog
+      klass: LevelLearnableMove
+      level: 16
+    - move: double_slap
+      klass: LevelLearnableMove
+      level: 21
+    - move: flame_burst
+      klass: LevelLearnableMove
+      level: 24
+    - move: toxic
+      klass: LevelLearnableMove
+      level: 29
+    - move: nasty_plot
+      klass: LevelLearnableMove
+      level: 32
+    - move: venoshock
+      klass: LevelLearnableMove
+      level: 37
+    - move: flamethrower
+      klass: LevelLearnableMove
+      level: 40
+    - move: venom_drench
+      klass: LevelLearnableMove
+      level: 45
+    - move: dragon_pulse
+      klass: LevelLearnableMove
+      level: 48
+    - move: sand_attack
+      klass: BreedLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: leech_life
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: fake_out
+      klass: BreedLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: knock_off
+      klass: BreedLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: snatch
+      klass: BreedLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: overheat
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: gunk_shot
+      klass: TutorLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: foul_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: belch
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 974
+      description: 0

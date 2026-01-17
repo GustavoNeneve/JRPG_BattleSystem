@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: cosmoem
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 790
+  dbSymbol: cosmoem
+  forms:
+  - form: 0
+    height: 0.1
+    weight: 999.9
+    type1: psychic
+    type2: __undef__
+    baseHp: 43
+    baseAtk: 29
+    baseDfe: 131
+    baseSpd: 37
+    baseAts: 29
+    baseDfs: 131
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 1
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 53
+      - type: dayNight
+        value: 3
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 53
+      - type: dayNight
+        value: 0
+    experienceType: 2
+    baseExperience: 140
+    baseLoyalty: 0
+    catchRate: 45
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: cosmoem
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sturdy
+    - sturdy
+    - sturdy
+    frontOffsetY: 0
+    resources:
+      icon: 0790
+      iconF: 
+      iconShiny: 0790s
+      iconShinyF: 
+      front: 0790
+      frontF: 
+      frontShiny: 0790s
+      frontShinyF: 
+      back: 0790
+      backF: 
+      backShiny: 0790s
+      backShinyF: 
+      footprint: 0790
+      character: 0790
+      characterF: 
+      characterShiny: 0790s
+      characterShinyF: 
+      cry: 0790.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: teleport
+      klass: LevelLearnableMove
+      level: 1
+    - move: cosmic_power
+      klass: LevelLearnableMove
+      level: 1
+    - move: cosmic_power
+      klass: EvolutionLearnableMove
+      level: 0
+    formTextId:
+      name: 1032
+      description: 0

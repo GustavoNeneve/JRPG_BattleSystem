@@ -1,0 +1,273 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: dedenne
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 702
+  dbSymbol: dedenne
+  forms:
+  - form: 0
+    height: 0.2
+    weight: 2.2
+    type1: electric
+    type2: fairy
+    baseHp: 67
+    baseAtk: 58
+    baseDfe: 57
+    baseSpd: 101
+    baseAts: 81
+    baseDfs: 67
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 2
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 1
+    baseExperience: 151
+    baseLoyalty: 70
+    catchRate: 180
+    femaleRate: 50
+    breedGroups: 0500000006000000
+    hatchSteps: 5120
+    babyDbSymbol: dedenne
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - cheek_pouch
+    - pickup
+    - plus
+    frontOffsetY: 0
+    resources:
+      icon: 0702
+      iconF: 
+      iconShiny: 0702s
+      iconShinyF: 
+      front: 0702
+      frontF: 
+      frontShiny: 0702s
+      frontShinyF: 
+      back: 0702
+      backF: 
+      backShiny: 0702s
+      backShinyF: 
+      footprint: 0702
+      character: 0702
+      characterF: 
+      characterShiny: 0702s
+      characterShinyF: 
+      cry: 0702.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: tail_whip
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_shock
+      klass: LevelLearnableMove
+      level: 7
+    - move: charge
+      klass: LevelLearnableMove
+      level: 11
+    - move: charm
+      klass: LevelLearnableMove
+      level: 14
+    - move: parabolic_charge
+      klass: LevelLearnableMove
+      level: 17
+    - move: nuzzle
+      klass: LevelLearnableMove
+      level: 20
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 23
+    - move: volt_switch
+      klass: LevelLearnableMove
+      level: 26
+    - move: rest
+      klass: LevelLearnableMove
+      level: 30
+    - move: snore
+      klass: LevelLearnableMove
+      level: 31
+    - move: charge_beam
+      klass: LevelLearnableMove
+      level: 34
+    - move: entrainment
+      klass: LevelLearnableMove
+      level: 39
+    - move: play_rough
+      klass: LevelLearnableMove
+      level: 42
+    - move: thunder
+      klass: LevelLearnableMove
+      level: 45
+    - move: discharge
+      klass: LevelLearnableMove
+      level: 50
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: BreedLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: covet
+      klass: BreedLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: natural_gift
+      klass: BreedLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: electroweb
+      klass: TutorLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: eerie_impulse
+      klass: BreedLearnableMove
+      level: 0
+    - move: tearful_look
+      klass: BreedLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 902
+      description: 0

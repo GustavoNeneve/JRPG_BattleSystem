@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: palossand
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 770
+  dbSymbol: palossand
+  forms:
+  - form: 0
+    height: 1.3
+    weight: 250
+    type1: ghost
+    type2: ground
+    baseHp: 85
+    baseAtk: 75
+    baseDfe: 110
+    baseSpd: 35
+    baseAts: 100
+    baseDfs: 75
+    evHp: 0
+    evAtk: 0
+    evDfe: 2
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 1
+    baseExperience: 168
+    baseLoyalty: 70
+    catchRate: 60
+    femaleRate: 50
+    breedGroups: 0b0000000b000000
+    hatchSteps: 3840
+    babyDbSymbol: sandygast
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - water_compaction
+    - water_compaction
+    - sand_veil
+    frontOffsetY: 0
+    resources:
+      icon: 0770
+      iconF: 
+      iconShiny: 0770s
+      iconShinyF: 
+      front: 0770
+      frontF: 
+      frontShiny: 0770s
+      frontShinyF: 
+      back: 0770
+      backF: 
+      backShiny: 0770s
+      backShinyF: 
+      footprint: 0770
+      character: 0770
+      characterF: 
+      characterShiny: 0770s
+      characterShinyF: 
+      cry: 0770.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: absorb
+      klass: LevelLearnableMove
+      level: 1
+    - move: harden
+      klass: LevelLearnableMove
+      level: 1
+    - move: astonish
+      klass: LevelLearnableMove
+      level: 1
+    - move: astonish
+      klass: LevelLearnableMove
+      level: 5
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 9
+    - move: sand_tomb
+      klass: LevelLearnableMove
+      level: 14
+    - move: mega_drain
+      klass: LevelLearnableMove
+      level: 18
+    - move: bulldoze
+      klass: LevelLearnableMove
+      level: 23
+    - move: hypnosis
+      klass: LevelLearnableMove
+      level: 27
+    - move: iron_defense
+      klass: LevelLearnableMove
+      level: 32
+    - move: giga_drain
+      klass: LevelLearnableMove
+      level: 36
+    - move: shadow_ball
+      klass: LevelLearnableMove
+      level: 41
+    - move: earth_power
+      klass: LevelLearnableMove
+      level: 47
+    - move: shore_up
+      klass: LevelLearnableMove
+      level: 54
+    - move: sandstorm
+      klass: LevelLearnableMove
+      level: 60
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: pain_split
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: trick
+      klass: TutorLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: embargo
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: after_you
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: quash
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 987
+      description: 0

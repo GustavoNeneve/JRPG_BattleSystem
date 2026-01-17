@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: sealeo
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 364
+  dbSymbol: sealeo
+  forms:
+  - form: 0
+    height: 1.1
+    weight: 87.6
+    type1: ice
+    type2: water
+    baseHp: 90
+    baseAtk: 60
+    baseDfe: 70
+    baseSpd: 45
+    baseAts: 75
+    baseDfs: 70
+    evHp: 2
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 44
+    experienceType: 3
+    baseExperience: 144
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 50
+    breedGroups: 0200000005000000
+    hatchSteps: 5120
+    babyDbSymbol: spheal
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - thick_fat
+    - ice_body
+    - oblivious
+    frontOffsetY: 0
+    resources:
+      icon: 0364
+      iconF: 
+      iconShiny: 0364s
+      iconShinyF: 
+      front: 0364
+      frontF: 
+      frontShiny: 0364s
+      frontShinyF: 
+      back: 0364
+      backF: 
+      backShiny: 0364s
+      backShinyF: 
+      footprint: 0364
+      character: 0364
+      characterF: 
+      characterShiny: 0364s
+      characterShinyF: 
+      cry: 0364.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: growl
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_gun
+      klass: LevelLearnableMove
+      level: 1
+    - move: defense_curl
+      klass: LevelLearnableMove
+      level: 1
+    - move: powder_snow
+      klass: LevelLearnableMove
+      level: 1
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 1
+    - move: rollout
+      klass: LevelLearnableMove
+      level: 5
+    - move: encore
+      klass: LevelLearnableMove
+      level: 9
+    - move: ice_ball
+      klass: LevelLearnableMove
+      level: 13
+    - move: brine
+      klass: LevelLearnableMove
+      level: 17
+    - move: aurora_beam
+      klass: LevelLearnableMove
+      level: 21
+    - move: body_slam
+      klass: LevelLearnableMove
+      level: 26
+    - move: rest
+      klass: LevelLearnableMove
+      level: 31
+    - move: snore
+      klass: LevelLearnableMove
+      level: 31
+    - move: hail
+      klass: LevelLearnableMove
+      level: 38
+    - move: blizzard
+      klass: LevelLearnableMove
+      level: 45
+    - move: sheer_cold
+      klass: LevelLearnableMove
+      level: 52
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: frost_breath
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 454
+      description: 0

@@ -1,0 +1,220 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: pidgeotto
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 17
+  dbSymbol: pidgeotto
+  forms:
+  - form: 0
+    height: 1.1
+    weight: 30
+    type1: normal
+    type2: flying
+    baseHp: 63
+    baseAtk: 60
+    baseDfe: 55
+    baseSpd: 71
+    baseAts: 50
+    baseDfs: 50
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 2
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 36
+    experienceType: 3
+    baseExperience: 122
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 50
+    breedGroups: 0400000004000000
+    hatchSteps: 3840
+    babyDbSymbol: pidgey
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - keen_eye
+    - tangled_feet
+    - big_pecks
+    frontOffsetY: 0
+    resources:
+      icon: 0017
+      iconF: 
+      iconShiny: 0017s
+      iconShinyF: 
+      front: 0017
+      frontF: 
+      frontShiny: 0017s
+      frontShinyF: 
+      back: 0017
+      backF: 
+      backShiny: 0017s
+      backShinyF: 
+      footprint: 0017
+      character: 0017
+      characterF: 
+      characterShiny: 0017s
+      characterShinyF: 
+      cry: 0017.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: gust
+      klass: LevelLearnableMove
+      level: 1
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 5
+    - move: gust
+      klass: LevelLearnableMove
+      level: 9
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 13
+    - move: whirlwind
+      klass: LevelLearnableMove
+      level: 17
+    - move: twister
+      klass: LevelLearnableMove
+      level: 22
+    - move: feather_dance
+      klass: LevelLearnableMove
+      level: 27
+    - move: agility
+      klass: LevelLearnableMove
+      level: 32
+    - move: wing_attack
+      klass: LevelLearnableMove
+      level: 37
+    - move: roost
+      klass: LevelLearnableMove
+      level: 42
+    - move: tailwind
+      klass: LevelLearnableMove
+      level: 47
+    - move: mirror_move
+      klass: LevelLearnableMove
+      level: 52
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 57
+    - move: hurricane
+      klass: LevelLearnableMove
+      level: 62
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_attack
+      klass: TutorLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 21
+      description: 0

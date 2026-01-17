@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: drilbur
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 529
+  dbSymbol: drilbur
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 8.5
+    type1: ground
+    type2: __undef__
+    baseHp: 60
+    baseAtk: 85
+    baseDfe: 40
+    baseSpd: 68
+    baseAts: 30
+    baseDfs: 45
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 31
+    experienceType: 1
+    baseExperience: 66
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: drilbur
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sand_rush
+    - sand_force
+    - mold_breaker
+    frontOffsetY: 0
+    resources:
+      icon: 0529
+      iconF: 
+      iconShiny: 0529s
+      iconShinyF: 
+      front: 0529
+      frontF: 
+      frontShiny: 0529s
+      frontShinyF: 
+      back: 0529
+      backF: 
+      backShiny: 0529s
+      backShinyF: 
+      footprint: 0529
+      character: 0529
+      characterF: 
+      characterShiny: 0529s
+      characterShinyF: 
+      cry: 0529.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: mud_sport
+      klass: LevelLearnableMove
+      level: 1
+    - move: rapid_spin
+      klass: LevelLearnableMove
+      level: 5
+    - move: mud_slap
+      klass: LevelLearnableMove
+      level: 8
+    - move: fury_swipes
+      klass: LevelLearnableMove
+      level: 12
+    - move: metal_claw
+      klass: LevelLearnableMove
+      level: 15
+    - move: dig
+      klass: LevelLearnableMove
+      level: 19
+    - move: hone_claws
+      klass: LevelLearnableMove
+      level: 22
+    - move: slash
+      klass: LevelLearnableMove
+      level: 26
+    - move: rock_slide
+      klass: LevelLearnableMove
+      level: 29
+    - move: earthquake
+      klass: LevelLearnableMove
+      level: 33
+    - move: swords_dance
+      klass: LevelLearnableMove
+      level: 36
+    - move: sandstorm
+      klass: LevelLearnableMove
+      level: 40
+    - move: drill_run
+      klass: LevelLearnableMove
+      level: 43
+    - move: fissure
+      klass: LevelLearnableMove
+      level: 47
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: submission
+      klass: BreedLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: skull_bash
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: rapid_spin
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: crush_claw
+      klass: BreedLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: metal_sound
+      klass: BreedLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: BreedLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: drill_run
+      klass: TutorLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_climb
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 665
+      description: 0

@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: ditto
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 132
+  dbSymbol: ditto
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 4
+    type1: normal
+    type2: __undef__
+    baseHp: 48
+    baseAtk: 48
+    baseDfe: 48
+    baseSpd: 48
+    baseAts: 48
+    baseDfs: 48
+    evHp: 1
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 1
+    baseExperience: 101
+    baseLoyalty: 70
+    catchRate: 35
+    femaleRate: -1
+    breedGroups: 0d0000000d000000
+    hatchSteps: 5120
+    babyDbSymbol: ditto
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - limber
+    - limber
+    - imposter
+    frontOffsetY: 0
+    resources:
+      icon: 0132
+      iconF: 
+      iconShiny: 0132s
+      iconShinyF: 
+      front: 0132
+      frontF: 
+      frontShiny: 0132s
+      frontShinyF: 
+      back: 0132
+      backF: 
+      backShiny: 0132s
+      backShinyF: 
+      footprint: 0132
+      character: 0132
+      characterF: 
+      characterShiny: 0132s
+      characterShinyF: 
+      cry: 0132.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: transform
+      klass: LevelLearnableMove
+      level: 1
+    formTextId:
+      name: 168
+      description: 0

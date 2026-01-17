@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: cacnea
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 331
+  dbSymbol: cacnea
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 51.3
+    type1: grass
+    type2: __undef__
+    baseHp: 50
+    baseAtk: 85
+    baseDfe: 40
+    baseSpd: 35
+    baseAts: 85
+    baseDfs: 40
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 32
+    experienceType: 3
+    baseExperience: 67
+    baseLoyalty: 35
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0700000008000000
+    hatchSteps: 5120
+    babyDbSymbol: cacnea
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sand_veil
+    - sand_veil
+    - water_absorb
+    frontOffsetY: 0
+    resources:
+      icon: 0331
+      iconF: 
+      iconShiny: 0331s
+      iconShinyF: 
+      front: 0331
+      frontF: 
+      frontShiny: 0331s
+      frontShinyF: 
+      back: 0331
+      backF: 
+      backShiny: 0331s
+      backShinyF: 
+      footprint: 0331
+      character: 0331
+      characterF: 
+      characterShiny: 0331s
+      characterShinyF: 
+      cry: 0331.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: poison_sting
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: absorb
+      klass: LevelLearnableMove
+      level: 4
+    - move: growth
+      klass: LevelLearnableMove
+      level: 7
+    - move: leech_seed
+      klass: LevelLearnableMove
+      level: 10
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 13
+    - move: needle_arm
+      klass: LevelLearnableMove
+      level: 16
+    - move: feint_attack
+      klass: LevelLearnableMove
+      level: 19
+    - move: ingrain
+      klass: LevelLearnableMove
+      level: 22
+    - move: payback
+      klass: LevelLearnableMove
+      level: 26
+    - move: spikes
+      klass: LevelLearnableMove
+      level: 30
+    - move: sucker_punch
+      klass: LevelLearnableMove
+      level: 34
+    - move: pin_missile
+      klass: LevelLearnableMove
+      level: 38
+    - move: energy_ball
+      klass: LevelLearnableMove
+      level: 42
+    - move: cotton_spore
+      klass: LevelLearnableMove
+      level: 46
+    - move: sandstorm
+      klass: LevelLearnableMove
+      level: 50
+    - move: destiny_bond
+      klass: LevelLearnableMove
+      level: 54
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: disable
+      klass: BreedLearnableMove
+      level: 0
+    - move: acid
+      klass: BreedLearnableMove
+      level: 0
+    - move: low_kick
+      klass: BreedLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: counter
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: dynamic_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: smelling_salts
+      klass: BreedLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: teeter_dance
+      klass: BreedLearnableMove
+      level: 0
+    - move: grass_whistle
+      klass: BreedLearnableMove
+      level: 0
+    - move: block
+      klass: BreedLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: magical_leaf
+      klass: BreedLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: BreedLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: BreedLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: drain_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: switcheroo
+      klass: BreedLearnableMove
+      level: 0
+    - move: nasty_plot
+      klass: BreedLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: belch
+      klass: BreedLearnableMove
+      level: 0
+    - move: rototiller
+      klass: BreedLearnableMove
+      level: 0
+    - move: fell_stinger
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: power_up_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 414
+      description: 0

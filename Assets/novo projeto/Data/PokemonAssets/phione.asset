@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: phione
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 489
+  dbSymbol: phione
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 3.1
+    type1: water
+    type2: __undef__
+    baseHp: 80
+    baseAtk: 80
+    baseDfe: 80
+    baseSpd: 80
+    baseAts: 80
+    baseDfs: 80
+    evHp: 1
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 216
+    baseLoyalty: 70
+    catchRate: 30
+    femaleRate: -1
+    breedGroups: 0200000006000000
+    hatchSteps: 10240
+    babyDbSymbol: phione
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - hydration
+    - hydration
+    - hydration
+    frontOffsetY: 0
+    resources:
+      icon: 0489
+      iconF: 
+      iconShiny: 0489s
+      iconShinyF: 
+      front: 0489
+      frontF: 
+      frontShiny: 0489s
+      frontShinyF: 
+      back: 0489
+      backF: 
+      backShiny: 0489s
+      backShinyF: 
+      footprint: 0489
+      character: 0489
+      characterF: 
+      characterShiny: 0489s
+      characterShinyF: 
+      cry: 0489.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: bubble
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_sport
+      klass: LevelLearnableMove
+      level: 1
+    - move: charm
+      klass: LevelLearnableMove
+      level: 9
+    - move: supersonic
+      klass: LevelLearnableMove
+      level: 16
+    - move: bubble_beam
+      klass: LevelLearnableMove
+      level: 24
+    - move: acid_armor
+      klass: LevelLearnableMove
+      level: 31
+    - move: whirlpool
+      klass: LevelLearnableMove
+      level: 39
+    - move: water_pulse
+      klass: LevelLearnableMove
+      level: 46
+    - move: aqua_ring
+      klass: LevelLearnableMove
+      level: 54
+    - move: dive
+      klass: LevelLearnableMove
+      level: 61
+    - move: rain_dance
+      klass: LevelLearnableMove
+      level: 69
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: heal_bell
+      klass: TutorLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 607
+      description: 0

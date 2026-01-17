@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: poipole
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 803
+  dbSymbol: poipole
+  forms:
+  - form: 0
+    height: 0.6
+    weight: 1.8
+    type1: poison
+    type2: __undef__
+    baseHp: 67
+    baseAtk: 73
+    baseDfe: 67
+    baseSpd: 73
+    baseAts: 73
+    baseDfs: 67
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: skill1
+        value: dragon_pulse
+    experienceType: 2
+    baseExperience: 189
+    baseLoyalty: 0
+    catchRate: 45
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: poipole
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - beast_boost
+    - beast_boost
+    - beast_boost
+    frontOffsetY: 0
+    resources:
+      icon: 0803
+      iconF: 
+      iconShiny: 0803s
+      iconShinyF: 
+      front: 0803
+      frontF: 
+      frontShiny: 0803s
+      frontShinyF: 
+      back: 0803
+      backF: 
+      backShiny: 0803s
+      backShinyF: 
+      footprint: 0803
+      character: 0803
+      characterF: 
+      characterShiny: 0803s
+      characterShinyF: 
+      cry: 0803.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: growl
+      klass: LevelLearnableMove
+      level: 1
+    - move: acid
+      klass: LevelLearnableMove
+      level: 1
+    - move: peck
+      klass: LevelLearnableMove
+      level: 1
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 1
+    - move: dragon_pulse
+      klass: LevelLearnableMove
+      level: 1
+    - move: fury_attack
+      klass: LevelLearnableMove
+      level: 7
+    - move: venoshock
+      klass: LevelLearnableMove
+      level: 13
+    - move: charm
+      klass: LevelLearnableMove
+      level: 19
+    - move: venom_drench
+      klass: LevelLearnableMove
+      level: 23
+    - move: nasty_plot
+      klass: LevelLearnableMove
+      level: 31
+    - move: poison_jab
+      klass: LevelLearnableMove
+      level: 37
+    - move: toxic
+      klass: LevelLearnableMove
+      level: 41
+    - move: fell_stinger
+      klass: LevelLearnableMove
+      level: 47
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: gastro_acid
+      klass: TutorLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: gunk_shot
+      klass: TutorLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 1048
+      description: 0

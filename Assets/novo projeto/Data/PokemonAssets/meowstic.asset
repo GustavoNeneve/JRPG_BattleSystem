@@ -1,0 +1,630 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: meowstic
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 678
+  dbSymbol: meowstic
+  forms:
+  - form: 0
+    height: 0.6
+    weight: 8.5
+    type1: psychic
+    type2: __undef__
+    baseHp: 74
+    baseAtk: 48
+    baseDfe: 76
+    baseSpd: 104
+    baseAts: 83
+    baseDfs: 81
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 2
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 1
+    baseExperience: 163
+    baseLoyalty: 70
+    catchRate: 75
+    femaleRate: 0
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: espurr
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - keen_eye
+    - infiltrator
+    - prankster
+    frontOffsetY: 0
+    resources:
+      icon: 0678
+      iconF: 
+      iconShiny: 0678s
+      iconShinyF: 
+      front: 0678
+      frontF: 
+      frontShiny: 0678s
+      frontShinyF: 
+      back: 0678
+      backF: 
+      backShiny: 0678s
+      backShinyF: 
+      footprint: 0678
+      character: 0678
+      characterF: 
+      characterShiny: 0678s
+      characterShinyF: 
+      cry: 0678.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: confusion
+      klass: LevelLearnableMove
+      level: 1
+    - move: mean_look
+      klass: LevelLearnableMove
+      level: 1
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 1
+    - move: covet
+      klass: LevelLearnableMove
+      level: 1
+    - move: quick_guard
+      klass: LevelLearnableMove
+      level: 1
+    - move: covet
+      klass: LevelLearnableMove
+      level: 5
+    - move: confusion
+      klass: LevelLearnableMove
+      level: 9
+    - move: light_screen
+      klass: LevelLearnableMove
+      level: 13
+    - move: psybeam
+      klass: LevelLearnableMove
+      level: 17
+    - move: fake_out
+      klass: LevelLearnableMove
+      level: 19
+    - move: disarming_voice
+      klass: LevelLearnableMove
+      level: 22
+    - move: psyshock
+      klass: LevelLearnableMove
+      level: 25
+    - move: charm
+      klass: LevelLearnableMove
+      level: 28
+    - move: miracle_eye
+      klass: LevelLearnableMove
+      level: 31
+    - move: reflect
+      klass: LevelLearnableMove
+      level: 35
+    - move: psychic
+      klass: LevelLearnableMove
+      level: 40
+    - move: role_play
+      klass: LevelLearnableMove
+      level: 43
+    - move: imprison
+      klass: LevelLearnableMove
+      level: 45
+    - move: sucker_punch
+      klass: LevelLearnableMove
+      level: 48
+    - move: misty_terrain
+      klass: LevelLearnableMove
+      level: 50
+    - move: quick_guard
+      klass: LevelLearnableMove
+      level: 53
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: heal_bell
+      klass: TutorLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: trick
+      klass: TutorLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: TutorLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: trick_room
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: wonder_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: psyshock
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: magic_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 876
+      description: 0
+  - form: 1
+    height: 0.6
+    weight: 8.5
+    type1: psychic
+    type2: __undef__
+    baseHp: 74
+    baseAtk: 48
+    baseDfe: 76
+    baseSpd: 104
+    baseAts: 83
+    baseDfs: 81
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 2
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 1
+    baseExperience: 163
+    baseLoyalty: 70
+    catchRate: 75
+    femaleRate: 100
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: espurr
+    babyForm: 1
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - keen_eye
+    - infiltrator
+    - competitive
+    frontOffsetY: 0
+    resources:
+      icon: 0678_01
+      iconF: 0678_01
+      iconShiny: 0678s_01
+      iconShinyF: 0678s_01
+      front: 0678_01
+      frontF: 0678_01
+      frontShiny: 0678s_01
+      frontShinyF: 0678s_01
+      back: 0678_01
+      backF: 0678_01
+      backShiny: 0678s_01
+      backShinyF: 0678s_01
+      footprint: 0678
+      character: 0678_01
+      characterF: 0678_01
+      characterShiny: 0678s_01
+      characterShinyF: 0678s_01
+      cry: 0678.ogg
+      hasFemale: 1
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: scratch
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: confusion
+      klass: LevelLearnableMove
+      level: 1
+    - move: covet
+      klass: LevelLearnableMove
+      level: 1
+    - move: magical_leaf
+      klass: LevelLearnableMove
+      level: 1
+    - move: me_first
+      klass: LevelLearnableMove
+      level: 1
+    - move: stored_power
+      klass: LevelLearnableMove
+      level: 1
+    - move: covet
+      klass: LevelLearnableMove
+      level: 5
+    - move: confusion
+      klass: LevelLearnableMove
+      level: 9
+    - move: light_screen
+      klass: LevelLearnableMove
+      level: 13
+    - move: psybeam
+      klass: LevelLearnableMove
+      level: 17
+    - move: fake_out
+      klass: LevelLearnableMove
+      level: 19
+    - move: disarming_voice
+      klass: LevelLearnableMove
+      level: 22
+    - move: psyshock
+      klass: LevelLearnableMove
+      level: 25
+    - move: charge_beam
+      klass: LevelLearnableMove
+      level: 28
+    - move: shadow_ball
+      klass: LevelLearnableMove
+      level: 31
+    - move: extrasensory
+      klass: LevelLearnableMove
+      level: 35
+    - move: psychic
+      klass: LevelLearnableMove
+      level: 40
+    - move: role_play
+      klass: LevelLearnableMove
+      level: 43
+    - move: signal_beam
+      klass: LevelLearnableMove
+      level: 45
+    - move: sucker_punch
+      klass: LevelLearnableMove
+      level: 48
+    - move: future_sight
+      klass: LevelLearnableMove
+      level: 50
+    - move: stored_power
+      klass: LevelLearnableMove
+      level: 53
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: reflect
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: heal_bell
+      klass: TutorLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: trick
+      klass: TutorLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: skill_swap
+      klass: TutorLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: trick_room
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: wonder_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: psyshock
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: magic_room
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 877
+      description: 200

@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: finneon
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 456
+  dbSymbol: finneon
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 7
+    type1: water
+    type2: __undef__
+    baseHp: 49
+    baseAtk: 49
+    baseDfe: 56
+    baseSpd: 66
+    baseAts: 49
+    baseDfs: 61
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 31
+    experienceType: 4
+    baseExperience: 66
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0c0000000c000000
+    hatchSteps: 5120
+    babyDbSymbol: finneon
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - swift_swim
+    - storm_drain
+    - water_veil
+    frontOffsetY: 0
+    resources:
+      icon: 0456
+      iconF: 0456
+      iconShiny: 0456s
+      iconShinyF: 0456s
+      front: 0456
+      frontF: 0456f
+      frontShiny: 0456s
+      frontShinyF: 0456sf
+      back: 0456
+      backF: 0456f
+      backShiny: 0456s
+      backShinyF: 0456sf
+      footprint: 0456
+      character: 0456
+      characterF: 0456
+      characterShiny: 0456s
+      characterShinyF: 0456s
+      cry: 0456.ogg
+      hasFemale: 1
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: pound
+      klass: LevelLearnableMove
+      level: 1
+    - move: water_gun
+      klass: LevelLearnableMove
+      level: 6
+    - move: attract
+      klass: LevelLearnableMove
+      level: 10
+    - move: rain_dance
+      klass: LevelLearnableMove
+      level: 13
+    - move: gust
+      klass: LevelLearnableMove
+      level: 17
+    - move: water_pulse
+      klass: LevelLearnableMove
+      level: 22
+    - move: captivate
+      klass: LevelLearnableMove
+      level: 26
+    - move: safeguard
+      klass: LevelLearnableMove
+      level: 29
+    - move: aqua_ring
+      klass: LevelLearnableMove
+      level: 33
+    - move: whirlpool
+      klass: LevelLearnableMove
+      level: 38
+    - move: u_turn
+      klass: LevelLearnableMove
+      level: 42
+    - move: bounce
+      klass: LevelLearnableMove
+      level: 45
+    - move: silver_wind
+      klass: LevelLearnableMove
+      level: 49
+    - move: soak
+      klass: LevelLearnableMove
+      level: 54
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: psybeam
+      klass: BreedLearnableMove
+      level: 0
+    - move: aurora_beam
+      klass: BreedLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: agility
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: confuse_ray
+      klass: BreedLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: splash
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: flail
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sweet_kiss
+      klass: BreedLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: charm
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: tickle
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: brine
+      klass: BreedLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: BreedLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    - move: whirlpool
+      klass: TutorLearnableMove
+      level: 0
+    formTextId:
+      name: 566
+      description: 0

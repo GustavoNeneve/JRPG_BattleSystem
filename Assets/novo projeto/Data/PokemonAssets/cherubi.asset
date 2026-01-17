@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: cherubi
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 420
+  dbSymbol: cherubi
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 3.3
+    type1: grass
+    type2: __undef__
+    baseHp: 45
+    baseAtk: 35
+    baseDfe: 45
+    baseSpd: 35
+    baseAts: 62
+    baseDfs: 53
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 25
+    experienceType: 1
+    baseExperience: 55
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0600000007000000
+    hatchSteps: 5120
+    babyDbSymbol: cherubi
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - chlorophyll
+    - chlorophyll
+    - chlorophyll
+    frontOffsetY: 0
+    resources:
+      icon: 0420
+      iconF: 
+      iconShiny: 0420s
+      iconShinyF: 
+      front: 0420
+      frontF: 
+      frontShiny: 0420s
+      frontShinyF: 
+      back: 0420
+      backF: 
+      backShiny: 0420s
+      backShinyF: 
+      footprint: 0420
+      character: 0420
+      characterF: 
+      characterShiny: 0420s
+      characterShinyF: 
+      cry: 0420.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: morning_sun
+      klass: LevelLearnableMove
+      level: 1
+    - move: growth
+      klass: LevelLearnableMove
+      level: 7
+    - move: leech_seed
+      klass: LevelLearnableMove
+      level: 10
+    - move: helping_hand
+      klass: LevelLearnableMove
+      level: 13
+    - move: magical_leaf
+      klass: LevelLearnableMove
+      level: 19
+    - move: sunny_day
+      klass: LevelLearnableMove
+      level: 22
+    - move: worry_seed
+      klass: LevelLearnableMove
+      level: 28
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 31
+    - move: solar_beam
+      klass: LevelLearnableMove
+      level: 37
+    - move: lucky_chant
+      klass: LevelLearnableMove
+      level: 40
+    - move: petal_blizzard
+      klass: LevelLearnableMove
+      level: 47
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: razor_leaf
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: defense_curl
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: rollout
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: sweet_scent
+      klass: BreedLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: weather_ball
+      klass: BreedLearnableMove
+      level: 0
+    - move: aromatherapy
+      klass: BreedLearnableMove
+      level: 0
+    - move: grass_whistle
+      klass: BreedLearnableMove
+      level: 0
+    - move: tickle
+      klass: BreedLearnableMove
+      level: 0
+    - move: healing_wish
+      klass: BreedLearnableMove
+      level: 0
+    - move: natural_gift
+      klass: BreedLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: BreedLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: heal_pulse
+      klass: BreedLearnableMove
+      level: 0
+    - move: flower_shield
+      klass: BreedLearnableMove
+      level: 0
+    - move: grassy_terrain
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 524
+      description: 0

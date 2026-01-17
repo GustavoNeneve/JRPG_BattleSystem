@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: bastiodon
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 411
+  dbSymbol: bastiodon
+  forms:
+  - form: 0
+    height: 1.3
+    weight: 149.5
+    type1: rock
+    type2: steel
+    baseHp: 60
+    baseAtk: 52
+    baseDfe: 168
+    baseSpd: 30
+    baseAts: 47
+    baseDfs: 138
+    evHp: 0
+    evAtk: 0
+    evDfe: 2
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 4
+    baseExperience: 173
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 12
+    breedGroups: 0100000001000000
+    hatchSteps: 7680
+    babyDbSymbol: shieldon
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sturdy
+    - sturdy
+    - soundproof
+    frontOffsetY: 0
+    resources:
+      icon: 0411
+      iconF: 
+      iconShiny: 0411s
+      iconShinyF: 
+      front: 0411
+      frontF: 
+      frontShiny: 0411s
+      frontShinyF: 
+      back: 0411
+      backF: 
+      backShiny: 0411s
+      backShinyF: 
+      footprint: 0411
+      character: 0411
+      characterF: 
+      characterShiny: 0411s
+      characterShinyF: 
+      cry: 0411.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: protect
+      klass: LevelLearnableMove
+      level: 1
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 1
+    - move: metal_sound
+      klass: LevelLearnableMove
+      level: 1
+    - move: block
+      klass: LevelLearnableMove
+      level: 1
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 6
+    - move: metal_sound
+      klass: LevelLearnableMove
+      level: 10
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 15
+    - move: iron_defense
+      klass: LevelLearnableMove
+      level: 19
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 24
+    - move: ancient_power
+      klass: LevelLearnableMove
+      level: 28
+    - move: endure
+      klass: LevelLearnableMove
+      level: 36
+    - move: metal_burst
+      klass: LevelLearnableMove
+      level: 43
+    - move: iron_head
+      klass: LevelLearnableMove
+      level: 51
+    - move: heavy_slam
+      klass: LevelLearnableMove
+      level: 58
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: outrage
+      klass: TutorLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: block
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: block
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: smack_down
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: stomping_tantrum
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 511
+      description: 0

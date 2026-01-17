@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: type_null
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 772
+  dbSymbol: type_null
+  forms:
+  - form: 0
+    height: 1.9
+    weight: 120.5
+    type1: normal
+    type2: __undef__
+    baseHp: 95
+    baseAtk: 95
+    baseDfe: 95
+    baseSpd: 59
+    baseAts: 95
+    baseDfs: 95
+    evHp: 2
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLoyalty
+        value: 220
+    experienceType: 2
+    baseExperience: 107
+    baseLoyalty: 0
+    catchRate: 3
+    femaleRate: -1
+    breedGroups: 0f0000000f000000
+    hatchSteps: 30720
+    babyDbSymbol: type_null
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - battle_armor
+    - battle_armor
+    - battle_armor
+    frontOffsetY: 0
+    resources:
+      icon: 0772
+      iconF: 
+      iconShiny: 0772s
+      iconShinyF: 
+      front: 0772
+      frontF: 
+      frontShiny: 0772s
+      frontShinyF: 
+      back: 0772
+      backF: 
+      backShiny: 0772s
+      backShinyF: 
+      footprint: 0772
+      character: 0772
+      characterF: 
+      characterShiny: 0772s
+      characterShinyF: 
+      cry: 0772.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: rage
+      klass: LevelLearnableMove
+      level: 5
+    - move: pursuit
+      klass: LevelLearnableMove
+      level: 10
+    - move: imprison
+      klass: LevelLearnableMove
+      level: 15
+    - move: aerial_ace
+      klass: LevelLearnableMove
+      level: 20
+    - move: crush_claw
+      klass: LevelLearnableMove
+      level: 25
+    - move: scary_face
+      klass: LevelLearnableMove
+      level: 30
+    - move: x_scissor
+      klass: LevelLearnableMove
+      level: 35
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 40
+    - move: metal_sound
+      klass: LevelLearnableMove
+      level: 45
+    - move: iron_head
+      klass: LevelLearnableMove
+      level: 50
+    - move: double_hit
+      klass: LevelLearnableMove
+      level: 55
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 60
+    - move: punishment
+      klass: LevelLearnableMove
+      level: 65
+    - move: razor_wind
+      klass: LevelLearnableMove
+      level: 70
+    - move: tri_attack
+      klass: LevelLearnableMove
+      level: 75
+    - move: double_edge
+      klass: LevelLearnableMove
+      level: 80
+    - move: heal_block
+      klass: LevelLearnableMove
+      level: 85
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: dragon_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: last_resort
+      klass: TutorLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_head
+      klass: TutorLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 989
+      description: 0

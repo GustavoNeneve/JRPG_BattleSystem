@@ -1,0 +1,262 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: helioptile
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 694
+  dbSymbol: helioptile
+  forms:
+  - form: 0
+    height: 0.5
+    weight: 6
+    type1: electric
+    type2: normal
+    baseHp: 44
+    baseAtk: 38
+    baseDfe: 33
+    baseSpd: 70
+    baseAts: 61
+    baseDfs: 43
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: stone
+        value: sun_stone
+    experienceType: 1
+    baseExperience: 58
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 010000000e000000
+    hatchSteps: 5120
+    babyDbSymbol: helioptile
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - dry_skin
+    - sand_veil
+    - solar_power
+    frontOffsetY: 0
+    resources:
+      icon: 0694
+      iconF: 
+      iconShiny: 0694s
+      iconShinyF: 
+      front: 0694
+      frontF: 
+      frontShiny: 0694s
+      frontShinyF: 
+      back: 0694
+      backF: 
+      backShiny: 0694s
+      backShinyF: 
+      footprint: 0694
+      character: 0694
+      characterF: 
+      characterShiny: 0694s
+      characterShinyF: 
+      cry: 0694.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: pound
+      klass: LevelLearnableMove
+      level: 1
+    - move: tail_whip
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_shock
+      klass: LevelLearnableMove
+      level: 6
+    - move: charge
+      klass: LevelLearnableMove
+      level: 11
+    - move: mud_slap
+      klass: LevelLearnableMove
+      level: 13
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 17
+    - move: razor_wind
+      klass: LevelLearnableMove
+      level: 22
+    - move: parabolic_charge
+      klass: LevelLearnableMove
+      level: 25
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 31
+    - move: bulldoze
+      klass: LevelLearnableMove
+      level: 35
+    - move: volt_switch
+      klass: LevelLearnableMove
+      level: 40
+    - move: electrify
+      klass: LevelLearnableMove
+      level: 45
+    - move: thunderbolt
+      klass: LevelLearnableMove
+      level: 49
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: agility
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: glare
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: camouflage
+      klass: BreedLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: low_sweep
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: dragon_tail
+      klass: TechLearnableMove
+      level: 0
+    - move: electroweb
+      klass: TutorLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: electric_terrain
+      klass: BreedLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 894
+      description: 0

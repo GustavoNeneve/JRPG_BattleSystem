@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: vanillite
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 582
+  dbSymbol: vanillite
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 5.7
+    type1: ice
+    type2: __undef__
+    baseHp: 36
+    baseAtk: 50
+    baseDfe: 50
+    baseSpd: 44
+    baseAts: 65
+    baseDfs: 60
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 35
+    experienceType: 2
+    baseExperience: 61
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0a0000000a000000
+    hatchSteps: 5120
+    babyDbSymbol: vanillite
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - ice_body
+    - snow_cloak
+    - weak_armor
+    frontOffsetY: 0
+    resources:
+      icon: 0582
+      iconF: 
+      iconShiny: 0582s
+      iconShinyF: 
+      front: 0582
+      frontF: 
+      frontShiny: 0582s
+      frontShinyF: 
+      back: 0582
+      backF: 
+      backShiny: 0582s
+      backShinyF: 
+      footprint: 0582
+      character: 0582
+      characterF: 
+      characterShiny: 0582s
+      characterShinyF: 
+      cry: 0582.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: icicle_spear
+      klass: LevelLearnableMove
+      level: 1
+    - move: harden
+      klass: LevelLearnableMove
+      level: 4
+    - move: astonish
+      klass: LevelLearnableMove
+      level: 7
+    - move: uproar
+      klass: LevelLearnableMove
+      level: 10
+    - move: icy_wind
+      klass: LevelLearnableMove
+      level: 13
+    - move: mist
+      klass: LevelLearnableMove
+      level: 16
+    - move: avalanche
+      klass: LevelLearnableMove
+      level: 19
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 22
+    - move: mirror_shot
+      klass: LevelLearnableMove
+      level: 26
+    - move: acid_armor
+      klass: LevelLearnableMove
+      level: 31
+    - move: ice_beam
+      klass: LevelLearnableMove
+      level: 35
+    - move: hail
+      klass: LevelLearnableMove
+      level: 40
+    - move: mirror_coat
+      klass: LevelLearnableMove
+      level: 44
+    - move: blizzard
+      klass: LevelLearnableMove
+      level: 49
+    - move: sheer_cold
+      klass: LevelLearnableMove
+      level: 53
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: explosion
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: powder_snow
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: imprison
+      klass: BreedLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: BreedLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: natural_gift
+      klass: BreedLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: BreedLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: ice_shard
+      klass: BreedLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: autotomize
+      klass: BreedLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: frost_breath
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 721
+      description: 0

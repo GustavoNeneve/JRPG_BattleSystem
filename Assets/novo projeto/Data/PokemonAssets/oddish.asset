@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: oddish
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 43
+  dbSymbol: oddish
+  forms:
+  - form: 0
+    height: 0.5
+    weight: 5.4
+    type1: grass
+    type2: poison
+    baseHp: 45
+    baseAtk: 50
+    baseDfe: 55
+    baseSpd: 30
+    baseAts: 75
+    baseDfs: 65
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 1
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 21
+    experienceType: 3
+    baseExperience: 64
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0700000007000000
+    hatchSteps: 5120
+    babyDbSymbol: oddish
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - chlorophyll
+    - chlorophyll
+    - run_away
+    frontOffsetY: 0
+    resources:
+      icon: 0043
+      iconF: 
+      iconShiny: 0043s
+      iconShinyF: 
+      front: 0043
+      frontF: 
+      frontShiny: 0043s
+      frontShinyF: 
+      back: 0043
+      backF: 
+      backShiny: 0043s
+      backShinyF: 
+      footprint: 0043
+      character: 0043
+      characterF: 
+      characterShiny: 0043s
+      characterShinyF: 
+      cry: 0043.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: absorb
+      klass: LevelLearnableMove
+      level: 1
+    - move: growth
+      klass: LevelLearnableMove
+      level: 1
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 5
+    - move: acid
+      klass: LevelLearnableMove
+      level: 9
+    - move: poison_powder
+      klass: LevelLearnableMove
+      level: 13
+    - move: stun_spore
+      klass: LevelLearnableMove
+      level: 14
+    - move: sleep_powder
+      klass: LevelLearnableMove
+      level: 15
+    - move: mega_drain
+      klass: LevelLearnableMove
+      level: 19
+    - move: lucky_chant
+      klass: LevelLearnableMove
+      level: 23
+    - move: moonlight
+      klass: LevelLearnableMove
+      level: 27
+    - move: giga_drain
+      klass: LevelLearnableMove
+      level: 31
+    - move: toxic
+      klass: LevelLearnableMove
+      level: 35
+    - move: natural_gift
+      klass: LevelLearnableMove
+      level: 39
+    - move: moonblast
+      klass: LevelLearnableMove
+      level: 43
+    - move: grassy_terrain
+      klass: LevelLearnableMove
+      level: 47
+    - move: petal_dance
+      klass: LevelLearnableMove
+      level: 51
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: razor_leaf
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: flail
+      klass: BreedLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: charm
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: synthesis
+      klass: BreedLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: nature_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: nature_power
+      klass: TechLearnableMove
+      level: 0
+    - move: ingrain
+      klass: BreedLearnableMove
+      level: 0
+    - move: secret_power
+      klass: BreedLearnableMove
+      level: 0
+    - move: teeter_dance
+      klass: BreedLearnableMove
+      level: 0
+    - move: tickle
+      klass: BreedLearnableMove
+      level: 0
+    - move: gastro_acid
+      klass: TutorLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: after_you
+      klass: BreedLearnableMove
+      level: 0
+    - move: after_you
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    - move: strength_sap
+      klass: BreedLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 62
+      description: 0

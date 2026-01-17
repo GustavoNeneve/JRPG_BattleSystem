@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: swirlix
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 684
+  dbSymbol: swirlix
+  forms:
+  - form: 0
+    height: 0.4
+    weight: 3.5
+    type1: fairy
+    type2: __undef__
+    baseHp: 62
+    baseAtk: 48
+    baseDfe: 66
+    baseSpd: 49
+    baseAts: 59
+    baseDfs: 57
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: trade
+        value: true
+      - type: itemHold
+        value: whipped_dream
+    experienceType: 1
+    baseExperience: 68
+    baseLoyalty: 70
+    catchRate: 200
+    femaleRate: 50
+    breedGroups: 0600000006000000
+    hatchSteps: 5120
+    babyDbSymbol: swirlix
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - sweet_veil
+    - sweet_veil
+    - unburden
+    frontOffsetY: 0
+    resources:
+      icon: 0684
+      iconF: 
+      iconShiny: 0684s
+      iconShinyF: 
+      front: 0684
+      frontF: 
+      frontShiny: 0684s
+      frontShinyF: 
+      back: 0684
+      backF: 
+      backShiny: 0684s
+      backShinyF: 
+      footprint: 0684
+      character: 0684
+      characterF: 
+      characterShiny: 0684s
+      characterShinyF: 
+      cry: 0684.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 1
+    - move: fairy_wind
+      klass: LevelLearnableMove
+      level: 5
+    - move: play_nice
+      klass: LevelLearnableMove
+      level: 8
+    - move: fake_tears
+      klass: LevelLearnableMove
+      level: 10
+    - move: round
+      klass: LevelLearnableMove
+      level: 13
+    - move: cotton_spore
+      klass: LevelLearnableMove
+      level: 17
+    - move: endeavor
+      klass: LevelLearnableMove
+      level: 21
+    - move: aromatherapy
+      klass: LevelLearnableMove
+      level: 26
+    - move: draining_kiss
+      klass: LevelLearnableMove
+      level: 31
+    - move: energy_ball
+      klass: LevelLearnableMove
+      level: 36
+    - move: cotton_guard
+      klass: LevelLearnableMove
+      level: 41
+    - move: wish
+      klass: LevelLearnableMove
+      level: 45
+    - move: play_rough
+      klass: LevelLearnableMove
+      level: 49
+    - move: light_screen
+      klass: LevelLearnableMove
+      level: 58
+    - move: safeguard
+      klass: LevelLearnableMove
+      level: 67
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: dream_eater
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: belly_drum
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: heal_bell
+      klass: TutorLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: psych_up
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: yawn
+      klass: BreedLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: calm_mind
+      klass: TechLearnableMove
+      level: 0
+    - move: gastro_acid
+      klass: TutorLearnableMove
+      level: 0
+    - move: copycat
+      klass: BreedLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: after_you
+      klass: BreedLearnableMove
+      level: 0
+    - move: after_you
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: sticky_web
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: dazzling_gleam
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 884
+      description: 0

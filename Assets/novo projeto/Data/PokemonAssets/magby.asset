@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: magby
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 240
+  dbSymbol: magby
+  forms:
+  - form: 0
+    height: 0.7
+    weight: 21.4
+    type1: fire
+    type2: __undef__
+    baseHp: 45
+    baseAtk: 75
+    baseDfe: 37
+    baseSpd: 83
+    baseAts: 70
+    baseDfs: 55
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 30
+    experienceType: 1
+    baseExperience: 73
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 25
+    breedGroups: 0f0000000f000000
+    hatchSteps: 6400
+    babyDbSymbol: magby
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - flame_body
+    - flame_body
+    - vital_spirit
+    frontOffsetY: 0
+    resources:
+      icon: 0240
+      iconF: 
+      iconShiny: 0240s
+      iconShinyF: 
+      front: 0240
+      frontF: 
+      frontShiny: 0240s
+      frontShinyF: 
+      back: 0240
+      backF: 
+      backShiny: 0240s
+      backShinyF: 
+      footprint: 0240
+      character: 0240
+      characterF: 
+      characterShiny: 0240s
+      characterShinyF: 
+      cry: 0240.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: smog
+      klass: LevelLearnableMove
+      level: 1
+    - move: ember
+      klass: LevelLearnableMove
+      level: 5
+    - move: smokescreen
+      klass: LevelLearnableMove
+      level: 8
+    - move: feint_attack
+      klass: LevelLearnableMove
+      level: 12
+    - move: fire_spin
+      klass: LevelLearnableMove
+      level: 15
+    - move: clear_smog
+      klass: LevelLearnableMove
+      level: 19
+    - move: flame_burst
+      klass: LevelLearnableMove
+      level: 22
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 26
+    - move: fire_punch
+      klass: LevelLearnableMove
+      level: 29
+    - move: lava_plume
+      klass: LevelLearnableMove
+      level: 33
+    - move: sunny_day
+      klass: LevelLearnableMove
+      level: 36
+    - move: flamethrower
+      klass: LevelLearnableMove
+      level: 40
+    - move: fire_blast
+      klass: LevelLearnableMove
+      level: 43
+    - move: karate_chop
+      klass: BreedLearnableMove
+      level: 0
+    - move: mega_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: fire_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: psychic
+      klass: TechLearnableMove
+      level: 0
+    - move: screech
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: barrier
+      klass: BreedLearnableMove
+      level: 0
+    - move: focus_energy
+      klass: BreedLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: mach_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: belly_drum
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: dynamic_punch
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: BreedLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: cross_chop
+      klass: BreedLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: helping_hand
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: overheat
+      klass: TechLearnableMove
+      level: 0
+    - move: covet
+      klass: TutorLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: power_swap
+      klass: BreedLearnableMove
+      level: 0
+    - move: flare_blitz
+      klass: BreedLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: dual_chop
+      klass: TutorLearnableMove
+      level: 0
+    - move: belch
+      klass: BreedLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 311
+      description: 0

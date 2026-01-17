@@ -1,0 +1,244 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: pidove
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 519
+  dbSymbol: pidove
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 2.1
+    type1: normal
+    type2: flying
+    baseHp: 50
+    baseAtk: 55
+    baseDfe: 50
+    baseSpd: 43
+    baseAts: 36
+    baseDfs: 30
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 21
+    experienceType: 3
+    baseExperience: 53
+    baseLoyalty: 70
+    catchRate: 255
+    femaleRate: 50
+    breedGroups: 0400000004000000
+    hatchSteps: 3840
+    babyDbSymbol: pidove
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - big_pecks
+    - super_luck
+    - rivalry
+    frontOffsetY: 0
+    resources:
+      icon: 0519
+      iconF: 
+      iconShiny: 0519s
+      iconShinyF: 
+      front: 0519
+      frontF: 
+      frontShiny: 0519s
+      frontShinyF: 
+      back: 0519
+      backF: 
+      backShiny: 0519s
+      backShinyF: 
+      footprint: 0519
+      character: 0519
+      characterF: 
+      characterShiny: 0519s
+      characterShinyF: 
+      cry: 0519.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: gust
+      klass: LevelLearnableMove
+      level: 1
+    - move: growl
+      klass: LevelLearnableMove
+      level: 4
+    - move: leer
+      klass: LevelLearnableMove
+      level: 8
+    - move: quick_attack
+      klass: LevelLearnableMove
+      level: 11
+    - move: air_cutter
+      klass: LevelLearnableMove
+      level: 15
+    - move: roost
+      klass: LevelLearnableMove
+      level: 18
+    - move: detect
+      klass: LevelLearnableMove
+      level: 22
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 25
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 29
+    - move: razor_wind
+      klass: LevelLearnableMove
+      level: 32
+    - move: feather_dance
+      klass: LevelLearnableMove
+      level: 36
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 39
+    - move: facade
+      klass: LevelLearnableMove
+      level: 43
+    - move: tailwind
+      klass: LevelLearnableMove
+      level: 46
+    - move: sky_attack
+      klass: LevelLearnableMove
+      level: 50
+    - move: fly
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: hypnosis
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: sky_attack
+      klass: TutorLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: BreedLearnableMove
+      level: 0
+    - move: steel_wing
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: morning_sun
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: BreedLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: wish
+      klass: BreedLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: lucky_chant
+      klass: BreedLearnableMove
+      level: 0
+    - move: night_slash
+      klass: BreedLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: bestow
+      klass: BreedLearnableMove
+      level: 0
+    - move: work_up
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 655
+      description: 0

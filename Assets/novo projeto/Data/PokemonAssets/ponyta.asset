@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: ponyta
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 77
+  dbSymbol: ponyta
+  forms:
+  - form: 0
+    height: 1
+    weight: 30
+    type1: fire
+    type2: __undef__
+    baseHp: 50
+    baseAtk: 85
+    baseDfe: 55
+    baseSpd: 90
+    baseAts: 65
+    baseDfs: 65
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 1
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 40
+    experienceType: 1
+    baseExperience: 82
+    baseLoyalty: 70
+    catchRate: 190
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: ponyta
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - flash_fire
+    - run_away
+    - flame_body
+    frontOffsetY: 19
+    resources:
+      icon: 0077
+      iconF: 
+      iconShiny: 0077s
+      iconShinyF: 
+      front: 0077
+      frontF: 
+      frontShiny: 0077s
+      frontShinyF: 
+      back: 0077
+      backF: 
+      backShiny: 0077s
+      backShinyF: 
+      footprint: 0077
+      character: 0077
+      characterF: 
+      characterShiny: 0077s
+      characterShinyF: 
+      cry: 0077.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: growl
+      klass: LevelLearnableMove
+      level: 1
+    - move: tail_whip
+      klass: LevelLearnableMove
+      level: 4
+    - move: ember
+      klass: LevelLearnableMove
+      level: 9
+    - move: flame_wheel
+      klass: LevelLearnableMove
+      level: 13
+    - move: stomp
+      klass: LevelLearnableMove
+      level: 17
+    - move: flame_charge
+      klass: LevelLearnableMove
+      level: 21
+    - move: fire_spin
+      klass: LevelLearnableMove
+      level: 25
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 29
+    - move: inferno
+      klass: LevelLearnableMove
+      level: 33
+    - move: agility
+      klass: LevelLearnableMove
+      level: 37
+    - move: fire_blast
+      klass: LevelLearnableMove
+      level: 41
+    - move: bounce
+      klass: LevelLearnableMove
+      level: 45
+    - move: flare_blitz
+      klass: LevelLearnableMove
+      level: 49
+    - move: double_kick
+      klass: BreedLearnableMove
+      level: 0
+    - move: horn_drill
+      klass: BreedLearnableMove
+      level: 0
+    - move: thrash
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_edge
+      klass: BreedLearnableMove
+      level: 0
+    - move: flamethrower
+      klass: TechLearnableMove
+      level: 0
+    - move: low_kick
+      klass: BreedLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: hypnosis
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: fire_blast
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: flame_wheel
+      klass: BreedLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: charm
+      klass: BreedLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: morning_sun
+      klass: BreedLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: heat_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: will_o_wisp
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: overheat
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: captivate
+      klass: BreedLearnableMove
+      level: 0
+    - move: flame_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: BreedLearnableMove
+      level: 0
+    - move: ally_switch
+      klass: TutorLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: high_horsepower
+      klass: BreedLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 104
+      description: 0

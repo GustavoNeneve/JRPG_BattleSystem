@@ -1,0 +1,556 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: sharpedo
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 319
+  dbSymbol: sharpedo
+  forms:
+  - form: 0
+    height: 1.8
+    weight: 88.8
+    type1: water
+    type2: dark
+    baseHp: 70
+    baseAtk: 120
+    baseDfe: 40
+    baseSpd: 95
+    baseAts: 95
+    baseDfs: 40
+    evHp: 0
+    evAtk: 2
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 30
+      conditions:
+      - type: gemme
+        value: sharpedonite
+    experienceType: 2
+    baseExperience: 161
+    baseLoyalty: 35
+    catchRate: 60
+    femaleRate: 50
+    breedGroups: 0c0000000c000000
+    hatchSteps: 5120
+    babyDbSymbol: carvanha
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - rough_skin
+    - rough_skin
+    - speed_boost
+    frontOffsetY: 0
+    resources:
+      icon: 0319
+      iconF: 
+      iconShiny: 0319s
+      iconShinyF: 
+      front: 0319
+      frontF: 
+      frontShiny: 0319s
+      frontShinyF: 
+      back: 0319
+      backF: 
+      backShiny: 0319s
+      backShinyF: 
+      footprint: 0319
+      character: 0319
+      characterF: 
+      characterShiny: 0319s
+      characterShinyF: 
+      cry: 0319.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: bite
+      klass: LevelLearnableMove
+      level: 1
+    - move: rage
+      klass: LevelLearnableMove
+      level: 1
+    - move: focus_energy
+      klass: LevelLearnableMove
+      level: 1
+    - move: slash
+      klass: LevelLearnableMove
+      level: 1
+    - move: feint
+      klass: LevelLearnableMove
+      level: 1
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 1
+    - move: rage
+      klass: LevelLearnableMove
+      level: 4
+    - move: focus_energy
+      klass: LevelLearnableMove
+      level: 8
+    - move: aqua_jet
+      klass: LevelLearnableMove
+      level: 11
+    - move: assurance
+      klass: LevelLearnableMove
+      level: 15
+    - move: screech
+      klass: LevelLearnableMove
+      level: 18
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 22
+    - move: ice_fang
+      klass: LevelLearnableMove
+      level: 25
+    - move: scary_face
+      klass: LevelLearnableMove
+      level: 29
+    - move: poison_fang
+      klass: LevelLearnableMove
+      level: 34
+    - move: crunch
+      klass: LevelLearnableMove
+      level: 40
+    - move: agility
+      klass: LevelLearnableMove
+      level: 45
+    - move: skull_bash
+      klass: LevelLearnableMove
+      level: 51
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 56
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 62
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: slash
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: snarl
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 400
+      description: 0
+  - form: 30
+    height: 2.5
+    weight: 130.3
+    type1: water
+    type2: dark
+    baseHp: 70
+    baseAtk: 140
+    baseDfe: 70
+    baseSpd: 105
+    baseAts: 110
+    baseDfs: 65
+    evHp: 0
+    evAtk: 2
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions: []
+    experienceType: 2
+    baseExperience: 196
+    baseLoyalty: 35
+    catchRate: 60
+    femaleRate: 50
+    breedGroups: 0c0000000c000000
+    hatchSteps: 5120
+    babyDbSymbol: carvanha
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - strong_jaw
+    - strong_jaw
+    - strong_jaw
+    frontOffsetY: 0
+    resources:
+      icon: 0319_30
+      iconF: 
+      iconShiny: 0319s_30
+      iconShinyF: 
+      front: 0319_30
+      frontF: 
+      frontShiny: 0319s_30
+      frontShinyF: 
+      back: 0319_30
+      backF: 
+      backShiny: 0319s_30
+      backShinyF: 
+      footprint: 0319
+      character: 
+      characterF: 
+      characterShiny: 
+      characterShinyF: 
+      cry: 0319_30.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: bite
+      klass: LevelLearnableMove
+      level: 1
+    - move: rage
+      klass: LevelLearnableMove
+      level: 1
+    - move: focus_energy
+      klass: LevelLearnableMove
+      level: 1
+    - move: slash
+      klass: LevelLearnableMove
+      level: 1
+    - move: feint
+      klass: LevelLearnableMove
+      level: 1
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 1
+    - move: rage
+      klass: LevelLearnableMove
+      level: 4
+    - move: focus_energy
+      klass: LevelLearnableMove
+      level: 8
+    - move: aqua_jet
+      klass: LevelLearnableMove
+      level: 11
+    - move: assurance
+      klass: LevelLearnableMove
+      level: 15
+    - move: screech
+      klass: LevelLearnableMove
+      level: 18
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 22
+    - move: ice_fang
+      klass: LevelLearnableMove
+      level: 25
+    - move: scary_face
+      klass: LevelLearnableMove
+      level: 29
+    - move: poison_fang
+      klass: LevelLearnableMove
+      level: 34
+    - move: crunch
+      klass: LevelLearnableMove
+      level: 40
+    - move: agility
+      klass: LevelLearnableMove
+      level: 45
+    - move: skull_bash
+      klass: LevelLearnableMove
+      level: 51
+    - move: taunt
+      klass: LevelLearnableMove
+      level: 56
+    - move: night_slash
+      klass: LevelLearnableMove
+      level: 62
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: surf
+      klass: TechLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: waterfall
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: super_fang
+      klass: TutorLearnableMove
+      level: 0
+    - move: slash
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: bounce
+      klass: TutorLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: poison_jab
+      klass: TechLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: zen_headbutt
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: scald
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: snarl
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: liquidation
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: dive
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 401
+      description: 83

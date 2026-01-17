@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: klink
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 599
+  dbSymbol: klink
+  forms:
+  - form: 0
+    height: 0.3
+    weight: 21
+    type1: steel
+    type2: __undef__
+    baseHp: 40
+    baseAtk: 55
+    baseDfe: 70
+    baseSpd: 30
+    baseAts: 45
+    baseDfs: 60
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 38
+    experienceType: 3
+    baseExperience: 60
+    baseLoyalty: 70
+    catchRate: 130
+    femaleRate: -1
+    breedGroups: 0a0000000a000000
+    hatchSteps: 5120
+    babyDbSymbol: klink
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - plus
+    - minus
+    - clear_body
+    frontOffsetY: 0
+    resources:
+      icon: 0599
+      iconF: 
+      iconShiny: 0599s
+      iconShinyF: 
+      front: 0599
+      frontF: 
+      frontShiny: 0599s
+      frontShinyF: 
+      back: 0599
+      backF: 
+      backShiny: 0599s
+      backShinyF: 
+      footprint: 0599
+      character: 0599
+      characterF: 
+      characterShiny: 0599s
+      characterShinyF: 
+      cry: 0599.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: vise_grip
+      klass: LevelLearnableMove
+      level: 1
+    - move: charge
+      klass: LevelLearnableMove
+      level: 6
+    - move: thunder_shock
+      klass: LevelLearnableMove
+      level: 11
+    - move: gear_grind
+      klass: LevelLearnableMove
+      level: 16
+    - move: bind
+      klass: LevelLearnableMove
+      level: 21
+    - move: charge_beam
+      klass: LevelLearnableMove
+      level: 26
+    - move: autotomize
+      klass: LevelLearnableMove
+      level: 31
+    - move: mirror_shot
+      klass: LevelLearnableMove
+      level: 36
+    - move: screech
+      klass: LevelLearnableMove
+      level: 39
+    - move: discharge
+      klass: LevelLearnableMove
+      level: 42
+    - move: metal_sound
+      klass: LevelLearnableMove
+      level: 45
+    - move: shift_gear
+      klass: LevelLearnableMove
+      level: 48
+    - move: lock_on
+      klass: LevelLearnableMove
+      level: 50
+    - move: zap_cannon
+      klass: LevelLearnableMove
+      level: 54
+    - move: hyper_beam
+      klass: LevelLearnableMove
+      level: 57
+    - move: bind
+      klass: TutorLearnableMove
+      level: 0
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: magic_coat
+      klass: TutorLearnableMove
+      level: 0
+    - move: recycle
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: iron_defense
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: gravity
+      klass: TutorLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_polish
+      klass: TechLearnableMove
+      level: 0
+    - move: flash_cannon
+      klass: TechLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: telekinesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 744
+      description: 0

@@ -1,0 +1,292 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: krokorok
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 552
+  dbSymbol: krokorok
+  forms:
+  - form: 0
+    height: 1
+    weight: 33.4
+    type1: ground
+    type2: dark
+    baseHp: 60
+    baseAtk: 82
+    baseDfe: 45
+    baseSpd: 74
+    baseAts: 45
+    baseDfs: 45
+    evHp: 0
+    evAtk: 2
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 40
+    experienceType: 3
+    baseExperience: 123
+    baseLoyalty: 70
+    catchRate: 90
+    femaleRate: 50
+    breedGroups: 0500000005000000
+    hatchSteps: 5120
+    babyDbSymbol: sandile
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - intimidate
+    - moxie
+    - anger_point
+    frontOffsetY: 0
+    resources:
+      icon: 0552
+      iconF: 
+      iconShiny: 0552s
+      iconShinyF: 
+      front: 0552
+      frontF: 
+      frontShiny: 0552s
+      frontShinyF: 
+      back: 0552
+      backF: 
+      backShiny: 0552s
+      backShinyF: 
+      footprint: 0552
+      character: 0552
+      characterF: 
+      characterShiny: 0552s
+      characterShinyF: 
+      cry: 0552.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 1
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: bite
+      klass: LevelLearnableMove
+      level: 1
+    - move: rage
+      klass: LevelLearnableMove
+      level: 1
+    - move: bite
+      klass: LevelLearnableMove
+      level: 4
+    - move: sand_attack
+      klass: LevelLearnableMove
+      level: 7
+    - move: torment
+      klass: LevelLearnableMove
+      level: 10
+    - move: sand_tomb
+      klass: LevelLearnableMove
+      level: 13
+    - move: assurance
+      klass: LevelLearnableMove
+      level: 16
+    - move: mud_slap
+      klass: LevelLearnableMove
+      level: 19
+    - move: embargo
+      klass: LevelLearnableMove
+      level: 22
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 25
+    - move: crunch
+      klass: LevelLearnableMove
+      level: 28
+    - move: dig
+      klass: LevelLearnableMove
+      level: 32
+    - move: scary_face
+      klass: LevelLearnableMove
+      level: 36
+    - move: foul_play
+      klass: LevelLearnableMove
+      level: 40
+    - move: sandstorm
+      klass: LevelLearnableMove
+      level: 44
+    - move: earthquake
+      klass: LevelLearnableMove
+      level: 48
+    - move: thrash
+      klass: LevelLearnableMove
+      level: 52
+    - move: roar
+      klass: TechLearnableMove
+      level: 0
+    - move: low_kick
+      klass: TutorLearnableMove
+      level: 0
+    - move: earthquake
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_slide
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: spite
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: sandstorm
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: uproar
+      klass: TutorLearnableMove
+      level: 0
+    - move: torment
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: taunt
+      klass: TechLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: knock_off
+      klass: TutorLearnableMove
+      level: 0
+    - move: snatch
+      klass: TutorLearnableMove
+      level: 0
+    - move: rock_tomb
+      klass: TechLearnableMove
+      level: 0
+    - move: payback
+      klass: TechLearnableMove
+      level: 0
+    - move: embargo
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: dark_pulse
+      klass: TechLearnableMove
+      level: 0
+    - move: aqua_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: earth_power
+      klass: TutorLearnableMove
+      level: 0
+    - move: shadow_claw
+      klass: TechLearnableMove
+      level: 0
+    - move: stone_edge
+      klass: TechLearnableMove
+      level: 0
+    - move: stealth_rock
+      klass: TutorLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: low_sweep
+      klass: TechLearnableMove
+      level: 0
+    - move: foul_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: bulldoze
+      klass: TechLearnableMove
+      level: 0
+    - move: snarl
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: brutal_swing
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 690
+      description: 0

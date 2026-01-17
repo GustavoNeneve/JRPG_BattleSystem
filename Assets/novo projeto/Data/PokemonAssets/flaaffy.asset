@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: flaaffy
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 180
+  dbSymbol: flaaffy
+  forms:
+  - form: 0
+    height: 0.8
+    weight: 13.3
+    type1: electric
+    type2: __undef__
+    baseHp: 70
+    baseAtk: 55
+    baseDfe: 55
+    baseSpd: 45
+    baseAts: 80
+    baseDfs: 60
+    evHp: 0
+    evAtk: 0
+    evDfe: 0
+    evSpd: 0
+    evAts: 2
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 30
+    experienceType: 3
+    baseExperience: 128
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 50
+    breedGroups: 0100000005000000
+    hatchSteps: 5120
+    babyDbSymbol: mareep
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - static
+    - static
+    - plus
+    frontOffsetY: 0
+    resources:
+      icon: 0180
+      iconF: 
+      iconShiny: 0180s
+      iconShinyF: 
+      front: 0180
+      frontF: 
+      frontShiny: 0180s
+      frontShinyF: 
+      back: 0180
+      backF: 
+      backShiny: 0180s
+      backShinyF: 
+      footprint: 0180
+      character: 0180
+      characterF: 
+      characterShiny: 0180s
+      characterShinyF: 
+      cry: 0180.ogg
+      hasFemale: 0
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: tackle
+      klass: LevelLearnableMove
+      level: 1
+    - move: growl
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_shock
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 1
+    - move: thunder_wave
+      klass: LevelLearnableMove
+      level: 4
+    - move: thunder_shock
+      klass: LevelLearnableMove
+      level: 8
+    - move: cotton_spore
+      klass: LevelLearnableMove
+      level: 11
+    - move: charge
+      klass: LevelLearnableMove
+      level: 16
+    - move: take_down
+      klass: LevelLearnableMove
+      level: 20
+    - move: electro_ball
+      klass: LevelLearnableMove
+      level: 25
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 29
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 34
+    - move: discharge
+      klass: LevelLearnableMove
+      level: 38
+    - move: cotton_guard
+      klass: LevelLearnableMove
+      level: 43
+    - move: signal_beam
+      klass: LevelLearnableMove
+      level: 47
+    - move: light_screen
+      klass: LevelLearnableMove
+      level: 52
+    - move: thunder
+      klass: LevelLearnableMove
+      level: 56
+    - move: fire_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunder_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: thunderbolt
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder_wave
+      klass: TechLearnableMove
+      level: 0
+    - move: thunder
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: heal_bell
+      klass: TutorLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: focus_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: brick_break
+      klass: TechLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: shock_wave
+      klass: TutorLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: magnet_rise
+      klass: TutorLearnableMove
+      level: 0
+    - move: charge_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: after_you
+      klass: TutorLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: echoed_voice
+      klass: TechLearnableMove
+      level: 0
+    - move: volt_switch
+      klass: TechLearnableMove
+      level: 0
+    - move: electroweb
+      klass: TutorLearnableMove
+      level: 0
+    - move: wild_charge
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: rock_smash
+      klass: TechLearnableMove
+      level: 0
+    - move: strength
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 219
+      description: 0

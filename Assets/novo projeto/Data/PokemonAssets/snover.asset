@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: snover
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 459
+  dbSymbol: snover
+  forms:
+  - form: 0
+    height: 1
+    weight: 50.5
+    type1: grass
+    type2: ice
+    baseHp: 60
+    baseAtk: 62
+    baseDfe: 50
+    baseSpd: 40
+    baseAts: 62
+    baseDfs: 60
+    evHp: 0
+    evAtk: 1
+    evDfe: 0
+    evSpd: 0
+    evAts: 0
+    evDfs: 0
+    evolutions:
+    - form: 0
+      conditions:
+      - type: minLevel
+        value: 40
+    experienceType: 2
+    baseExperience: 67
+    baseLoyalty: 70
+    catchRate: 120
+    femaleRate: 50
+    breedGroups: 0100000007000000
+    hatchSteps: 5120
+    babyDbSymbol: snover
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - snow_warning
+    - snow_warning
+    - soundproof
+    frontOffsetY: 0
+    resources:
+      icon: 0459
+      iconF: 0459
+      iconShiny: 0459s
+      iconShinyF: 0459s
+      front: 0459
+      frontF: 0459f
+      frontShiny: 0459s
+      frontShinyF: 0459sf
+      back: 0459
+      backF: 0459f
+      backShiny: 0459s
+      backShinyF: 0459sf
+      footprint: 0459
+      character: 0459
+      characterF: 0459
+      characterShiny: 0459s
+      characterShinyF: 0459s
+      cry: 0459.ogg
+      hasFemale: 1
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: leer
+      klass: LevelLearnableMove
+      level: 1
+    - move: powder_snow
+      klass: LevelLearnableMove
+      level: 1
+    - move: razor_leaf
+      klass: LevelLearnableMove
+      level: 5
+    - move: icy_wind
+      klass: LevelLearnableMove
+      level: 9
+    - move: grass_whistle
+      klass: LevelLearnableMove
+      level: 13
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 17
+    - move: mist
+      klass: LevelLearnableMove
+      level: 21
+    - move: ice_shard
+      klass: LevelLearnableMove
+      level: 26
+    - move: ingrain
+      klass: LevelLearnableMove
+      level: 31
+    - move: wood_hammer
+      klass: LevelLearnableMove
+      level: 36
+    - move: blizzard
+      klass: LevelLearnableMove
+      level: 41
+    - move: sheer_cold
+      klass: LevelLearnableMove
+      level: 46
+    - move: ice_punch
+      klass: TutorLearnableMove
+      level: 0
+    - move: swords_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: stomp
+      klass: BreedLearnableMove
+      level: 0
+    - move: double_edge
+      klass: BreedLearnableMove
+      level: 0
+    - move: mist
+      klass: BreedLearnableMove
+      level: 0
+    - move: ice_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: blizzard
+      klass: TechLearnableMove
+      level: 0
+    - move: leech_seed
+      klass: BreedLearnableMove
+      level: 0
+    - move: growth
+      klass: BreedLearnableMove
+      level: 0
+    - move: solar_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: light_screen
+      klass: TechLearnableMove
+      level: 0
+    - move: skull_bash
+      klass: BreedLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: icy_wind
+      klass: TutorLearnableMove
+      level: 0
+    - move: giga_drain
+      klass: TutorLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: safeguard
+      klass: TechLearnableMove
+      level: 0
+    - move: iron_tail
+      klass: TutorLearnableMove
+      level: 0
+    - move: synthesis
+      klass: TutorLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: shadow_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: hail
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: role_play
+      klass: TutorLearnableMove
+      level: 0
+    - move: bullet_seed
+      klass: BreedLearnableMove
+      level: 0
+    - move: magical_leaf
+      klass: BreedLearnableMove
+      level: 0
+    - move: water_pulse
+      klass: TutorLearnableMove
+      level: 0
+    - move: natural_gift
+      klass: BreedLearnableMove
+      level: 0
+    - move: worry_seed
+      klass: TutorLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: BreedLearnableMove
+      level: 0
+    - move: seed_bomb
+      klass: TutorLearnableMove
+      level: 0
+    - move: energy_ball
+      klass: TechLearnableMove
+      level: 0
+    - move: avalanche
+      klass: BreedLearnableMove
+      level: 0
+    - move: grass_knot
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: frost_breath
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 569
+      description: 0

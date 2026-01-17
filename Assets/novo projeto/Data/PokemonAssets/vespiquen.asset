@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02ec306b1a8ac1246a3b28b89ceead3c, type: 3}
+  m_Name: vespiquen
+  m_EditorClassIdentifier: 
+  klass: Specie
+  id: 416
+  dbSymbol: vespiquen
+  forms:
+  - form: 0
+    height: 1.2
+    weight: 38.5
+    type1: bug
+    type2: flying
+    baseHp: 70
+    baseAtk: 80
+    baseDfe: 102
+    baseSpd: 40
+    baseAts: 80
+    baseDfs: 102
+    evHp: 0
+    evAtk: 0
+    evDfe: 1
+    evSpd: 0
+    evAts: 0
+    evDfs: 1
+    evolutions: []
+    experienceType: 3
+    baseExperience: 166
+    baseLoyalty: 70
+    catchRate: 45
+    femaleRate: 100
+    breedGroups: 0300000003000000
+    hatchSteps: 3840
+    babyDbSymbol: combee
+    babyForm: 0
+    itemHeld:
+    - dbSymbol: none
+      chance: 0
+    - dbSymbol: none
+      chance: 0
+    abilities:
+    - pressure
+    - pressure
+    - unnerve
+    frontOffsetY: 0
+    resources:
+      icon: 0416
+      iconF: 0416
+      iconShiny: 0416s
+      iconShinyF: 0416s
+      front: 0416
+      frontF: 0416
+      frontShiny: 0416s
+      frontShinyF: 0416s
+      back: 0416
+      backF: 0416
+      backShiny: 0416s
+      backShinyF: 0416s
+      footprint: 0416
+      character: 0416
+      characterF: 0416
+      characterShiny: 0416s
+      characterShinyF: 0416s
+      cry: 0416.ogg
+      hasFemale: 1
+      egg: egg
+      iconEgg: egg
+    moveSet:
+    - move: gust
+      klass: LevelLearnableMove
+      level: 1
+    - move: poison_sting
+      klass: LevelLearnableMove
+      level: 1
+    - move: confuse_ray
+      klass: LevelLearnableMove
+      level: 1
+    - move: slash
+      klass: LevelLearnableMove
+      level: 1
+    - move: destiny_bond
+      klass: LevelLearnableMove
+      level: 1
+    - move: sweet_scent
+      klass: LevelLearnableMove
+      level: 1
+    - move: fell_stinger
+      klass: LevelLearnableMove
+      level: 1
+    - move: fury_cutter
+      klass: LevelLearnableMove
+      level: 5
+    - move: pursuit
+      klass: LevelLearnableMove
+      level: 9
+    - move: fury_swipes
+      klass: LevelLearnableMove
+      level: 13
+    - move: defend_order
+      klass: LevelLearnableMove
+      level: 17
+    - move: power_gem
+      klass: LevelLearnableMove
+      level: 25
+    - move: heal_order
+      klass: LevelLearnableMove
+      level: 29
+    - move: toxic
+      klass: LevelLearnableMove
+      level: 33
+    - move: air_slash
+      klass: LevelLearnableMove
+      level: 37
+    - move: captivate
+      klass: LevelLearnableMove
+      level: 41
+    - move: attack_order
+      klass: LevelLearnableMove
+      level: 45
+    - move: swagger
+      klass: LevelLearnableMove
+      level: 49
+    - move: destiny_bond
+      klass: LevelLearnableMove
+      level: 53
+    - move: fell_stinger
+      klass: LevelLearnableMove
+      level: 57
+    - move: hyper_beam
+      klass: TechLearnableMove
+      level: 0
+    - move: toxic
+      klass: TechLearnableMove
+      level: 0
+    - move: double_team
+      klass: TechLearnableMove
+      level: 0
+    - move: rest
+      klass: TechLearnableMove
+      level: 0
+    - move: slash
+      klass: EvolutionLearnableMove
+      level: 0
+    - move: substitute
+      klass: TechLearnableMove
+      level: 0
+    - move: thief
+      klass: TechLearnableMove
+      level: 0
+    - move: snore
+      klass: TutorLearnableMove
+      level: 0
+    - move: protect
+      klass: TechLearnableMove
+      level: 0
+    - move: sludge_bomb
+      klass: TechLearnableMove
+      level: 0
+    - move: swagger
+      klass: TechLearnableMove
+      level: 0
+    - move: attract
+      klass: TechLearnableMove
+      level: 0
+    - move: sleep_talk
+      klass: TechLearnableMove
+      level: 0
+    - move: return
+      klass: TechLearnableMove
+      level: 0
+    - move: frustration
+      klass: TechLearnableMove
+      level: 0
+    - move: hidden_power
+      klass: TechLearnableMove
+      level: 0
+    - move: rain_dance
+      klass: TechLearnableMove
+      level: 0
+    - move: sunny_day
+      klass: TechLearnableMove
+      level: 0
+    - move: facade
+      klass: TechLearnableMove
+      level: 0
+    - move: endeavor
+      klass: TutorLearnableMove
+      level: 0
+    - move: signal_beam
+      klass: TutorLearnableMove
+      level: 0
+    - move: aerial_ace
+      klass: TechLearnableMove
+      level: 0
+    - move: roost
+      klass: TechLearnableMove
+      level: 0
+    - move: tailwind
+      klass: TutorLearnableMove
+      level: 0
+    - move: u_turn
+      klass: TechLearnableMove
+      level: 0
+    - move: fling
+      klass: TechLearnableMove
+      level: 0
+    - move: x_scissor
+      klass: TechLearnableMove
+      level: 0
+    - move: giga_impact
+      klass: TechLearnableMove
+      level: 0
+    - move: defog
+      klass: TutorLearnableMove
+      level: 0
+    - move: bug_bite
+      klass: TutorLearnableMove
+      level: 0
+    - move: venoshock
+      klass: TechLearnableMove
+      level: 0
+    - move: round
+      klass: TechLearnableMove
+      level: 0
+    - move: quash
+      klass: TechLearnableMove
+      level: 0
+    - move: acrobatics
+      klass: TechLearnableMove
+      level: 0
+    - move: confide
+      klass: TechLearnableMove
+      level: 0
+    - move: infestation
+      klass: TechLearnableMove
+      level: 0
+    - move: laser_focus
+      klass: TutorLearnableMove
+      level: 0
+    - move: cut
+      klass: TechLearnableMove
+      level: 0
+    - move: flash
+      klass: TechLearnableMove
+      level: 0
+    formTextId:
+      name: 520
+      description: 0

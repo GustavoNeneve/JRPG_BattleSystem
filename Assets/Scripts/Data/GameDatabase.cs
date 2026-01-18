@@ -166,27 +166,30 @@ namespace NewBark.Data
 
         private void LoadTrainers()
         {
-            // Trainer JSONs are complex and polymorphic. 
-            // We'll read them, but strictly parsing the "party" might fail with JsonUtility due to "value" object.
-            // For now, let's look at the structure again.
-            // "expandPokemonSetup" contains "value". 
-            // If we cannot parse it easily, we might need a workaround for the 'Moves' specifically.
-            
-            // NOTE: Since I am writing this without Newtonsoft, I will use a trick.
-            // The user wants 'Moves' specifically from the setup.
-            // I will create a specific DTO for Trainer that maps "Moves" slightly differently or skip the detailed party implementation for a moment
-            // to focus on the core requirement: getting the pokemon + moves.
-            
-            // Actually, I'll recommend installing Newtonsoft or use a naive string search for now if needed, 
-            // but let's try strict JsonUtility mapping where possible. 
-            // The "value" in "expandPokemonSetup" is `object` in my definition, but Unity serializer won't touch it.
-            // I will modify DataDefinitions to be more permissive or hardcoded for the known types.
-            
             string path = Path.Combine(BASE_PATH, "trainers");
             if (!Directory.Exists(path)) return;
             
-            // To properly parse the Trainer JSON which has polymorphic fields, we may need a custom parser.
-            // But let's assume we can use a "Partial" class or Regex for the moves if JsonUtility fails.
+            foreach (var file in Directory.GetFiles(path, "*.json"))
+            {
+                try
+                {
+                    string json = File.ReadAllText(file);
+                    // JsonUtility struggles with 'object' type in TrainerPokemonExpandSetup.
+                    // However, it should parse the rest of the structure (party list, specie, etc) successfully.
+                    // Polymorphic fields will simply be ignored/null/default.
+                    TrainerData data = JsonUtility.FromJson<TrainerData>(json);
+                    
+                    if (data != null && !string.IsNullOrEmpty(data.dbSymbol))
+                    {
+                        if (!Trainers.ContainsKey(data.dbSymbol))
+                        {
+                            Trainers.Add(data.dbSymbol, data);
+                            Debug.Log($"Loaded Trainer: {data.dbSymbol} with {data.party?.Count ?? 0} pokemons.");
+                        }
+                    }
+                }
+                catch (System.Exception e) { Debug.LogError($"Error loading trainer {file}: {e.Message}"); }
+            }
         }
         
         // Simple Audio Loader

@@ -10,8 +10,8 @@ namespace NewBark.World
     {
         [Header("Settings")]
         public string trainerId = "trainer_0";
+        public string targetTag = "Player"; // Tag check is crucial
         public float viewDistance = 5f;
-        public LayerMask playerLayer;
         public float moveSpeed = 3f;
         public float stopDistance = 1.5f;
 
@@ -30,7 +30,6 @@ namespace NewBark.World
         {
             rb = GetComponent<Rigidbody2D>();
             anim = GetComponent<Animator>();
-            
             // Load Trainer Data
             if (GameDatabase.Instance != null && GameDatabase.Instance.Trainers.ContainsKey(trainerId))
             {
@@ -55,33 +54,51 @@ namespace NewBark.World
         private void CheckForPlayer()
         {
             // Simple Raycast in look direction
-            // Ideally retrieve direction from Animator or localized state
-            // For now, assume lookDirection is updated if we were patrolling (not implemented yet)
-            
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, lookDirection, viewDistance, playerLayer);
-            if (hit.collider != null && hit.collider.CompareTag("Player"))
+            // Using RaycastAll to avoid blocking view with own collider
+
+            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, lookDirection, viewDistance);
+
+            // Sort by distance to ensure we check the closest object first
+            System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
+
+            foreach (var hit in hits)
             {
-                Debug.Log("NPC detected player!");
-                playerTarget = hit.transform;
-                isChasing = true;
-                
-                // Disable Player Control?
-                // Notify player?
-                // Exclamation mark UI?
+                // Ignore myself
+                if (hit.collider.gameObject == gameObject) continue;
+
+                // Stop at first obstacle or player
+                if (hit.collider.CompareTag(targetTag))
+                {
+                    Debug.Log("NPC detected player!");
+                    playerTarget = hit.transform;
+                    isChasing = true;
+                    return; // Found target
+                }
+                else
+                {
+                    // It hit something else.
+                    // If it's a trigger, we might want to see through it.
+                    // If it's solid, vision is blocked.
+                    if (!hit.collider.isTrigger)
+                    {
+                        // Vision Blocked by " + hit.collider.name
+                        return;
+                    }
+                }
             }
-            
+
             Debug.DrawRay(transform.position, lookDirection * viewDistance, Color.red);
         }
 
         private void MoveToPlayer()
         {
             float distance = Vector2.Distance(transform.position, playerTarget.position);
-            
+
             if (distance > stopDistance)
             {
                 Vector2 dir = (playerTarget.position - transform.position).normalized;
                 rb.linearVelocity = dir * moveSpeed;
-                
+
                 // Update Animation
                 if (anim != null)
                 {
@@ -96,10 +113,10 @@ namespace NewBark.World
                 // Stop and Battle
                 rb.linearVelocity = Vector2.zero;
                 if (anim != null) anim.SetBool("IsMoving", false);
-                
+
                 isChasing = false;
                 hasBattled = true; // Set flag immediately to prevent loop
-                
+
                 StartCoroutine(StartBattleRoutine());
             }
         }
@@ -108,7 +125,7 @@ namespace NewBark.World
         {
             // Dialog/Intro delay
             yield return new WaitForSeconds(0.5f);
-            
+
             // Trigger Encounter
             if (EncounterManager.instance != null && myData != null)
             {
@@ -119,7 +136,7 @@ namespace NewBark.World
                 Debug.LogError("Cannot start battle: Missing Manager or Data");
             }
         }
-        
+
         // Gizmos for checking view
         private void OnDrawGizmosSelected()
         {

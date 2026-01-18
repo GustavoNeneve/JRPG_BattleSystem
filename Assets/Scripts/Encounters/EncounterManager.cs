@@ -187,7 +187,7 @@ public class EncounterManager : MonoBehaviour
         }
         else if (enemiesToSpawn.Count == 0)
         {
-            Debug.Log("No enemies to spawn");
+            //Debug.Log("No enemies to spawn");
         }
     }
 

@@ -2,22 +2,31 @@
 
 ## Ferramentas de Automação
 
-### Fatiador de Sprites de Personagens (Python Script)
-**Script:** `slice_sprites.py` (na raiz do projeto, pode ser removido após uso)
+### Fatiador de Sprites de Personagens (Sprite Slicer)
+**Script:** `Assets/Editor/SpriteSlicerTool.cs`
+**Menu:** `Tools > Fatiar Sprites de Personagens`
 
-Este script Python automatiza o processo de "Slicing" (recorte) dos spritesheets de personagens modificando diretamente os arquivos `.meta`.
+Esta ferramenta automatiza o processo de "Slicing" (recorte) dos spritesheets de personagens.
 
-**Funcionalidade:**
+**Regras de Fatiamento:**
+
+1.  **Regra Especial (4x4):**
+    *   Aplica-se a arquivos cujos nomes:
+        *   Estejam no intervalo `z_b149` a `z_b212`.
+        *   Contenham `_rockclimb` ou `_surf`.
+    *   A imagem é dividida em uma grade exata de **4 colunas por 4 linhas**. O tamanho do sprite é calculado dinamicamente (`Largura/4` x `Altura/4`).
+
+2.  **Regra Padrão (32x32):**
+    *   Aplica-se a todos os outros arquivos na pasta.
+    *   A imagem é dividida em blocos fixos de **32x32 pixels**.
+
+**Funcionalidade Geral:**
 - Varre a pasta `Assets/novo projeto/graphics/characters`.
-- Lê as dimensões de cada arquivo PNG.
-- Altera o `spriteMode` para 2 (Multiple) nos arquivos `.meta`.
-- Substitui a seção `sprites:` com definições de grade de **32x32 pixels**.
-- Nomeia os sprites sequencialmente (ex: `NomeArquivo_0`, `NomeArquivo_1`, etc.).
-
-**Motivo do uso de Python:**
-Uma tentativa anterior usando `AssetDatabase` via script de Editor apresentou problemas. A edição direta dos metadados via Python provou-se mais robusta para este lote específico de arquivos.
+- Altera o `Sprite Mode` para `Multiple`.
+- Define o pivô para **Center** (Centro).
+- Nomeia os sprites sequencialmente (ex: `Nome_0`, `Nome_1`).
 
 **Como usar:**
-1. Tenha o Python instalado no sistema.
-2. Execute o script na raiz do projeto: `python slice_sprites.py`
-3. A Unity detectará as alterações nos arquivos meta e reimportará os assets automaticamente.
+1. Na Unity, clique no menu `Tools`.
+2. Selecione `Fatiar Sprites de Personagens`.
+3. Verifique o Console. Ele informará quantos arquivos foram processados e quantos foram detectados como "Especiais".

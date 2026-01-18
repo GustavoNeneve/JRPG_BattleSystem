@@ -33,6 +33,10 @@ public class EncounterManager : MonoBehaviour
     public Sprite CurrentBackground => currentEncounterData != null ? currentEncounterData.backgroundImage : null;
     public AudioClip CurrentBattleMusic => currentEncounterData != null ? currentEncounterData.battleMusic : null;
 
+    // Data Transfer for Battle
+    public List<NewBark.Runtime.PokemonInstance> CurrentEnemyParty = new List<NewBark.Runtime.PokemonInstance>();
+    public int CurrentEncounterAILevel = 1;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -87,7 +91,7 @@ public class EncounterManager : MonoBehaviour
         }
 
         // Save Music
-        var audioCtrl = FindObjectOfType<NewBark.Audio.AudioController>();
+        var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
         if (audioCtrl && audioCtrl.BgmChannel)
         {
             lastWorldMusic = audioCtrl.BgmChannel.clip;
@@ -96,8 +100,83 @@ public class EncounterManager : MonoBehaviour
         // Calculate Enemies
         GenerateEnemyList();
 
+        SceneManager.LoadScene("Main_Offline");
+    }
+
+    public void StartTrainerBattle(NewBark.Data.TrainerData trainer)
+    {
+        currentEncounterData = null; // Clear wild data
+        if (trainer != null) CurrentEncounterAILevel = trainer.ai;
+        else CurrentEncounterAILevel = 1;
+
+        // Save Position & Player (Reuse logic, maybe refactor later to 'SaveWorldState')
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject mainCamera = GameObject.Find("MainCameraWorld");
+
+        if (player)
+        {
+            preservedPlayer = player;
+            lastWorldPosition = player.transform.position;
+            lastWorldSceneName = SceneManager.GetActiveScene().name;
+            player.SetActive(false);
+        }
+        if (mainCamera)
+        {
+            preservedCamera = mainCamera;
+            mainCamera.SetActive(false);
+            var l = mainCamera.GetComponent<AudioListener>();
+            if (l) l.enabled = false;
+        }
+
+        // Save Music
+        var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
+        if (audioCtrl && audioCtrl.BgmChannel)
+        {
+            lastWorldMusic = audioCtrl.BgmChannel.clip;
+        }
+
+        // Generate Enemy List from Trainer
+        GenerateTrainerEnemyList(trainer);
+
         // Load Battle
         SceneManager.LoadScene("Main_Offline");
+    }
+
+    private void GenerateTrainerEnemyList(NewBark.Data.TrainerData trainer)
+    {
+        enemiesToSpawn.Clear();
+        CurrentEnemyParty.Clear();
+
+        if (trainer == null || trainer.party == null) return;
+
+        foreach (var member in trainer.party)
+        {
+            // Create Instance
+            var instance = new NewBark.Runtime.PokemonInstance(member.specie, member.levelSetup != null ? member.levelSetup.level : 5);
+            CurrentEnemyParty.Add(instance);
+
+            // Resolve Prefab
+            string idName = member.specie;
+            GameObject realPrefab = null;
+            if (dex_prefab.instance != null)
+            {
+                realPrefab = dex_prefab.instance.GetEnemyPrefab(idName);
+            }
+            else
+            {
+                // Fallback or Log
+                // Ideally we should have a default prefab if not found in Dex
+            }
+
+            if (realPrefab != null)
+            {
+                enemiesToSpawn.Add(realPrefab);
+            }
+            else
+            {
+                Debug.LogWarning($"Prefab for {idName} not found, skipping spawn visual but data is there.");
+            }
+        }
     }
 
     public void Update()
@@ -241,7 +320,7 @@ public class EncounterManager : MonoBehaviour
         // Restore Music
         if (lastWorldMusic != null)
         {
-            var audioCtrl = FindObjectOfType<NewBark.Audio.AudioController>();
+            var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
             if (audioCtrl)
                 audioCtrl.PlayBgmTransition(lastWorldMusic);
         }
@@ -343,7 +422,7 @@ public class EncounterManager : MonoBehaviour
         // Generally hospital has its own BGM set by the scene.
         if (lastWorldMusic != null)
         {
-            var audioCtrl = FindObjectOfType<NewBark.Audio.AudioController>();
+            var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
             if (audioCtrl)
                 audioCtrl.PlayBgmTransition(lastWorldMusic);
         }

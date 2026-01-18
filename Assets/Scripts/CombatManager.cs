@@ -88,7 +88,7 @@ public class CombatManager : NetworkBehaviour
             // Play Music
             if (EncounterManager.instance.CurrentBattleMusic != null)
             {
-                var audioCtrl = FindObjectOfType<NewBark.Audio.AudioController>();
+                var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
                 if (audioCtrl)
                 {
                     audioCtrl.PlayBgmTransition(EncounterManager.instance.CurrentBattleMusic);
@@ -126,7 +126,19 @@ public class CombatManager : NetworkBehaviour
             var enemyPrefab = enemies[i];
 
             // Instantiate at Spot Position, but keep in EnemiesParent
-            Instantiate(enemyPrefab, enemySpawnSpots[i].position, Quaternion.identity, enemiesParent);
+            GameObject spawned = Instantiate(enemyPrefab, enemySpawnSpots[i].position, Quaternion.identity, enemiesParent);
+
+            // Setup Data if available
+            if (EncounterManager.instance != null && EncounterManager.instance.CurrentEnemyParty.Count > i)
+            {
+                var behavior = spawned.GetComponent<EnemyBehaviour>();
+                if (behavior != null)
+                {
+                    var data = EncounterManager.instance.CurrentEnemyParty[i];
+                    int aiLevel = EncounterManager.instance.CurrentEncounterAILevel;
+                    behavior.Setup(data, aiLevel);
+                }
+            }
         }
     }
 

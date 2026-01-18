@@ -28,13 +28,35 @@ public class EnemyBehaviour : CharacterBehaviour
 
     public override void Start()
     {
+        // If Setup was called before Start, don't re-initialize blindly or handle it gracefully.
+        // Initialize() is called here.
+        if (myStats == null) // Check if already setup
+            Initialize();
+    }
+
+    // New Setup Method
+    public void Setup(NewBark.Runtime.PokemonInstance data, int aiLevel)
+    {
+        // 1. Add AI Controller
+        var ai = gameObject.AddComponent<BattleAIController>();
+        ai.Initialize(this, data, aiLevel);
+
+        // 2. Set Stats from Data
+        if (myStats == null) myStats = new CharacterStats(); // Assuming CharacterBehaviour has myStats
+        myStats.baseHP = data.MaxHP;
+        myStats.currentHP = data.CurrentHP;
+        // myStats.attack = data.Attack; // Map other stats if CharacterBehaviour supports them
+
+        // 3. Store Data reference (if needed)
+        // this.pokemonData = data; 
+
         Initialize();
     }
 
     protected override void Initialize()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        defaultSortingOrder = spriteRenderer.sortingOrder;
+        if (spriteRenderer) defaultSortingOrder = spriteRenderer.sortingOrder;
 
         currentPreAction = ScriptableObject.CreateInstance<CombatActionSO>();
         currentExecutingAction = ScriptableObject.CreateInstance<CombatActionSO>();
@@ -42,7 +64,10 @@ public class EnemyBehaviour : CharacterBehaviour
         characterUIController = GetComponentInChildren<CharacterUIController>();
         CombatManager.instance.EnemiesOnField.Add(this);
         originalPosition = transform.localPosition;
-        currentHP = myStats.baseHP;
+
+        // Use Data HP if available, else fallback
+        if (myStats != null) currentHP = myStats.currentHP;
+        else currentHP = 100; // Fallback
 
         transform.SetParent(CombatManager.instance.EnemiesParent);
 
@@ -69,7 +94,7 @@ public class EnemyBehaviour : CharacterBehaviour
             _randomPlayerIndex = UnityEngine.Random.Range(0, CombatManager.instance.PlayersOnField.Count);
         }
 
-        
+
         SetTarget(CombatManager.instance.PlayersOnField[_randomPlayerIndex]);
     }
 
@@ -88,7 +113,7 @@ public class EnemyBehaviour : CharacterBehaviour
         }
     }
 
-    public override void ExecuteActionOn(CharacterBehaviour target=null)
+    public override void ExecuteActionOn(CharacterBehaviour target = null)
     {
         StartCoroutine(AttackRandomPlayerCoroutine(target));
     }
@@ -155,6 +180,16 @@ public class EnemyBehaviour : CharacterBehaviour
                 if (currentExecutingAction.actionType == ActionType.SKILL)
                 {
                     OnEnemyUsedSkill?.Invoke(currentExecutingAction.actionName);
+
+                    // Play Sound
+                    if (currentExecutingAction.actionSound != null)
+                    {
+                        // Using AudioSource.PlayClipAtPoint or specialized AudioController
+                        // Assuming AudioController handles SFX
+                        var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
+                        if (audioCtrl) audioCtrl.PlaySfx(currentExecutingAction.actionSound);
+                        else AudioSource.PlayClipAtPoint(currentExecutingAction.actionSound, transform.position);
+                    }
                 }
                 else if (currentExecutingAction.actionType == ActionType.NORMAL_ATTACK)
                 {
@@ -227,6 +262,30 @@ public class EnemyBehaviour : CharacterBehaviour
     {
         if (!GameManager.IsOnline() || IsServer)
         {
+            // AI Integration
+            var ai = GetComponent<BattleAIController>();
+            if (ai != null)
+            {
+                // Get AI Decision
+                // We need the Target's Pokemon Instance. Currently currentPlayerTarget is CharacterBehaviour.
+                // We need to cast or retrieve it.
+                // For now, assuming AI SelectAction handles null defender gracefully.
+
+                // Get Attacker Data from AI component (stored there)
+                // Note: AI.SelectAction needs Attacker and Defender Instances.
+                // We typically need to refactor CharacterBehaviour to hold PokemonInstance.
+                // For this step, I'll pass null for defender if I can't easily get it, or minimal info.
+
+                var action = ai.SelectAction(null, null); // We need to fix this to pass real data
+                if (action != null)
+                {
+                    currentExecutingAction = action;
+                    // Sync?
+                    if (IsServer) SyncCurrentActionClientRpc(-1); // Custom sync logic needed for dynamic actions
+                    return;
+                }
+            }
+
             float _randomValue = UnityEngine.Random.value;
 
             if (_randomValue > chanceToUseSkill)

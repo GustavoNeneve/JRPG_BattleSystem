@@ -9,13 +9,13 @@ namespace NewBark.Support.Extensions
         {
             return obj.TryGetComponent(typeof(T), out _);
         }
-        
+
         public static GameObject SetParent(this GameObject obj, GameObject newParent)
         {
             obj.transform.parent = newParent.transform;
             return obj;
         }
-        
+
         public static GameObject SetParent(this GameObject obj, Component newParent)
         {
             obj.transform.parent = newParent.transform;
@@ -36,7 +36,7 @@ namespace NewBark.Support.Extensions
 
         public static T[] FindObjectsByTypeAndName<T>(string name) where T : Component
         {
-            var objs = GameObject.FindObjectsOfType<T>();
+            var objs = GameObject.FindObjectsByType<T>(FindObjectsSortMode.None);
             var filteredObjs = new List<T>();
 
             foreach (var obj in objs)

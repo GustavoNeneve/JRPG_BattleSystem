@@ -35,6 +35,7 @@ public class EnemyBehaviour : CharacterBehaviour
     }
 
     // New Setup Method
+    // New Setup Method
     public void Setup(NewBark.Runtime.PokemonInstance data, int aiLevel)
     {
         // 1. Add AI Controller
@@ -42,10 +43,11 @@ public class EnemyBehaviour : CharacterBehaviour
         ai.Initialize(this, data, aiLevel);
 
         // 2. Set Stats from Data
-        if (myStats == null) myStats = new CharacterStats(); // Assuming CharacterBehaviour has myStats
+        if (myStats == null) myStats = new CharacterStats();
         myStats.baseHP = data.MaxHP;
-        myStats.currentHP = data.CurrentHP;
-        // myStats.attack = data.Attack; // Map other stats if CharacterBehaviour supports them
+
+        // FIX: Assign to the protected field 'currentHP', not myStats.currentHP
+        this.currentHP = data.CurrentHP;
 
         // 3. Store Data reference (if needed)
         // this.pokemonData = data; 
@@ -66,8 +68,13 @@ public class EnemyBehaviour : CharacterBehaviour
         originalPosition = transform.localPosition;
 
         // Use Data HP if available, else fallback
-        if (myStats != null) currentHP = myStats.currentHP;
-        else currentHP = 100; // Fallback
+        // If Setup was called, 'currentHP' is already set.
+        // We ensure it is valid.
+        if (currentHP <= 0)
+        {
+            if (myStats != null && myStats.baseHP > 0) currentHP = myStats.baseHP;
+            else currentHP = 100;
+        }
 
         transform.SetParent(CombatManager.instance.EnemiesParent);
 

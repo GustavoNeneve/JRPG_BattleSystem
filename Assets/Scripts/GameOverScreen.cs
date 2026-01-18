@@ -51,4 +51,16 @@ public class GameOverScreen : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ReturnToHospital()
+    {
+        if (EncounterManager.instance != null)
+        {
+            EncounterManager.instance.EndEncounter(false);
+        }
+        else
+        {
+            SceneManager.LoadScene(0); // Main Menu or similar fallback
+        }
+    }
 }

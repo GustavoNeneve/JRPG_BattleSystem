@@ -445,8 +445,8 @@ public class CombatManager : NetworkBehaviour
         {
             GameManager.instance.EndGame();
 
-            if (EncounterManager.instance != null)
-                EncounterManager.instance.EndEncounter(true);
+            // if (EncounterManager.instance != null)
+            //    EncounterManager.instance.EndEncounter(true);
         }
     }
 
@@ -470,14 +470,18 @@ public class CombatManager : NetworkBehaviour
         {
             yield return new WaitForSeconds(1);
 
-            if (EncounterManager.instance != null)
-            {
-                EncounterManager.instance.EndEncounter(false);
-            }
-            else
-            {
+            // Always show Game Over screen. The UI will handle "Continue/Hospital".
+            if (gameOverScreen != null)
                 gameOverScreen.ShowGameOverScreen();
-            }
+
+            // if (EncounterManager.instance != null)
+            // {
+            //     EncounterManager.instance.EndEncounter(false);
+            // }
+            // else
+            // {
+            //     gameOverScreen.ShowGameOverScreen();
+            // }
         }
     }
 

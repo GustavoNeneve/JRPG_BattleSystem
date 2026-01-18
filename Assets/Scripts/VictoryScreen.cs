@@ -20,9 +20,11 @@ public class VictoryScreen : MonoBehaviour
     [Header("BUTTONS")]
     [SerializeField] GameObject restartButton;
     [SerializeField] GameObject quitButton;
+    [SerializeField] GameObject continueButton; // New button for RPG flow
 
     CanvasGroup restartButtonCanvasGroup;
     CanvasGroup quittButtonCanvasGroup;
+    CanvasGroup continueButtonCanvasGroup;
 
     private void OnEnable()
     {
@@ -37,14 +39,27 @@ public class VictoryScreen : MonoBehaviour
 
     void Start()
     {
-        restartButton.SetActive(false);
-        quitButton.SetActive(false);
+        if (restartButton) restartButton.SetActive(false);
+        if (quitButton) quitButton.SetActive(false);
+        if (continueButton) continueButton.SetActive(false);
 
-        restartButton.GetComponent<Button>().onClick.AddListener(GameManager.instance.RestartCurrentScene);
-        quitButton.GetComponent<Button>().onClick.AddListener(GameManager.instance.QuitGame);
+        if (restartButton) restartButton.GetComponent<Button>().onClick.AddListener(GameManager.instance.RestartCurrentScene);
+        if (quitButton) quitButton.GetComponent<Button>().onClick.AddListener(GameManager.instance.QuitGame);
 
-        restartButtonCanvasGroup = restartButton.GetComponent<CanvasGroup>();
-        quittButtonCanvasGroup = quitButton.GetComponent<CanvasGroup>();
+        if (continueButton)
+        {
+            continueButton.GetComponent<Button>().onClick.AddListener(() =>
+            {
+                if (EncounterManager.instance != null)
+                    EncounterManager.instance.EndEncounter(true);
+                else
+                    GameManager.instance.LoadMenuScene(); // Fallback
+            });
+            continueButtonCanvasGroup = continueButton.GetComponent<CanvasGroup>();
+        }
+
+        if (restartButton) restartButtonCanvasGroup = restartButton.GetComponent<CanvasGroup>();
+        if (quitButton) quittButtonCanvasGroup = quitButton.GetComponent<CanvasGroup>();
 
     }
 
@@ -57,6 +72,9 @@ public class VictoryScreen : MonoBehaviour
 
     IEnumerator ShowScreenCoroutine()
     {
+        if (EncounterManager.instance != null)
+            EncounterManager.instance.PreloadWorldScene();
+
         yield return new WaitForSeconds(2.75f);
         screen.SetActive(true);
 
@@ -89,13 +107,31 @@ public class VictoryScreen : MonoBehaviour
         if (GameManager.IsOnline() && !NetworkManager.Singleton.IsServer)
             yield break;
 
-        restartButtonCanvasGroup.alpha = 0;
-        restartButton.SetActive(true);
-        quittButtonCanvasGroup.alpha = 0;
-        quitButton.SetActive(true);
-        restartButtonCanvasGroup.DOFade(1, .25f);
-        quittButtonCanvasGroup.DOFade(1, .25f);
-        EventSystem.current.SetSelectedGameObject(restartButton);
+        // RPG Flow: If EncounterManager exists, show Continue.
+        if (EncounterManager.instance != null && continueButton != null)
+        {
+            continueButtonCanvasGroup.alpha = 0;
+            continueButton.SetActive(true);
+            continueButtonCanvasGroup.DOFade(1, .25f);
+            EventSystem.current.SetSelectedGameObject(continueButton);
+        }
+        else
+        {
+            // Default Flow (Arcade/Roguelite)
+            if (restartButton)
+            {
+                restartButtonCanvasGroup.alpha = 0;
+                restartButton.SetActive(true);
+                restartButtonCanvasGroup.DOFade(1, .25f);
+                EventSystem.current.SetSelectedGameObject(restartButton);
+            }
+            if (quitButton)
+            {
+                quittButtonCanvasGroup.alpha = 0;
+                quitButton.SetActive(true);
+                quittButtonCanvasGroup.DOFade(1, .25f);
+            }
+        }
     }
 
     void ShowXPEarned()

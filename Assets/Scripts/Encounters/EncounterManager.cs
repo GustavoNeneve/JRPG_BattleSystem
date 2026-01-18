@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using NewBark.Support;
+using UnityEngine.Rendering.Universal;
 
 public class EncounterManager : MonoBehaviour
 {
@@ -16,6 +17,12 @@ public class EncounterManager : MonoBehaviour
 
     // Keep reference to the camera we disabled
     private GameObject preservedCamera;
+
+    // Keep reference to the player we disabled
+    private GameObject preservedPlayer;
+
+    // Async loading operation
+    private AsyncOperation preloadOperation;
 
     [Header("Defaults")]
     [Tooltip("Where to go if defeated")]
@@ -59,6 +66,7 @@ public class EncounterManager : MonoBehaviour
 
         if (player)
         {
+            preservedPlayer = player;
             lastWorldPosition = player.transform.position;
             lastWorldSceneName = SceneManager.GetActiveScene().name;
             player.SetActive(false);
@@ -154,15 +162,43 @@ public class EncounterManager : MonoBehaviour
         }
     }
 
+    public void PreloadWorldScene()
+    {
+        if (!string.IsNullOrEmpty(lastWorldSceneName))
+        {
+            StartCoroutine(PreloadCoroutine());
+        }
+    }
+
+    private System.Collections.IEnumerator PreloadCoroutine()
+    {
+        preloadOperation = SceneManager.LoadSceneAsync(lastWorldSceneName);
+        preloadOperation.allowSceneActivation = false;
+        yield return null;
+    }
+
     public void EndEncounter(bool playerWon)
     {
         if (playerWon)
         {
-            // Return to world
-            SceneManager.LoadScene(lastWorldSceneName);
-            // We need a way to set position after load. 
-            // We can subscribe to scene loaded event or use a "PlayerSpawner" in the world scene.
-            SceneManager.sceneLoaded += OnSceneLoadedVictory;
+            // If preloading is active, finish it.
+            if (preloadOperation != null)
+            {
+                // Subscribe callback first to ensure it catches the load event (though it might have been safer to sub before starting async... 
+                // but SceneLoaded event is global, so it fires when scene finishes loading).
+                // Actually, ensure we don't sub multiple times.
+                SceneManager.sceneLoaded -= OnSceneLoadedVictory;
+                SceneManager.sceneLoaded += OnSceneLoadedVictory;
+
+                preloadOperation.allowSceneActivation = true;
+                preloadOperation = null;
+            }
+            else
+            {
+                // Return to world normal load
+                SceneManager.LoadScene(lastWorldSceneName);
+                SceneManager.sceneLoaded += OnSceneLoadedVictory;
+            }
         }
         else
         {
@@ -179,20 +215,16 @@ public class EncounterManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoadedVictory;
 
         // Restore Player
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject mainCamera = GameObject.Find("MainCameraWorld");
-
-
-        // If not found, maybe it's disabled? Try finding by type (slower but works for disabled if using Resources/etc, but FindObjectOfType doesn't working on inactive).
-        // If the player was destroyed and reloaded, it should be found.
-        // If it was persistent and disabled, we have an issue.
-        // Assuming naive reload for now.
+        GameObject player = preservedPlayer;
+        if (player == null) player = GameObject.FindGameObjectWithTag("Player");
 
         if (player)
         {
             player.transform.position = lastWorldPosition;
             player.SetActive(true); // Ensure player is re-enabled
         }
+
+        GameObject mainCamera = GameObject.Find("MainCameraWorld");
 
         if (preservedCamera != null)
         {
@@ -204,21 +236,7 @@ public class EncounterManager : MonoBehaviour
             mainCamera.SetActive(true);
         }
 
-        // Cleanup multiple AudioListeners/Cameras
-        var listeners = FindObjectsOfType<AudioListener>();
-        if (listeners.Length > 1)
-        {
-            Debug.LogWarning($"[EncounterManager] Found {listeners.Length} AudioListeners. Cleaning up duplicates...");
-            foreach (var l in listeners)
-            {
-                // If we have a preferred 'mainCamera', destroy others.
-                // If mainCamera is the one we hold, keep it.
-                if (mainCamera != null && l.gameObject != mainCamera)
-                {
-                    Destroy(l.gameObject); // Destroy the duplicate camera object entirely? Or just component? Usually object is duplicate.
-                }
-            }
-        }
+        CleanupDuplicates(mainCamera);
 
         // Restore Music
         if (lastWorldMusic != null)
@@ -229,16 +247,86 @@ public class EncounterManager : MonoBehaviour
         }
     }
 
+    private void CleanupDuplicates(GameObject mainCamera)
+    {
+        if (mainCamera == null) return;
+
+        // 1. Cleanup multiple AudioListeners/Cameras
+        var listeners = FindObjectsByType<AudioListener>(FindObjectsSortMode.None);
+        if (listeners.Length > 1)
+        {
+            Debug.LogWarning($"[EncounterManager] Found {listeners.Length} AudioListeners. Cleaning up duplicates...");
+            foreach (var l in listeners)
+            {
+                if (l.gameObject != mainCamera)
+                {
+                    // If the object is a Camera, likely we want to destroy the whole duplicate camera object.
+                    if (l.GetComponent<Camera>() != null)
+                    {
+                        Debug.Log($"[EncounterManager] Destroying duplicate Camera object: {l.gameObject.name}");
+                        Destroy(l.gameObject);
+                    }
+                    else
+                    {
+                        // It's likely a manager (GameController) with a stray AudioListener. 
+                        // Just destroy the component, don't kill the manager!
+                        Debug.Log($"[EncounterManager] Removing stray AudioListener component from: {l.gameObject.name}");
+                        Destroy(l);
+                    }
+                }
+            }
+        }
+
+        // 2. Cleanup multiple Global Lights (URP 2D)
+        var lights = FindObjectsByType<Light2D>(FindObjectsSortMode.None);
+        List<Light2D> globalLights = new List<Light2D>();
+        foreach (var checkLight in lights)
+        {
+            if (checkLight.lightType == Light2D.LightType.Global)
+                globalLights.Add(checkLight);
+        }
+
+        if (globalLights.Count > 1)
+        {
+            // If we have duplicates, we usually want to keep the ones in the current scene
+            // and destroy survivors from DontDestroyOnLoad that aren't expected.
+            foreach (var gl in globalLights)
+            {
+                // PROTECT THE PLAYER AND ESSENTIALS!
+                // If this light belongs to the Player (or children), OR is a known essential light, DO NOT DESTROY IT.
+                if (gl.CompareTag("Player")
+                    || (preservedPlayer != null && gl.transform.IsChildOf(preservedPlayer.transform))
+                    || gl.gameObject.name == "Player Light"
+                    || gl.gameObject.name == "World Normal Light")
+                {
+                    continue;
+                }
+
+                // If it's a global light and it's in the DDOL scene, it's a candidate for removal 
+                // UNLESS it's the only one (but we are in Count > 1).
+                if (gl.gameObject.scene.name == "DontDestroyOnLoad")
+                {
+                    Debug.LogWarning($"[EncounterManager] Destroying persistent Global Light that might be causing conflicts: {gl.gameObject.name}");
+                    Destroy(gl.gameObject);
+                }
+            }
+        }
+    }
+
     private void OnSceneLoadedDefeat(Scene scene, LoadSceneMode mode)
     {
         SceneManager.sceneLoaded -= OnSceneLoadedDefeat;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject mainCamera = GameObject.Find("MainCameraWorld");
+        // Restore Player
+        GameObject player = preservedPlayer;
+        if (player == null) player = GameObject.FindGameObjectWithTag("Player");
+
         if (player)
         {
             player.transform.position = hospitalPosition;
             player.SetActive(true); // Ensure player is re-enabled
         }
+
+        GameObject mainCamera = GameObject.Find("MainCameraWorld");
         if (preservedCamera != null)
         {
             preservedCamera.SetActive(true);
@@ -249,19 +337,7 @@ public class EncounterManager : MonoBehaviour
             mainCamera.SetActive(true);
         }
 
-        // Cleanup multiple AudioListeners
-        var listeners = FindObjectsOfType<AudioListener>();
-        if (listeners.Length > 1)
-        {
-            foreach (var l in listeners)
-            {
-                if (mainCamera != null && l.gameObject != mainCamera)
-                {
-                    Destroy(l.gameObject);
-                }
-            }
-        }
-
+        CleanupDuplicates(mainCamera);
 
         // Restore Music (optional, maybe hospital has its own music)
         // Generally hospital has its own BGM set by the scene.

@@ -49,16 +49,6 @@ public class dex_prefab : MonoBehaviour
         }
     }
 
-    public void Update()
-    {
-        //se esse objeto for destruido, recria ele
-        if (this == null)
-        {
-            InitializeDatabase();
-            UnityEngine.Debug.Log("dex_prefab recriado");
-        }
-    }
-
     public GameObject GetEnemyPrefab(string enemyName)
     {
         if (enemyLookup.TryGetValue(enemyName, out var prefab))

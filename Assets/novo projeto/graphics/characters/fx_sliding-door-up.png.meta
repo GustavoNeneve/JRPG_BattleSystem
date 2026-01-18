@@ -3,7 +3,7 @@ guid: bc49c77fde123ac40a74095cdbdfa7f3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,436 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: f68fe6268cda42d4b9cffa775fb0bc13
+      internalID: 4120245384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f97916df3774583b2bbb8939309a3ac
+      internalID: 578190290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bed0efbeb514704b83bfefd30b2e4e1
+      internalID: 865190723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d62c63b9c54b4082f6bcbffc98584d
+      internalID: 181411960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246b01242d404ee4a23063407de92f01
+      internalID: 1620466078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7914d562393444dc9596fff461788e9e
+      internalID: 3565334284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd92581af684fa897f3a7e4662dbedc
+      internalID: 3673691169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87e10295582487a956d5b8a8db3e822
+      internalID: 359176710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0bae7bd7aa4a989c759f4a63a6836b
+      internalID: 2786623292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b0162b868647129ace55002d30761c
+      internalID: 1816544861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c317aa185f39428d97ca8d5653d39943
+      internalID: 1105012909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50642d0aa19449a8a87a12af99ced295
+      internalID: 2998788542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4539c9c4274855b94c7eb9ea9314a9
+      internalID: 3662911869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005df36b550b446c930d281b29107317
+      internalID: 651605128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371fde198094461bb519e945abd875f4
+      internalID: 3012850867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94eada00db6645c094f7dd9996036298
+      internalID: 1614410720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e0cf5ae04d43f08a1d9d0b137c59fd
+      internalID: 3334841780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6097dadf1c465692ff1db35064977f
+      internalID: 3291794109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86d4b2e6aae4ea48e0e2896999da66b
+      internalID: 3236398109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_sliding-door-up_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91658fb878cd412d83acbd7714749cb8
+      internalID: 2762078769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 6549b4239cce460890bb672abde9e3e0
-      internalID: 1735422361
+      internalID: -7544440788638320129
       vertices: []
       indices: 
       edges: []
@@ -117,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 97f100b904f94d9495b8c65f757f7657
-      internalID: 2781021568
+      internalID: -7497468970146368426
       vertices: []
       indices: 
       edges: []
@@ -139,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f86636d113854fbb81106c78534b6c8d
-      internalID: 4111124783
+      internalID: -3482000380643622425
       vertices: []
       indices: 
       edges: []
@@ -161,7 +620,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3109f377548143869cfc1918159bdf3f
-      internalID: 191751145
+      internalID: -8621805288685404852
       vertices: []
       indices: 
       edges: []
@@ -183,7 +642,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a2f2c97d71fe44a18c5c1e07d27de9ca
-      internalID: 962135364
+      internalID: 3764068198026126385
       vertices: []
       indices: 
       edges: []
@@ -205,7 +664,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a2cf2851e98a49419965b8dfa3ad38b5
-      internalID: 716510403
+      internalID: -5349521148020065838
       vertices: []
       indices: 
       edges: []
@@ -227,7 +686,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 24081f0c37424288b715783481a834fd
-      internalID: 2080913300
+      internalID: -2482574406634677412
       vertices: []
       indices: 
       edges: []
@@ -249,7 +708,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3e8f57f33ea14c85bc59b9999fb7f468
-      internalID: 2387242310
+      internalID: 4370152342260831776
       vertices: []
       indices: 
       edges: []
@@ -271,7 +730,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9ef4737352b74dba9d514af4c7de2a24
-      internalID: 2721371796
+      internalID: 8935778549146891030
       vertices: []
       indices: 
       edges: []
@@ -293,7 +752,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0379c0cccf8048b39783d8d8648e84eb
-      internalID: 3492120499
+      internalID: 6230978910080506558
       vertices: []
       indices: 
       edges: []
@@ -315,7 +774,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 76e67239d8424369950b01c3fd89eb28
-      internalID: 3670667621
+      internalID: -558753453849730764
       vertices: []
       indices: 
       edges: []
@@ -337,7 +796,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 86a36153121e47319bc25031be2965e8
-      internalID: 1673831102
+      internalID: -6511163123665669439
       vertices: []
       indices: 
       edges: []
@@ -359,7 +818,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8129458ca90043ec8f49931dcf46d034
-      internalID: 1979752686
+      internalID: -2443215541667306281
       vertices: []
       indices: 
       edges: []
@@ -381,7 +840,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 478746d11df7466ebbd80d99c86472bf
-      internalID: 3760764228
+      internalID: 7225595938128885809
       vertices: []
       indices: 
       edges: []
@@ -403,7 +862,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 69ba3d8a2b794870a4df466355f743fd
-      internalID: 714513922
+      internalID: 5364236303491727390
       vertices: []
       indices: 
       edges: []
@@ -425,7 +884,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 13ee9dcd2fd941ce9d8180a8f042e3b0
-      internalID: 4281795408
+      internalID: 68963326378980545
       vertices: []
       indices: 
       edges: []
@@ -447,7 +906,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eb8ca1433e5a48c59531af9f235dec77
-      internalID: 353767998
+      internalID: -8227748540640395791
       vertices: []
       indices: 
       edges: []
@@ -469,7 +928,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3d445b084d6c4707bde8f1d1aac48085
-      internalID: 2442619356
+      internalID: -3184862069847543164
       vertices: []
       indices: 
       edges: []
@@ -491,7 +950,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 91a45e0c45c148c6a22351c76f31cf26
-      internalID: 3761079344
+      internalID: 8280097942658517782
       vertices: []
       indices: 
       edges: []
@@ -513,11 +972,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c7301f9c0179476e8d70a950e12808d1
-      internalID: 1558172801
+      internalID: -1466114297044036040
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -527,9 +988,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx_sliding-door-up_0: -7544440788638320129
+      fx_sliding-door-up_1: -7497468970146368426
+      fx_sliding-door-up_10: -558753453849730764
+      fx_sliding-door-up_11: -6511163123665669439
+      fx_sliding-door-up_12: -2443215541667306281
+      fx_sliding-door-up_13: 7225595938128885809
+      fx_sliding-door-up_14: 5364236303491727390
+      fx_sliding-door-up_15: 68963326378980545
+      fx_sliding-door-up_16: -8227748540640395791
+      fx_sliding-door-up_17: -3184862069847543164
+      fx_sliding-door-up_18: 8280097942658517782
+      fx_sliding-door-up_19: -1466114297044036040
+      fx_sliding-door-up_2: -3482000380643622425
+      fx_sliding-door-up_3: -8621805288685404852
+      fx_sliding-door-up_4: 3764068198026126385
+      fx_sliding-door-up_5: -5349521148020065838
+      fx_sliding-door-up_6: -2482574406634677412
+      fx_sliding-door-up_7: 4370152342260831776
+      fx_sliding-door-up_8: 8935778549146891030
+      fx_sliding-door-up_9: 6230978910080506558
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 65d17a4c9ca4e81458c15e2f52d6ecc0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,172 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: bc45ec101bf24c36b0fb68c2a878ca48
+      internalID: 985536525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70396ecf59234d879d9ea307e95d417d
+      internalID: 811827562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017b9a338ea3475f8736106bfe2bb13c
+      internalID: 2507869693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbf1f95d5fe406e938f900d3787da91
+      internalID: 2855346164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325a5ef502464529b073024fb9673214
+      internalID: 2578494666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7c34ac2c4247f2b47c59dec7cf3a98
+      internalID: 2938804096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcec7af9854c40449b33b94b7db76bf1
+      internalID: 4236204640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_computer-screen_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0012afa1d68a4a3499cb386166a77887
+      internalID: 2434692081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: e16f1644dc96403bb14ca9b18eb9f457
-      internalID: 72580137
+      internalID: -3663340133830526948
       vertices: []
       indices: 
       edges: []
@@ -117,7 +312,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 95893d3197cf41aa959481da924c6193
-      internalID: 2296191989
+      internalID: -5020349552452467812
       vertices: []
       indices: 
       edges: []
@@ -139,7 +334,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f2e622b2f4644debbd97bf298c9eb6c7
-      internalID: 4288137489
+      internalID: -1143707448287878419
       vertices: []
       indices: 
       edges: []
@@ -161,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 67d5ce6bae5f40349fe4121f34dae3d3
-      internalID: 3133958709
+      internalID: -4800474096973481004
       vertices: []
       indices: 
       edges: []
@@ -183,7 +378,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5e5638c22ee8440ca32e913655c79e2f
-      internalID: 2205299524
+      internalID: -6609127154959319505
       vertices: []
       indices: 
       edges: []
@@ -205,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cb6e5e0f04ac461d864528ffd5c86974
-      internalID: 3879325121
+      internalID: 6945406269277480890
       vertices: []
       indices: 
       edges: []
@@ -227,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f62fff1c3ca645358b39eb99aae89f14
-      internalID: 2025807452
+      internalID: 5531376023475574074
       vertices: []
       indices: 
       edges: []
@@ -249,11 +444,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ef9b56e3517f4a2daa55a81c7e474ef4
-      internalID: 4035551215
+      internalID: 372279610529451841
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -263,9 +460,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx_computer-screen_0: -3663340133830526948
+      fx_computer-screen_1: -5020349552452467812
+      fx_computer-screen_2: -1143707448287878419
+      fx_computer-screen_3: -4800474096973481004
+      fx_computer-screen_4: -6609127154959319505
+      fx_computer-screen_5: 6945406269277480890
+      fx_computer-screen_6: 5531376023475574074
+      fx_computer-screen_7: 372279610529451841
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

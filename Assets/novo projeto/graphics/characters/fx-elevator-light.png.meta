@@ -3,7 +3,7 @@ guid: f09d3f6bab6bf1b46801e1799efe1c19
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,876 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: d71b25fcf597427ea81d9597d1bc8592
+      internalID: 2486188380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20bc9a9e29c438eab5217537207eee0
+      internalID: 4217512209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27c21b91a1746889fad189086ef53e8
+      internalID: 1280649089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99957292b32a4a77b2ec99d13e6ad935
+      internalID: 1396010857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2457b65dcb7e494b9cb504a642231b8d
+      internalID: 1711451361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ff4d036ebd4444bede05d3f7738b45
+      internalID: 42831702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc4a1a4bed84dc68b8abb54b815739b
+      internalID: 562096340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9222a2f28d2f4ff8ba1e7102291f2df9
+      internalID: 910977897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b489a103fd0f4d8fab1d2f3e1a7e525a
+      internalID: 1401003334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c380fdac2d884093b85d24fb6e889b5d
+      internalID: 1687893544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8ccc3a65834c7b9cd5d020c57d4248
+      internalID: 45832140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aac145e399247199a852773788e3c7a
+      internalID: 3371544883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0aa35af841405ca4c4b1618319fd23
+      internalID: 345609461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9c56fa98fd462d9f37351cab307e78
+      internalID: 3108640530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08987762190a4e478bdf23f8ed4b1f2d
+      internalID: 2540493645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933c7e3ff4714116aea9750205a780c1
+      internalID: 1973408904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab90f99dacc4b17a0a4a28947cb8d59
+      internalID: 1474571808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafd70f0e6de47519edc13088f9e5600
+      internalID: 1770341912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa8974578744d5bbbf6a7712cc6ddfd
+      internalID: 4138623234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731f5567d21047d084deaaf5a54f87d8
+      internalID: 2071954677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91d76548d5e4e269786eff6b4520c7f
+      internalID: 934661302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc3fd7bcec741f6a5ce026dbe25a6e1
+      internalID: 2869749537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e1116dbf0440c58e45fea99b26003e
+      internalID: 4178775306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91b677bfe2a48c08321161b24ec52ad
+      internalID: 2354294623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b050deb347048f7a8fe3af74e84fc0f
+      internalID: 886728442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8490308feb5a4969bc56c28502a1af22
+      internalID: 302624752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c348c4ee45cb46e8860550493035ab8a
+      internalID: 3458179616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a0cd656aa54df1803b5cdee9d35cde
+      internalID: 764038602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543e74b8114b4983b167898d50fe5d66
+      internalID: 2279213681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8322e2d7fe444c68759353515db0603
+      internalID: 1062863183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf2fdf7ed0a4d89b3387c7d853de455
+      internalID: 2995199324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34ff370c341845aaafbac2d720d19da7
+      internalID: 2136374524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b707cd1b57c484998ab09015736d978
+      internalID: 3730836034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfef71f5325b4135b856649b63664cdd
+      internalID: 522008961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699fa984632041888e7df1cad29f19c5
+      internalID: 309698463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426d924c5ea54582ab5e5fdcace477d8
+      internalID: 3941617778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 830e80e6a18d45fa9de1970035549220
+      internalID: 1864681990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb21e9b5539a4e5694eb38df326c66ac
+      internalID: 2933076575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661b2f898d94450e95f3f00a4b771e75
+      internalID: 2443096661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-light_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5f15d4128a471c89b8a107fc51b596
+      internalID: 3400048904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: f0f7007f5f3840f69aaae8ce6437db05
-      internalID: 3709323844
+      internalID: -4223342030669919036
       vertices: []
       indices: 
       edges: []
@@ -117,7 +1016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c576f670f7ad4ce7bf3184404a917a2a
-      internalID: 1889661699
+      internalID: -2414992398523715471
       vertices: []
       indices: 
       edges: []
@@ -139,7 +1038,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7023d2c9cc7440e5a7d2c67b36ea985c
-      internalID: 1122484745
+      internalID: 1232577438206483683
       vertices: []
       indices: 
       edges: []
@@ -161,7 +1060,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dde6c4bf7bd44763a7a94f230848e728
-      internalID: 340576886
+      internalID: 1969143850025012561
       vertices: []
       indices: 
       edges: []
@@ -183,7 +1082,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2332628b187c4617a6b1d5f59eeaec86
-      internalID: 847770007
+      internalID: -4054072425839188107
       vertices: []
       indices: 
       edges: []
@@ -205,7 +1104,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c53af79a2d034a60be3a96954ec8fe2d
-      internalID: 3642852791
+      internalID: -1135678671178936134
       vertices: []
       indices: 
       edges: []
@@ -227,7 +1126,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4e09963d7fd14d79b5e7f6fa5db20824
-      internalID: 2712751594
+      internalID: -1800872857178963635
       vertices: []
       indices: 
       edges: []
@@ -249,7 +1148,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 048efe5a36664b47b4acb60e3d852d15
-      internalID: 3679912037
+      internalID: 8531779513120213785
       vertices: []
       indices: 
       edges: []
@@ -271,7 +1170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4539e6f92f5c40e49dec9e5aafc5621c
-      internalID: 3720484876
+      internalID: -6333736242937540148
       vertices: []
       indices: 
       edges: []
@@ -293,7 +1192,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7dda3ddbf89b47f5b329fa3793f305db
-      internalID: 1763679025
+      internalID: 6801070540620721889
       vertices: []
       indices: 
       edges: []
@@ -315,7 +1214,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 671df8ce1aca498881f3203c81a67899
-      internalID: 12523759
+      internalID: 8952951991223447466
       vertices: []
       indices: 
       edges: []
@@ -337,7 +1236,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2a718a45a259450e8fe9c532a2d720e3
-      internalID: 421517974
+      internalID: -3475798517465801355
       vertices: []
       indices: 
       edges: []
@@ -359,7 +1258,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2bfe6f1d652849348e12ad527ab648b6
-      internalID: 4078266796
+      internalID: 2413978346582346658
       vertices: []
       indices: 
       edges: []
@@ -381,7 +1280,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c6cab3b993df4364b0d693dafb5cdb28
-      internalID: 3460346501
+      internalID: -3037276470979882647
       vertices: []
       indices: 
       edges: []
@@ -403,7 +1302,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a72cb95418a54cf8b3465ab0827e2b64
-      internalID: 497534685
+      internalID: 651629005193813199
       vertices: []
       indices: 
       edges: []
@@ -425,7 +1324,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 39a337768b554580800cff61f79bd44b
-      internalID: 4057759990
+      internalID: -560905399812329051
       vertices: []
       indices: 
       edges: []
@@ -447,7 +1346,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4b1afb5d3fe0400d8f0e8c3c43347c71
-      internalID: 4109714023
+      internalID: 4423115202984152161
       vertices: []
       indices: 
       edges: []
@@ -469,7 +1368,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c504b6a7e927458a99eba08fb0c1bfaa
-      internalID: 937060526
+      internalID: 8468202506971822444
       vertices: []
       indices: 
       edges: []
@@ -491,7 +1390,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 50f5365db6df4b5689b38ea84e9ae7b9
-      internalID: 441984663
+      internalID: 7060748241568686031
       vertices: []
       indices: 
       edges: []
@@ -513,7 +1412,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 25c4c519c4444774ac70f75f34bb73df
-      internalID: 2559288175
+      internalID: -7399789895337317324
       vertices: []
       indices: 
       edges: []
@@ -535,7 +1434,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a24d017ea6d34556befb61d713dead39
-      internalID: 1678103107
+      internalID: -1681722515101963764
       vertices: []
       indices: 
       edges: []
@@ -557,7 +1456,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 80bd231ad05345fcaa99c4cded26fa26
-      internalID: 1495939828
+      internalID: -3250260696622839404
       vertices: []
       indices: 
       edges: []
@@ -579,7 +1478,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aa688630d27b4d92863cdea5ed6d4c7c
-      internalID: 1160559335
+      internalID: -191481038733442146
       vertices: []
       indices: 
       edges: []
@@ -601,7 +1500,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c1dc32f4330942eba7cee106c696dadd
-      internalID: 200598106
+      internalID: -3123910139630198023
       vertices: []
       indices: 
       edges: []
@@ -623,7 +1522,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1eaffa1ff2cc4f319510cf1aae736970
-      internalID: 1319417293
+      internalID: 1781632580144208057
       vertices: []
       indices: 
       edges: []
@@ -645,7 +1544,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bfeb49709c7e4e74a27b556ecfa87a91
-      internalID: 3667629502
+      internalID: 5929981971054660233
       vertices: []
       indices: 
       edges: []
@@ -667,7 +1566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 84656f9950224c3eb6992377d616e20c
-      internalID: 572530377
+      internalID: -6669249437456095144
       vertices: []
       indices: 
       edges: []
@@ -689,7 +1588,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a98d5b0902074110bfad5e0500913e54
-      internalID: 771797892
+      internalID: 6665849590441853145
       vertices: []
       indices: 
       edges: []
@@ -711,7 +1610,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a9a46f653e34d268037c2e95cfa3269
-      internalID: 452252521
+      internalID: -8270863935764599726
       vertices: []
       indices: 
       edges: []
@@ -733,7 +1632,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 15d57f8de62b4fb8a3001cfe9aedc124
-      internalID: 3967820629
+      internalID: 7973332870827343248
       vertices: []
       indices: 
       edges: []
@@ -755,7 +1654,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ad3cad9811284fbeb0975bc3f54d0a42
-      internalID: 3520309393
+      internalID: -1886629981852935543
       vertices: []
       indices: 
       edges: []
@@ -777,7 +1676,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 52e4fad753314be4aab07ac85ad71932
-      internalID: 3348984575
+      internalID: -3071227750127978870
       vertices: []
       indices: 
       edges: []
@@ -799,7 +1698,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6497a6a92fac4aa28c6406ff3e1c1bd4
-      internalID: 3799894703
+      internalID: 5093920430596397446
       vertices: []
       indices: 
       edges: []
@@ -821,7 +1720,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 914939aeeab142d3bc658fbfdb670a97
-      internalID: 1212044483
+      internalID: -4805058574978644398
       vertices: []
       indices: 
       edges: []
@@ -843,7 +1742,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eac8324183e147fd9d87f6f2c172cd44
-      internalID: 1108155334
+      internalID: 3837394749006533893
       vertices: []
       indices: 
       edges: []
@@ -865,7 +1764,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a047c2faaa0a4ad6a389f79b32278411
-      internalID: 996730634
+      internalID: 5154818510875886249
       vertices: []
       indices: 
       edges: []
@@ -887,7 +1786,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 313fe32bc7ec4f4b9c7eb8f3a8a95621
-      internalID: 1118061756
+      internalID: 6440940469637988749
       vertices: []
       indices: 
       edges: []
@@ -909,7 +1808,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 676541490967450fa8464aea14b05e2d
-      internalID: 182358527
+      internalID: 810918795760465460
       vertices: []
       indices: 
       edges: []
@@ -931,7 +1830,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c8c04e77da3449f6abfda939ee3349ab
-      internalID: 252575397
+      internalID: -160453570230913032
       vertices: []
       indices: 
       edges: []
@@ -953,11 +1852,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f7963bdc94a842c2986022b5c4aa2a7d
-      internalID: 3012475900
+      internalID: -2368003492663459892
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -967,9 +1868,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx-elevator-light_0: -4223342030669919036
+      fx-elevator-light_1: -2414992398523715471
+      fx-elevator-light_10: 8952951991223447466
+      fx-elevator-light_11: -3475798517465801355
+      fx-elevator-light_12: 2413978346582346658
+      fx-elevator-light_13: -3037276470979882647
+      fx-elevator-light_14: 651629005193813199
+      fx-elevator-light_15: -560905399812329051
+      fx-elevator-light_16: 4423115202984152161
+      fx-elevator-light_17: 8468202506971822444
+      fx-elevator-light_18: 7060748241568686031
+      fx-elevator-light_19: -7399789895337317324
+      fx-elevator-light_2: 1232577438206483683
+      fx-elevator-light_20: -1681722515101963764
+      fx-elevator-light_21: -3250260696622839404
+      fx-elevator-light_22: -191481038733442146
+      fx-elevator-light_23: -3123910139630198023
+      fx-elevator-light_24: 1781632580144208057
+      fx-elevator-light_25: 5929981971054660233
+      fx-elevator-light_26: -6669249437456095144
+      fx-elevator-light_27: 6665849590441853145
+      fx-elevator-light_28: -8270863935764599726
+      fx-elevator-light_29: 7973332870827343248
+      fx-elevator-light_3: 1969143850025012561
+      fx-elevator-light_30: -1886629981852935543
+      fx-elevator-light_31: -3071227750127978870
+      fx-elevator-light_32: 5093920430596397446
+      fx-elevator-light_33: -4805058574978644398
+      fx-elevator-light_34: 3837394749006533893
+      fx-elevator-light_35: 5154818510875886249
+      fx-elevator-light_36: 6440940469637988749
+      fx-elevator-light_37: 810918795760465460
+      fx-elevator-light_38: -160453570230913032
+      fx-elevator-light_39: -2368003492663459892
+      fx-elevator-light_4: -4054072425839188107
+      fx-elevator-light_5: -1135678671178936134
+      fx-elevator-light_6: -1800872857178963635
+      fx-elevator-light_7: 8531779513120213785
+      fx-elevator-light_8: -6333736242937540148
+      fx-elevator-light_9: 6801070540620721889
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

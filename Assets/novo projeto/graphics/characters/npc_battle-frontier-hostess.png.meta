@@ -3,7 +3,7 @@ guid: aef42f5937131a04eb50630b3aa66aff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,348 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 4a17049d6798424eaf5ec3de2c0056f1
+      internalID: 1353216821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c7e0899d87484a9728da5cfbe3eefe
+      internalID: 2851988107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9186e7298fae448783cfca3a1bd624d8
+      internalID: 3332614818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deea95e420a04ea8a789f729d980fffb
+      internalID: 566509481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9596dd393ec64e5aba6d4f893605324c
+      internalID: 805950666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcbb34ba8a44f59b84e92a9639435d8
+      internalID: 3647146413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecde452f9cd4ba8a68efc5c26dec547
+      internalID: 3765586056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99f25b464734e4f96977012607a7d57
+      internalID: 3507185202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1210839317f34e0195a4a00e25029e9f
+      internalID: 1049528473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787cb849995c42c79cda3d0cd8dad02b
+      internalID: 279639549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cb9f21b4e04962b864deb7b97865e2
+      internalID: 2742261143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8716ca3a6a24425870373186eacc9c8
+      internalID: 3961678518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fa77ea6a71470fa6dcb6b5eb1561bc
+      internalID: 15421534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0e1521dcfb41bdbbdd645f0c1b7398
+      internalID: 3747801022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8c958af3bb41bbbc275e154a424db5
+      internalID: 2963160461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_battle-frontier-hostess_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cebe24b299a4980a0ff45b479942823
+      internalID: 382102484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 060882c33e264c1a8b88a9a7a54d0538
-      internalID: 510091458
+      internalID: -654405510654066349
       vertices: []
       indices: 
       edges: []
@@ -117,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee3b2e5898b34c9180114cf90a1e8fe2
-      internalID: 3552850670
+      internalID: -4964773140523118870
       vertices: []
       indices: 
       edges: []
@@ -139,7 +510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 59c9f53844b241398293af59ec92dca0
-      internalID: 322105539
+      internalID: 1131881318049087080
       vertices: []
       indices: 
       edges: []
@@ -161,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8428ac296c094b5aa3fedab5b86ab1ed
-      internalID: 4107552015
+      internalID: -4371133549837100382
       vertices: []
       indices: 
       edges: []
@@ -183,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 83feda462f3347359129cb603365a4e2
-      internalID: 83098290
+      internalID: -9046675699348786692
       vertices: []
       indices: 
       edges: []
@@ -205,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bfcf479ca2514e82a6d6d242c3943ee9
-      internalID: 69010653
+      internalID: 4594282828896719453
       vertices: []
       indices: 
       edges: []
@@ -227,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 78401e3afeea4ea38f9af07f2499b6ff
-      internalID: 36496854
+      internalID: -6157035706244233536
       vertices: []
       indices: 
       edges: []
@@ -249,7 +620,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c6b6bff29c304f02a09e710d5fd112f4
-      internalID: 481801155
+      internalID: 2638283044616760255
       vertices: []
       indices: 
       edges: []
@@ -271,7 +642,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d8028e2a8b024de79f2a1ff71368e698
-      internalID: 1459874284
+      internalID: -5244648930460449742
       vertices: []
       indices: 
       edges: []
@@ -293,7 +664,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8218cdc815ae486f9b4132ecb6420e78
-      internalID: 908683010
+      internalID: 3381562753956774820
       vertices: []
       indices: 
       edges: []
@@ -315,7 +686,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9916019bfb244632ba3432dcafef6e22
-      internalID: 2891712352
+      internalID: 1585625080616117370
       vertices: []
       indices: 
       edges: []
@@ -337,7 +708,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0d36536d1b324a9e872682605b57cdd1
-      internalID: 1284049305
+      internalID: 3701845686974110512
       vertices: []
       indices: 
       edges: []
@@ -359,7 +730,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c998adea9f2e4237973786ab2d8b8316
-      internalID: 3435247155
+      internalID: -5633651560995266513
       vertices: []
       indices: 
       edges: []
@@ -381,7 +752,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 125710a7342145ad9cfcc9367eb4285e
-      internalID: 3595134983
+      internalID: 8815061181447390873
       vertices: []
       indices: 
       edges: []
@@ -403,7 +774,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6dd42f869cbb41ef885c421ef1bfce7b
-      internalID: 2605036888
+      internalID: -7869498305272832831
       vertices: []
       indices: 
       edges: []
@@ -425,11 +796,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e5d249d9ab6345049ff3d7c4885fe278
-      internalID: 29467178
+      internalID: -5866933998789916421
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -439,9 +812,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      npc_battle-frontier-hostess_0: -654405510654066349
+      npc_battle-frontier-hostess_1: -4964773140523118870
+      npc_battle-frontier-hostess_10: 1585625080616117370
+      npc_battle-frontier-hostess_11: 3701845686974110512
+      npc_battle-frontier-hostess_12: -5633651560995266513
+      npc_battle-frontier-hostess_13: 8815061181447390873
+      npc_battle-frontier-hostess_14: -7869498305272832831
+      npc_battle-frontier-hostess_15: -5866933998789916421
+      npc_battle-frontier-hostess_2: 1131881318049087080
+      npc_battle-frontier-hostess_3: -4371133549837100382
+      npc_battle-frontier-hostess_4: -9046675699348786692
+      npc_battle-frontier-hostess_5: 4594282828896719453
+      npc_battle-frontier-hostess_6: -6157035706244233536
+      npc_battle-frontier-hostess_7: 2638283044616760255
+      npc_battle-frontier-hostess_8: -5244648930460449742
+      npc_battle-frontier-hostess_9: 3381562753956774820
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

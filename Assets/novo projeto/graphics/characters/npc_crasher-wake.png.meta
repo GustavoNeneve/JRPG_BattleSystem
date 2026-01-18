@@ -3,7 +3,7 @@ guid: 10904855fe25f81408cd74db201abe77
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,348 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: a49707cb5c484f4daa61bbdd743f4ff0
+      internalID: 2720396320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f28d7ce9f7048219fc1416baf5d07be
+      internalID: 575288574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f0a62e01b84ec19349a98f908cb052
+      internalID: 1848514700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828388a983d14ea2bd1d17d94d0d28db
+      internalID: 2268346278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7892bc9012054f77b5e2c67c9289e7c1
+      internalID: 2907131395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5a0e9880474a9696a77502be0efe4d
+      internalID: 121390324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5330ec8ce7414fd7a3b369db6dda05aa
+      internalID: 1776719773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4929e8c0f5cb4d959240f0a42fca8b29
+      internalID: 3307937171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7392bd74e6374f3294119f4f3bba36d8
+      internalID: 23946133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c9721d8b094e3a94d88ecfa87faa74
+      internalID: 2262505942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35ca813602a48f7872cfcf5034ecf3f
+      internalID: 2067475375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43247b960b94855be34439692f5b99f
+      internalID: 3265159310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1c9f721b2c415bbbb30b675eac4409
+      internalID: 2508732979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680c2a4f162a4294a1fbf943b85208ef
+      internalID: 2930244131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9927fca29e4f9aae0c26683100914b
+      internalID: 2376515133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: npc_crasher-wake_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80669c3fd5e34f3090fecf60eed8333c
+      internalID: 1401521329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 581987571d7646b59816350b77441ab2
-      internalID: 862014581
+      internalID: -2657746312590551961
       vertices: []
       indices: 
       edges: []
@@ -117,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 93f59c969549468e9f27a6b8e0de5403
-      internalID: 1084195039
+      internalID: 4874737009181246863
       vertices: []
       indices: 
       edges: []
@@ -139,7 +510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2bfe63eaf1d2494a90ab9cd349d0169d
-      internalID: 3609111996
+      internalID: -5522809554654814856
       vertices: []
       indices: 
       edges: []
@@ -161,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cbabb500b50841ee8b6db4de06e00cab
-      internalID: 1086637175
+      internalID: -7265945854325914686
       vertices: []
       indices: 
       edges: []
@@ -183,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c7c3caa1cc3e4c8e89cee3f0101ae84b
-      internalID: 405969153
+      internalID: 7664802436091081291
       vertices: []
       indices: 
       edges: []
@@ -205,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a962253837d5498cbc1570f19715bf29
-      internalID: 1362603745
+      internalID: 4626188522295986217
       vertices: []
       indices: 
       edges: []
@@ -227,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c41ec55c9ab14dca89af867d57cc1bf0
-      internalID: 278162998
+      internalID: 4159494233566597343
       vertices: []
       indices: 
       edges: []
@@ -249,7 +620,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 33e4f686f0144cf19821084524607402
-      internalID: 3273218719
+      internalID: 7303774387487605818
       vertices: []
       indices: 
       edges: []
@@ -271,7 +642,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8372de4727ae454fb486ec1fcb8c09ef
-      internalID: 3994266180
+      internalID: 1290295862748100731
       vertices: []
       indices: 
       edges: []
@@ -293,7 +664,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fd9a9acc4b914184b96a92abf2f8479f
-      internalID: 3717909082
+      internalID: 6648879885592242007
       vertices: []
       indices: 
       edges: []
@@ -315,7 +686,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 249257d5ec304f00b6ebe33378b48f4e
-      internalID: 3966603969
+      internalID: -5244075277204251377
       vertices: []
       indices: 
       edges: []
@@ -337,7 +708,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fdbfccc36b5c4ec286a2ceca17574723
-      internalID: 2251096073
+      internalID: -5260756127312547488
       vertices: []
       indices: 
       edges: []
@@ -359,7 +730,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 27f78d8b1fe449faac77a5e9c6444249
-      internalID: 2922803763
+      internalID: 5299921020860520125
       vertices: []
       indices: 
       edges: []
@@ -381,7 +752,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 034f0defdc21403baba4ce8119c4c8f5
-      internalID: 505898332
+      internalID: -1635071931422943523
       vertices: []
       indices: 
       edges: []
@@ -403,7 +774,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9b755fe1767945f7a8804f0b82dd0b5e
-      internalID: 2486689798
+      internalID: -8488538427336905790
       vertices: []
       indices: 
       edges: []
@@ -425,11 +796,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 648369d618974215b85b59f35ec4ed35
-      internalID: 2908307290
+      internalID: 3572766444002581954
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -439,9 +812,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      npc_crasher-wake_0: -2657746312590551961
+      npc_crasher-wake_1: 4874737009181246863
+      npc_crasher-wake_10: -5244075277204251377
+      npc_crasher-wake_11: -5260756127312547488
+      npc_crasher-wake_12: 5299921020860520125
+      npc_crasher-wake_13: -1635071931422943523
+      npc_crasher-wake_14: -8488538427336905790
+      npc_crasher-wake_15: 3572766444002581954
+      npc_crasher-wake_2: -5522809554654814856
+      npc_crasher-wake_3: -7265945854325914686
+      npc_crasher-wake_4: 7664802436091081291
+      npc_crasher-wake_5: 4626188522295986217
+      npc_crasher-wake_6: 4159494233566597343
+      npc_crasher-wake_7: 7303774387487605818
+      npc_crasher-wake_8: 1290295862748100731
+      npc_crasher-wake_9: 6648879885592242007
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

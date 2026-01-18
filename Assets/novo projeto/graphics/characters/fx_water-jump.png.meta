@@ -3,7 +3,7 @@ guid: 46eaaa344d287944da979ae728c2dfe7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,172 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 029c08d84bb942fd83a61f3b66ccf2a2
+      internalID: 1475300359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d4198644704181bcb825f816ff152b
+      internalID: 4062795220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fc1437fef146b2ab471428a81d2637
+      internalID: 2107785130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa11afc81494552b393b4d5f8d68511
+      internalID: 2615038343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac444aca0d1f4a80841df512b91c4150
+      internalID: 2403944862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8fb36bfed74714ae94377a88abf765
+      internalID: 472213621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df216de46511484c8bdd1388056f44fb
+      internalID: 480464311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_water-jump_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b74eb71fbf54cbdae0d43ee66184486
+      internalID: 2110727371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 4f2c03788c054f9d9a01c20cc77a3837
-      internalID: 1814412882
+      internalID: -5958253460492631171
       vertices: []
       indices: 
       edges: []
@@ -117,7 +312,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a9740e123e134011875758251541b755
-      internalID: 3834220887
+      internalID: 6523112456465721496
       vertices: []
       indices: 
       edges: []
@@ -139,7 +334,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9eaa9d3bb00c478b9927800b35af1d39
-      internalID: 1500001424
+      internalID: 902551819241941103
       vertices: []
       indices: 
       edges: []
@@ -161,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3bb7188055824baca4e05e5f5444c87a
-      internalID: 1448724291
+      internalID: -804012890410124212
       vertices: []
       indices: 
       edges: []
@@ -183,7 +378,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 40d1e184a1be4f3b9ccb45560f1d4a37
-      internalID: 949751313
+      internalID: -3929355864847352516
       vertices: []
       indices: 
       edges: []
@@ -205,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6b4b21855ddf48a6ba32a4675ea6dce1
-      internalID: 1739536757
+      internalID: 9019704849306812155
       vertices: []
       indices: 
       edges: []
@@ -227,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: da373a91d74e48ffaba1d1468b4c4ef1
-      internalID: 2857614032
+      internalID: 3861716057813875755
       vertices: []
       indices: 
       edges: []
@@ -249,11 +444,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bece438090c641298f717451beea2fe1
-      internalID: 4105625897
+      internalID: 2084735817932682698
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -263,9 +460,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx_water-jump_0: -5958253460492631171
+      fx_water-jump_1: 6523112456465721496
+      fx_water-jump_2: 902551819241941103
+      fx_water-jump_3: -804012890410124212
+      fx_water-jump_4: -3929355864847352516
+      fx_water-jump_5: 9019704849306812155
+      fx_water-jump_6: 3861716057813875755
+      fx_water-jump_7: 2084735817932682698
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

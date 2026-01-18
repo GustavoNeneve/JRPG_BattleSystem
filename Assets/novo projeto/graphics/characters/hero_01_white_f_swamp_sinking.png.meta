@@ -3,7 +3,7 @@ guid: d22de6607c5a8b84cb4a9457bdfe4524
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: d42042e313754fe0bf80900dd2944d17
+      internalID: 2860354838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be508d2f02f94ddc80e053d0d224d26a
+      internalID: 1509076282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87a22dd574f44718f4c3b04c708c4ad
+      internalID: 3589725472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc0d83293774db38c03f1428d4dbec0
+      internalID: 1157143088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb24d7469b9489db3a661453eefe8ec
+      internalID: 3796752751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1048413a28dd4d109143b48ccc5dce90
+      internalID: 3501355990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fb812357b74358bb7c2597608f4086
+      internalID: 2345625524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f79c5fabedf4985b28b2bb0ce195cd8
+      internalID: 3939714511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef220ccb78f4168ab72805c6e1ba0bf
+      internalID: 110793866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145a6510887c4f65916675ac36eb660a
+      internalID: 1985731630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04c864421ba48ec8ec7eeb4da2134d5
+      internalID: 2588442524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_white_f_swamp_sinking_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c53c45eaad47129dfa1fd2c4885668
+      internalID: 2962828955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: b4da8561d57248f6a1799fd9336951bb
-      internalID: 4177780041
+      internalID: 557101700296995186
       vertices: []
       indices: 
       edges: []
@@ -117,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5d5d040a89da481dbcba7b64e67aeda8
-      internalID: 1304709969
+      internalID: -6812132910788306246
       vertices: []
       indices: 
       edges: []
@@ -139,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a14b9a7e31444d40836b17da6e6a0553
-      internalID: 2571781182
+      internalID: 8896238168052341071
       vertices: []
       indices: 
       edges: []
@@ -161,7 +444,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fac4fce4423b405caeefa21eab8cbfa9
-      internalID: 2420032208
+      internalID: 1288155096781726533
       vertices: []
       indices: 
       edges: []
@@ -183,7 +466,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f3f72981e9584eb9a25922583521b29c
-      internalID: 2003111458
+      internalID: -8909888971769281533
       vertices: []
       indices: 
       edges: []
@@ -205,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 807e028794df4869bba472c1525e3033
-      internalID: 1749058000
+      internalID: -5056906407649612213
       vertices: []
       indices: 
       edges: []
@@ -227,7 +510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7425be60c6b44f5599b988c9f01c5d70
-      internalID: 4099028872
+      internalID: 4688306312049820228
       vertices: []
       indices: 
       edges: []
@@ -249,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a955b1d3a87649c1b642d91e7803db04
-      internalID: 113033956
+      internalID: -2610220537067578156
       vertices: []
       indices: 
       edges: []
@@ -271,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c139a31e547f4ee7980db65b4594e208
-      internalID: 4016707755
+      internalID: 753760298919283036
       vertices: []
       indices: 
       edges: []
@@ -293,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f5dd195d940f455babf0619acb8a1551
-      internalID: 4181839019
+      internalID: 5778377573800416778
       vertices: []
       indices: 
       edges: []
@@ -315,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b387f401b7f74bb4a03c86e8752778c7
-      internalID: 333139238
+      internalID: -5956452056801742151
       vertices: []
       indices: 
       edges: []
@@ -337,11 +620,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 579c6efb054f4ec08795f1e36a380091
-      internalID: 2444925406
+      internalID: -4162233339119421018
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -351,9 +636,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hero_01_white_f_swamp_sinking_0: 557101700296995186
+      hero_01_white_f_swamp_sinking_1: -6812132910788306246
+      hero_01_white_f_swamp_sinking_10: -5956452056801742151
+      hero_01_white_f_swamp_sinking_11: -4162233339119421018
+      hero_01_white_f_swamp_sinking_2: 8896238168052341071
+      hero_01_white_f_swamp_sinking_3: 1288155096781726533
+      hero_01_white_f_swamp_sinking_4: -8909888971769281533
+      hero_01_white_f_swamp_sinking_5: -5056906407649612213
+      hero_01_white_f_swamp_sinking_6: 4688306312049820228
+      hero_01_white_f_swamp_sinking_7: -2610220537067578156
+      hero_01_white_f_swamp_sinking_8: 753760298919283036
+      hero_01_white_f_swamp_sinking_9: 5778377573800416778
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

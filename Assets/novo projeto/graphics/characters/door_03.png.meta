@@ -3,7 +3,7 @@ guid: 7b35fd1dde2ba2e4b8027bcc5d95e789
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,524 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 0aedae3be6af4fc2b0a9e7ec170c39bf
+      internalID: 3104514411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cafe08fc94424ca814ec62b7f3c1fd
+      internalID: 2111717382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78afd139ce7547f3867e18048546c70b
+      internalID: 2984947321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f1b0b1b1a348e7b6c9b5c34bb8b7c1
+      internalID: 831763111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098c6616b69e4382a9e44af91e68278a
+      internalID: 2935565574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50f37b211df4521995bea5c3af530df
+      internalID: 1940339159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6a5ffcc4af492d994b1a39afbb7a9e
+      internalID: 3083057167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85452a77e7e049d8a1f01a09ba11af57
+      internalID: 2923088944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71067331367a40cb9913195bcba588ec
+      internalID: 498717002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d22fc23a7040178399fa871e66e1a2
+      internalID: 3884722561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b672258fc3f4533b0ed96704f1f3444
+      internalID: 1763892547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451a3ce04ba648539faf3cb17d0b0082
+      internalID: 1646541820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e36047fb16d49549ee2ece7d06a1109
+      internalID: 3211117773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927a58f8c56343f59b311929e7c26dcb
+      internalID: 2742182095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20fcb06a159b4c3190316561a0ce1b26
+      internalID: 1886751815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f838f08af04a9f87494538c59551b8
+      internalID: 4123915923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3eff808c50147079b80980e7d1c04f0
+      internalID: 54985911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bea8dba9374141b0af5fb20f61e480
+      internalID: 2327026793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612925b4b9b744ddb7b08f657e56f575
+      internalID: 799938323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2027b4f8c5f94b80992a31153c12d249
+      internalID: 1019429455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0181381c58a14a88a7c29594b6e087bd
+      internalID: 4159440276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651d6f532e9e49289b543434cda514f6
+      internalID: 4031786797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82d1e0cbfea4aa8a00c4e065e102d5e
+      internalID: 1604765117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_03_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e671e0abc0504a0c86b50e5ad5abbb08
+      internalID: 1421067409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 97f804d5b3a34808bd9dfd17748bb9ff
-      internalID: 3067951657
+      internalID: -6894700208750364065
       vertices: []
       indices: 
       edges: []
@@ -117,7 +664,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 24f16c4293a74e7fab7d43ee0ed86d16
-      internalID: 1560725935
+      internalID: -8481280588894168543
       vertices: []
       indices: 
       edges: []
@@ -139,7 +686,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 29aa57cca0a04f86b09f8d9111016bc0
-      internalID: 2803039023
+      internalID: -3741638269038173812
       vertices: []
       indices: 
       edges: []
@@ -161,7 +708,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 47df881e063b4566af59b0299d92c878
-      internalID: 897445660
+      internalID: -3667819510542724642
       vertices: []
       indices: 
       edges: []
@@ -183,7 +730,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 91dd86bfba994bb0b962a48d380b8d6e
-      internalID: 3207054762
+      internalID: -1097659212925795958
       vertices: []
       indices: 
       edges: []
@@ -205,7 +752,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e4f90707d9174655a57d602c7091ce34
-      internalID: 2341701629
+      internalID: -1874262992260684955
       vertices: []
       indices: 
       edges: []
@@ -227,7 +774,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fb2bd3281c894422947b0e15ae13ff94
-      internalID: 3615859611
+      internalID: 5250775461512106513
       vertices: []
       indices: 
       edges: []
@@ -249,7 +796,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9ca1a173d4ce47d79ca0915a71f400ac
-      internalID: 3629469458
+      internalID: 4504742835990338314
       vertices: []
       indices: 
       edges: []
@@ -271,7 +818,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fea7b6b4a7214c81b430471e09239258
-      internalID: 2555565860
+      internalID: -3375432918383047164
       vertices: []
       indices: 
       edges: []
@@ -293,7 +840,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 18caa354e28a4e338da9f159ff97959a
-      internalID: 1076821977
+      internalID: 1977347564000916311
       vertices: []
       indices: 
       edges: []
@@ -315,7 +862,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a3ced698711c4554a677d82621ae5987
-      internalID: 347527511
+      internalID: -1318586636940363222
       vertices: []
       indices: 
       edges: []
@@ -337,7 +884,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 58f5aef5e4de409399a8981b5118b2f0
-      internalID: 2751775583
+      internalID: -6353540040545048539
       vertices: []
       indices: 
       edges: []
@@ -359,7 +906,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ad841a34c6344cc4973b49507e5e395f
-      internalID: 145591180
+      internalID: -8077186770656417747
       vertices: []
       indices: 
       edges: []
@@ -381,7 +928,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3de7e3361cc6446a98159a198eabeec7
-      internalID: 4283202485
+      internalID: 4665483321018867350
       vertices: []
       indices: 
       edges: []
@@ -403,7 +950,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 45207454fee04134a460b2c0e1d22b0f
-      internalID: 1613699861
+      internalID: 3758864242966456937
       vertices: []
       indices: 
       edges: []
@@ -425,7 +972,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f8642f0dc8834874a1c4e3f7110d99c9
-      internalID: 3491494324
+      internalID: 8882816686945493982
       vertices: []
       indices: 
       edges: []
@@ -447,7 +994,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4aefe2edeed742328f77101177e4663e
-      internalID: 2368105997
+      internalID: -6449095951506425941
       vertices: []
       indices: 
       edges: []
@@ -469,7 +1016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 191ed3886596494abacabfaf9dfab422
-      internalID: 1566027558
+      internalID: 830397821281988708
       vertices: []
       indices: 
       edges: []
@@ -491,7 +1038,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1773b54099174831b88cf8434bdbb306
-      internalID: 93904180
+      internalID: -2013170365787331974
       vertices: []
       indices: 
       edges: []
@@ -513,7 +1060,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cdbc8e76f34c4e4285be36851ef317ed
-      internalID: 74944917
+      internalID: -1397569163842303129
       vertices: []
       indices: 
       edges: []
@@ -535,7 +1082,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bbbf9e84584e456ea705950eccafc8f5
-      internalID: 2655417606
+      internalID: -7033061796682912267
       vertices: []
       indices: 
       edges: []
@@ -557,7 +1104,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3cbbe8d3806f488798a423f44a75e069
-      internalID: 3060641589
+      internalID: -4187349201381438359
       vertices: []
       indices: 
       edges: []
@@ -579,7 +1126,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2553894a74d34c49943aac3e19aa5916
-      internalID: 2444338558
+      internalID: 5001012222609778688
       vertices: []
       indices: 
       edges: []
@@ -601,11 +1148,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 845f6b1d5fc6406f87874acf9589f655
-      internalID: 4088792035
+      internalID: 4489620116495515409
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -615,9 +1164,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      door_03_0: -6894700208750364065
+      door_03_1: -8481280588894168543
+      door_03_10: -1318586636940363222
+      door_03_11: -6353540040545048539
+      door_03_12: -8077186770656417747
+      door_03_13: 4665483321018867350
+      door_03_14: 3758864242966456937
+      door_03_15: 8882816686945493982
+      door_03_16: -6449095951506425941
+      door_03_17: 830397821281988708
+      door_03_18: -2013170365787331974
+      door_03_19: -1397569163842303129
+      door_03_2: -3741638269038173812
+      door_03_20: -7033061796682912267
+      door_03_21: -4187349201381438359
+      door_03_22: 5001012222609778688
+      door_03_23: 4489620116495515409
+      door_03_3: -3667819510542724642
+      door_03_4: -1097659212925795958
+      door_03_5: -1874262992260684955
+      door_03_6: 5250775461512106513
+      door_03_7: 4504742835990338314
+      door_03_8: -3375432918383047164
+      door_03_9: 1977347564000916311
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

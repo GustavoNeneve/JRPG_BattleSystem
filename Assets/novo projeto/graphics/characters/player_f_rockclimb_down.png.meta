@@ -3,7 +3,7 @@ guid: 4cdc3cf9c3d4b3f4bbe99a289839bf7e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -83,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 32
-        height: 32
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -94,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa0ee5a373604206b112b0f450b0e049
-      internalID: 818551783
+      spriteID: ca663b1611e54a19a49efe5c8ffd1261
+      internalID: 135729695
       vertices: []
       indices: 
       edges: []
@@ -104,10 +135,10 @@ TextureImporter:
       name: player_f_rockclimb_down_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
-        width: 32
-        height: 32
+        x: 48
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -116,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6be5707197e428bac64c6699f68b549
-      internalID: 705328302
+      spriteID: b551f61f29d84b0b8e2d2389b1a544cc
+      internalID: 3806623242
       vertices: []
       indices: 
       edges: []
@@ -126,10 +157,10 @@ TextureImporter:
       name: player_f_rockclimb_down_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
-        width: 32
-        height: 32
+        x: 96
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f078cb1d942c4b68b61124c0806d70c4
-      internalID: 1783847259
+      spriteID: 48eae9b5d99b4e029be4adda6362df02
+      internalID: 3882235809
       vertices: []
       indices: 
       edges: []
@@ -148,10 +179,10 @@ TextureImporter:
       name: player_f_rockclimb_down_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
-        width: 32
-        height: 32
+        x: 144
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c15f5257d1434df28b6656a1d66dfa49
-      internalID: 645020325
+      spriteID: bc1ca790658549d2a98cd59d2237d0e9
+      internalID: 2225528564
       vertices: []
       indices: 
       edges: []
@@ -170,10 +201,10 @@ TextureImporter:
       name: player_f_rockclimb_down_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 160
-        width: 32
-        height: 32
+        x: 0
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3891ebadd9a1413bbe9f9f5bed439938
-      internalID: 4216905894
+      spriteID: d615b1882acb46f489a46e9654b0c36c
+      internalID: 4140992221
       vertices: []
       indices: 
       edges: []
@@ -192,10 +223,10 @@ TextureImporter:
       name: player_f_rockclimb_down_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 32
-        height: 32
+        x: 48
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2496b441312743d1947154a2308ddd09
-      internalID: 3389755327
+      spriteID: 0efd55816d6b4593b36eff73783e37de
+      internalID: 1984465017
       vertices: []
       indices: 
       edges: []
@@ -214,10 +245,10 @@ TextureImporter:
       name: player_f_rockclimb_down_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
-        width: 32
-        height: 32
+        x: 96
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: def8c501633f4bda9a6ddcd00df24a82
-      internalID: 1060193641
+      spriteID: aafacd6941654e19a35df6dddfb577b5
+      internalID: 1364158311
       vertices: []
       indices: 
       edges: []
@@ -236,10 +267,10 @@ TextureImporter:
       name: player_f_rockclimb_down_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
-        width: 32
-        height: 32
+        x: 144
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb9969b410994985995cf9b157e13625
-      internalID: 2161407282
+      spriteID: d433a5c19705452da4f99a5c60ad77fe
+      internalID: 3210561082
       vertices: []
       indices: 
       edges: []
@@ -258,10 +289,10 @@ TextureImporter:
       name: player_f_rockclimb_down_8
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 32
-        height: 32
+        x: 0
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5fc001b7c674578a0e8e2d80828eb2b
-      internalID: 1207077514
+      spriteID: 6d9de7c575704ff0b0a828e7e3cf7a2f
+      internalID: 2413722725
       vertices: []
       indices: 
       edges: []
@@ -280,10 +311,10 @@ TextureImporter:
       name: player_f_rockclimb_down_9
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
+        x: 48
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3f5f35f6a4b4da4bb957c2f02a20838
-      internalID: 2303806971
+      spriteID: 027fd41e509842c4883296d11129af77
+      internalID: 798071020
       vertices: []
       indices: 
       edges: []
@@ -302,10 +333,10 @@ TextureImporter:
       name: player_f_rockclimb_down_10
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 96
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b92898ea3da4e528405161af7942725
-      internalID: 2340686121
+      spriteID: b437a3433098410c867cfb36a7b6677d
+      internalID: 440488606
       vertices: []
       indices: 
       edges: []
@@ -324,10 +355,10 @@ TextureImporter:
       name: player_f_rockclimb_down_11
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
-        width: 32
-        height: 32
+        x: 144
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,8 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91e573519f004540aded212da01b0019
-      internalID: 1930732996
+      spriteID: 000b3aacd955417f937cff365eee2a33
+      internalID: 2458800935
       vertices: []
       indices: 
       edges: []
@@ -347,9 +378,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 32
-        height: 32
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e87bb8faaa0401abd2c7591fb05b080
-      internalID: 931403750
+      spriteID: f26e1380544c4be8ba876bc171c692d6
+      internalID: 2133886310
       vertices: []
       indices: 
       edges: []
@@ -368,10 +399,10 @@ TextureImporter:
       name: player_f_rockclimb_down_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,8 +411,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f252db9051d4693a8f93a821503e391
-      internalID: 1199499236
+      spriteID: 408271d83e2e41a98edd106a036850a6
+      internalID: 1021917455
       vertices: []
       indices: 
       edges: []
@@ -390,10 +421,10 @@ TextureImporter:
       name: player_f_rockclimb_down_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
+        x: 96
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,8 +433,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df83afcfd47a433ca358b66aeb6e72c2
-      internalID: 318152547
+      spriteID: 997fab9d01024bc586b5fdf490b3052b
+      internalID: 1047518021
       vertices: []
       indices: 
       edges: []
@@ -412,10 +443,64 @@ TextureImporter:
       name: player_f_rockclimb_down_15
       rect:
         serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d58ca5f69314f42b9a28bcd7bad527d
+      internalID: 3958653626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0ee5a373604206b112b0f450b0e049
+      internalID: 1968095063766235423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_rockclimb_down_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6be5707197e428bac64c6699f68b549
+      internalID: 4456983254298295449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_rockclimb_down_2
+      rect:
+        serializedVersion: 2
         x: 96
-        y: 96
-        width: 32
-        height: 32
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +509,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16cc88765c944ac49df98890b90636d9
-      internalID: 3515671768
+      spriteID: f078cb1d942c4b68b61124c0806d70c4
+      internalID: 5438657343858764016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_16
+      name: player_f_rockclimb_down_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 32
-        height: 32
+        x: 144
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,42 +531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a8290fe7cdf433086de19c0e8c7c2c5
-      internalID: 2368210113
+      spriteID: c15f5257d1434df28b6656a1d66dfa49
+      internalID: -1611106938073909417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_17
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db06b66197a44e396a91d6f3f994739
-      internalID: 800879064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_18
+      name: player_f_rockclimb_down_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 32
-        height: 32
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,20 +553,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f6b50ed834d46dda5a2e9d5b050dc6f
-      internalID: 725724071
+      spriteID: 3891ebadd9a1413bbe9f9f5bed439938
+      internalID: 8148378386570005775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_19
+      name: player_f_rockclimb_down_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
+        x: 48
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,42 +575,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbd74797a7df4e3c8e0f5c67b805f362
-      internalID: 2495118675
+      spriteID: 2496b441312743d1947154a2308ddd09
+      internalID: -4861152108243578305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_20
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d92a1fff499a4c0daf2f3ca62980d133
-      internalID: 2178569617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_21
+      name: player_f_rockclimb_down_6
       rect:
         serializedVersion: 2
         x: 96
-        y: 64
-        width: 32
-        height: 32
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,20 +597,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e3568cbae8b4df2ba5b9e18c89e10a4
-      internalID: 794597872
+      spriteID: def8c501633f4bda9a6ddcd00df24a82
+      internalID: 3153789851719489491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_22
+      name: player_f_rockclimb_down_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
-        width: 32
-        height: 32
+        x: 144
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,42 +619,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df38f85d361e4a1fbfe8276cba74bda3
-      internalID: 3310651049
+      spriteID: eb9969b410994985995cf9b157e13625
+      internalID: -4479743077408213463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_23
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71a922a8c2ad46d197f22dcecfd93d3b
-      internalID: 267564638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_24
+      name: player_f_rockclimb_down_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,20 +641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b982f9962d80420db114de111a1ccab7
-      internalID: 1305308475
+      spriteID: f5fc001b7c674578a0e8e2d80828eb2b
+      internalID: 854675754549886804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_25
+      name: player_f_rockclimb_down_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 48
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -644,42 +663,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcca7270742249bb8c27945ab23319de
-      internalID: 941747078
+      spriteID: 1746de727dddcae469ed029a2f54d7ec
+      internalID: -3553161740678260288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_26
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51fbf7c4cb9f44d380f3cc0d8add96b2
-      internalID: 1632473428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_27
+      name: player_f_rockclimb_down_10
       rect:
         serializedVersion: 2
         x: 96
-        y: 32
-        width: 32
-        height: 32
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,20 +685,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 783e1b0a9f9c4cfc89f650dbf8db3355
-      internalID: 234867581
+      spriteID: 7109d85cbd3c63b4cab3d08a6fc0fbb1
+      internalID: 5001179582943437906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_28
+      name: player_f_rockclimb_down_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 32
-        width: 32
-        height: 32
+        x: 144
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,42 +707,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1a10f81ddc54ef1a2496d3f5dca82db
-      internalID: 1903778884
+      spriteID: 2e3062615d8f5d943a9da44cad2c5804
+      internalID: 4245554196832664693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_29
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7d41faf4c80e43179b36248e68a8c66e
-      internalID: 4042626768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_30
+      name: player_f_rockclimb_down_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,20 +729,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c69847c05304628b8a81d58432bd3b9
-      internalID: 2812027445
+      spriteID: 9ec41b94c345ea145b6e53195a99a116
+      internalID: -5719816426393109847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_31
+      name: player_f_rockclimb_down_13
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -776,42 +751,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b29ac9e896047cbbf47df4ddb9b10ce
-      internalID: 1927291574
+      spriteID: 8aa4af503a0a1ac4a8b3b5d7d9cffec8
+      internalID: -3416306076200085367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_32
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea67a458c45c4002a39e0f4cf1331a05
-      internalID: 3632410181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_33
+      name: player_f_rockclimb_down_14
       rect:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -820,20 +773,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a0bf7e611604e41a366c5cb6ee4aa1b
-      internalID: 842051735
+      spriteID: bac7b36ad437fb443af8016519854e27
+      internalID: 2131180660568393897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_f_rockclimb_down_34
+      name: player_f_rockclimb_down_15
       rect:
         serializedVersion: 2
-        x: 128
+        x: 144
         y: 0
-        width: 32
-        height: 32
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -842,34 +795,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0d5918a799e44d883262fbfc6d6c6e0
-      internalID: 3619481477
+      spriteID: e5b870c3dc36c73429ced7a733f30f0d
+      internalID: -6073518406442779609
       vertices: []
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: player_f_rockclimb_down_35
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1d0a25ecd504f2a9654441eb6d4e33c
-      internalID: 411988165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []    outline: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -879,9 +812,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":48.0,"y":48.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      player_f_rockclimb_down_0: 1968095063766235423
+      player_f_rockclimb_down_1: 4456983254298295449
+      player_f_rockclimb_down_10: 5001179582943437906
+      player_f_rockclimb_down_11: 4245554196832664693
+      player_f_rockclimb_down_12: -5719816426393109847
+      player_f_rockclimb_down_13: -3416306076200085367
+      player_f_rockclimb_down_14: 2131180660568393897
+      player_f_rockclimb_down_15: -6073518406442779609
+      player_f_rockclimb_down_2: 5438657343858764016
+      player_f_rockclimb_down_3: -1611106938073909417
+      player_f_rockclimb_down_4: 8148378386570005775
+      player_f_rockclimb_down_5: -4861152108243578305
+      player_f_rockclimb_down_6: 3153789851719489491
+      player_f_rockclimb_down_7: -4479743077408213463
+      player_f_rockclimb_down_8: 854675754549886804
+      player_f_rockclimb_down_9: -3553161740678260288
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

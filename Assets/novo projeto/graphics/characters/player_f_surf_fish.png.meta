@@ -3,7 +3,7 @@ guid: 6f471821a41090e48b92811193641e92
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -83,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 32
-        height: 32
+        y: 144
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -94,8 +125,348 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 6943321ee4ce4920aa0a754dba8810b7
+      internalID: 918499260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca179dff20af4e4bb3f7e02c2878fb66
+      internalID: 4205078701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6481e2c19b4c4fe78f295c601f1bad4d
+      internalID: 3423384756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba75245ee2e34216856cd9f556ff9a35
+      internalID: 1852025882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ee58e0aaa64469822635f6024b0b1b
+      internalID: 3277224328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_5
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341761f17a7945a085a751cf3ae5588f
+      internalID: 1585355249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06de300238e4646afdf60d96079eb29
+      internalID: 2987008169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6771c6e06f74451f93241b1de49788cf
+      internalID: 3019209826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b42a249bc1496583d778ed1c163a0a
+      internalID: 4084825875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e0c9f013364e538f98da6daa65a97a
+      internalID: 694894590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c266faca7e91455b90226d44eedfb742
+      internalID: 2167128646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65868a6d7d9a4b3f938aba560ea463aa
+      internalID: 2255833742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9b2eed09dc4f15943fa298ea1d6093
+      internalID: 3311850640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389cac37aa9b4e19acbfd7a21f9da39a
+      internalID: 4128497577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d1bafc39324442b4fa24f9c1a0c109
+      internalID: 2751226627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_f_surf_fish_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952fc4f1cfe5440cb2f51a73f2f25715
+      internalID: 3551914589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 78ab873991f440e1910188fc7c9e5ce7
-      internalID: 3765580654
+      internalID: 3068515676886138369
       vertices: []
       indices: 
       edges: []
@@ -117,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3380049f01634c8c934b83a940ac4d89
-      internalID: 2015958619
+      internalID: -5650361069256833460
       vertices: []
       indices: 
       edges: []
@@ -139,7 +510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e5100938b5d946e3a602649945a41377
-      internalID: 3369235384
+      internalID: 5656994156022655596
       vertices: []
       indices: 
       edges: []
@@ -161,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5b7981e1eee14930be3004d0913717b9
-      internalID: 536402927
+      internalID: 8519209354357698416
       vertices: []
       indices: 
       edges: []
@@ -183,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2c8599d5b2644405af8752e097f70ee8
-      internalID: 3724789705
+      internalID: 6898138507952952628
       vertices: []
       indices: 
       edges: []
@@ -205,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b9ebfe7edbf247e2b86ac2fb7c4444c9
-      internalID: 512770118
+      internalID: 3867083625069533760
       vertices: []
       indices: 
       edges: []
@@ -227,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 16f3879f8a594beaa63522740372b15b
-      internalID: 4013204610
+      internalID: -4871038777187087261
       vertices: []
       indices: 
       edges: []
@@ -249,7 +620,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c97060f40fd54c5ea2d9c2730869bf8a
-      internalID: 3561711795
+      internalID: 5352799431803557882
       vertices: []
       indices: 
       edges: []
@@ -271,7 +642,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 061b2f76d232419fb69468d133054b48
-      internalID: 2520036506
+      internalID: -5160612589827226858
       vertices: []
       indices: 
       edges: []
@@ -293,7 +664,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 93e3f00df070491687ace21431090fb9
-      internalID: 250571146
+      internalID: 2954696670448977053
       vertices: []
       indices: 
       edges: []
@@ -315,7 +686,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0c125fba7d0d43b292588ee792e735dd
-      internalID: 1828191372
+      internalID: 1724030751568667733
       vertices: []
       indices: 
       edges: []
@@ -337,7 +708,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 20788d56c7c04cb295c55be33bb1f9ce
-      internalID: 3370347874
+      internalID: 126156243837801067
       vertices: []
       indices: 
       edges: []
@@ -359,7 +730,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c969780585644f1da037659e7204a770
-      internalID: 3419354151
+      internalID: 9186756654062639393
       vertices: []
       indices: 
       edges: []
@@ -381,7 +752,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1cbc61aa680447b9bc51b83ee7972385
-      internalID: 355389401
+      internalID: -6366711101828319691
       vertices: []
       indices: 
       edges: []
@@ -403,7 +774,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9e0a2203ccc04c84904275dd1b8fa1b6
-      internalID: 1517574944
+      internalID: 8404051771313972796
       vertices: []
       indices: 
       edges: []
@@ -425,7 +796,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6175cd0c42be49f4a69a5877e3abbeb8
-      internalID: 1286328902
+      internalID: -7512759536323319570
       vertices: []
       indices: 
       edges: []
@@ -447,7 +818,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bef5b2bfe4354133b3d3030c8282501d
-      internalID: 1653325259
+      internalID: 377174129613219684
       vertices: []
       indices: 
       edges: []
@@ -469,7 +840,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 040992ccd4d941f68bb7dfe01aa15bfe
-      internalID: 499318361
+      internalID: -8312148545825563742
       vertices: []
       indices: 
       edges: []
@@ -491,7 +862,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a96b98c2d855421ebfc9b02f92e2fc48
-      internalID: 1235453005
+      internalID: 8776081467860896116
       vertices: []
       indices: 
       edges: []
@@ -513,7 +884,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 58b47a547b814099aaeb8779aaa4e074
-      internalID: 2236104008
+      internalID: 439734527020212217
       vertices: []
       indices: 
       edges: []
@@ -535,7 +906,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b1f9e4aa0a8248f9a3998472f5e42748
-      internalID: 3038066849
+      internalID: -1145245476050712525
       vertices: []
       indices: 
       edges: []
@@ -557,7 +928,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4a475b7907f34a0e96e6f94f9613ab5a
-      internalID: 3208223484
+      internalID: -8071549271010451516
       vertices: []
       indices: 
       edges: []
@@ -579,7 +950,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3bf4a562e43c407bbeb7458bdc3703fa
-      internalID: 4011257263
+      internalID: -4015999735544891690
       vertices: []
       indices: 
       edges: []
@@ -601,7 +972,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: da4aab01643f46d8931062010c178301
-      internalID: 557336751
+      internalID: -3436230738019418276
       vertices: []
       indices: 
       edges: []
@@ -623,7 +994,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e9c12bfe5f3b41cdbeacefa97c98c8db
-      internalID: 850072600
+      internalID: 3502308917803214958
       vertices: []
       indices: 
       edges: []
@@ -645,7 +1016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2310ad97c4da4039ac150fae808ad2cc
-      internalID: 1877083502
+      internalID: -2446007155573105265
       vertices: []
       indices: 
       edges: []
@@ -667,7 +1038,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 795e9c56270a4f75a7cf3c2decdfdad3
-      internalID: 3242232032
+      internalID: -2279215197990626629
       vertices: []
       indices: 
       edges: []
@@ -689,7 +1060,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9f0e8d38948f4ed28c8bf84c5cb72e56
-      internalID: 2557429384
+      internalID: -6338796167514453593
       vertices: []
       indices: 
       edges: []
@@ -711,7 +1082,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2c8b7ed878d546a8b2643ea2ddb54c0b
-      internalID: 3925584271
+      internalID: -5772651853051552063
       vertices: []
       indices: 
       edges: []
@@ -733,7 +1104,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: fa857fbb147648959312bd15c3fffe22
-      internalID: 1498018342
+      internalID: -8901150073083843059
       vertices: []
       indices: 
       edges: []
@@ -755,7 +1126,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6dbfb301d6654204b10b2ad468796457
-      internalID: 2619642763
+      internalID: -4833936593459979680
       vertices: []
       indices: 
       edges: []
@@ -777,7 +1148,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c987e97cc55b4fd085b62e777499b0b0
-      internalID: 3092585423
+      internalID: -6124744434600947193
       vertices: []
       indices: 
       edges: []
@@ -799,7 +1170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8d2508e62dc24713a231b50bb991c4dd
-      internalID: 1911321173
+      internalID: 3615201900927539046
       vertices: []
       indices: 
       edges: []
@@ -821,7 +1192,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 827244bae2254d9e933bfcf91b6f029d
-      internalID: 800736900
+      internalID: -6466271951384816547
       vertices: []
       indices: 
       edges: []
@@ -843,7 +1214,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1d542aed870f4220a95b7500cd02c9bc
-      internalID: 3719192646
+      internalID: -7052412309010838603
       vertices: []
       indices: 
       edges: []
@@ -865,11 +1236,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b22c4cc76c024f1dbbdf22d81af8f79b
-      internalID: 3159995348
+      internalID: 2044049892587132065
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -879,9 +1252,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      player_f_surf_fish_0: 3068515676886138369
+      player_f_surf_fish_1: -5650361069256833460
+      player_f_surf_fish_10: 1724030751568667733
+      player_f_surf_fish_11: 126156243837801067
+      player_f_surf_fish_12: 9186756654062639393
+      player_f_surf_fish_13: -6366711101828319691
+      player_f_surf_fish_14: 8404051771313972796
+      player_f_surf_fish_15: -7512759536323319570
+      player_f_surf_fish_16: 377174129613219684
+      player_f_surf_fish_17: -8312148545825563742
+      player_f_surf_fish_18: 8776081467860896116
+      player_f_surf_fish_19: 439734527020212217
+      player_f_surf_fish_2: 5656994156022655596
+      player_f_surf_fish_20: -1145245476050712525
+      player_f_surf_fish_21: -8071549271010451516
+      player_f_surf_fish_22: -4015999735544891690
+      player_f_surf_fish_23: -3436230738019418276
+      player_f_surf_fish_24: 3502308917803214958
+      player_f_surf_fish_25: -2446007155573105265
+      player_f_surf_fish_26: -2279215197990626629
+      player_f_surf_fish_27: -6338796167514453593
+      player_f_surf_fish_28: -5772651853051552063
+      player_f_surf_fish_29: -8901150073083843059
+      player_f_surf_fish_3: 8519209354357698416
+      player_f_surf_fish_30: -4833936593459979680
+      player_f_surf_fish_31: -6124744434600947193
+      player_f_surf_fish_32: 3615201900927539046
+      player_f_surf_fish_33: -6466271951384816547
+      player_f_surf_fish_34: -7052412309010838603
+      player_f_surf_fish_35: 2044049892587132065
+      player_f_surf_fish_4: 6898138507952952628
+      player_f_surf_fish_5: 3867083625069533760
+      player_f_surf_fish_6: -4871038777187087261
+      player_f_surf_fish_7: 5352799431803557882
+      player_f_surf_fish_8: -5160612589827226858
+      player_f_surf_fish_9: 2954696670448977053
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 5ecea73aca686b94ba2dc9353c698a30
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,172 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 19411cc954af49bcbae69c21236ca853
+      internalID: 218535707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04ab2d506314053a713133de0ed0750
+      internalID: 2537406315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161ef68f20dd4bd3953fab6efac75eba
+      internalID: 4027632164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea2bcd79956477e836b88183765f17a
+      internalID: 2931628090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 506146a3ff63484e8eeb1fa90bcc9278
+      internalID: 2118902734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bce1a9662224993a7ea9794c6bdbf0c
+      internalID: 3815135221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebca3fa1fafb46fbb04fb367d1d54aeb
+      internalID: 3856739606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-hm_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a971e90b06348b3b211b48856dd286d
+      internalID: 2620099060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: c43483133c4d42c7a148db60cddaf91c
-      internalID: 1557036731
+      internalID: 1022553026813407909
       vertices: []
       indices: 
       edges: []
@@ -117,7 +312,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7efa81bf0ff641209f7f610529635751
-      internalID: 3536762915
+      internalID: -7275357023848197994
       vertices: []
       indices: 
       edges: []
@@ -139,7 +334,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2f0baedd5ffd447f99cc91ea536b8d6e
-      internalID: 4097042087
+      internalID: 3906043457854349761
       vertices: []
       indices: 
       edges: []
@@ -161,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7485026ef5674eb9abda1d9c00e33a74
-      internalID: 2467146037
+      internalID: 6253193298339093358
       vertices: []
       indices: 
       edges: []
@@ -183,7 +378,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 68a5b3d01973497499fde804b170940b
-      internalID: 338803339
+      internalID: 8933754614675907339
       vertices: []
       indices: 
       edges: []
@@ -205,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bf320cdd871344f1aadc3c7fac2188a3
-      internalID: 1126275297
+      internalID: -1124066073378970400
       vertices: []
       indices: 
       edges: []
@@ -227,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c94006aebd5f47f89006f54dc58f6977
-      internalID: 1839088228
+      internalID: 8859668842592723535
       vertices: []
       indices: 
       edges: []
@@ -249,11 +444,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d6c2beb9abdf4865b4b0a4a314f0f271
-      internalID: 2801376912
+      internalID: -1889843958810313521
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -263,9 +460,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx-hm_0: 1022553026813407909
+      fx-hm_1: -7275357023848197994
+      fx-hm_2: 3906043457854349761
+      fx-hm_3: 6253193298339093358
+      fx-hm_4: 8933754614675907339
+      fx-hm_5: -1124066073378970400
+      fx-hm_6: 8859668842592723535
+      fx-hm_7: -1889843958810313521
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: d48219badb6d3e448abb4c2be6b2004a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,876 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 579ac3a724004e219160abce3ae03e7f
+      internalID: 1865479970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bdfa60e88484ee08c36267179cc398d
+      internalID: 3647040532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918b00abbb04495dba2f84eeff8b0b7e
+      internalID: 39853034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4439871efa4b459ebbe63a9edbcb9d97
+      internalID: 907494726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d427db4b0ad1478ab78f56e2ceac0bbc
+      internalID: 1195510486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 694d19d5338344478ee415010488e85f
+      internalID: 1846595267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c50e731ca334a51b0eabafaa27d5325
+      internalID: 3866722321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2d15846844434dac2f01fbd9a5851c
+      internalID: 2786966159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885db8a9b2844a1493e8b16351d115c3
+      internalID: 497050427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658835c6d7034172977af7e0eed6e14b
+      internalID: 4064185788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc65346a76948bb82fdc9100e349e5c
+      internalID: 632270454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94abde124ef442fb86f1566e8c631b8e
+      internalID: 91474172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28893ca4a11f4581b1a4b55c08ced256
+      internalID: 401005241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee51f057fb964943bacb83a6b3635761
+      internalID: 250819845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb3da6636ca427fa492897a5ba34b53
+      internalID: 1761125872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0360621519ce4412a1ba176e705b665d
+      internalID: 3098522428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56a750e2e7264a16a23fa07d78bb8b23
+      internalID: 1600181525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f91967c17c4742a979f128808795f7
+      internalID: 3195662598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9b241b1c1a4d23b86a2787263b9723
+      internalID: 703769535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d0497881b149579177fde5a41b8bd2
+      internalID: 1844239480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e305ad623d8743c5b0d9a9198089c0d4
+      internalID: 1300591549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c940f6979dce4fc7a14503769e9739f0
+      internalID: 1325815735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a23b7deafc4ac6afc0df2f5b2b97b4
+      internalID: 41537017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33989ce75baf49adb5d1e5bdc601c280
+      internalID: 2338224314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752f73ed04ac404593524b87b1a3b72f
+      internalID: 405822346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e3c43bdb664daa942114eb217c62f2
+      internalID: 865146679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5987964ed12f468c95fbc9eda716b98f
+      internalID: 3354162257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9065eac3bd4beab45c128cccfd03c6
+      internalID: 1059795509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192900f564884304a22d03d99cb620a8
+      internalID: 272584502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d112a9154d30449e854e16955b786a65
+      internalID: 4253923622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bafd56a79e94086bc2acd22eb03a194
+      internalID: 2034004241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe04da932d0d422485b8c6f389f1d952
+      internalID: 3311952031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db9234bd7974a91a54f0f9dc8d3b5e0
+      internalID: 3023883273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b5353d630e49b6bb5b7d94cefdbb04
+      internalID: 2024537276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394b9d9e77614033a13b95c748db2d55
+      internalID: 1685640159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ad1d397034423a87003438119e6f94
+      internalID: 471110581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2149ba8f4874460887893c18348dd0f4
+      internalID: 968039769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c777228e7d7408d9d25e2d143440225
+      internalID: 2657535796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ee1bd250ff42bf8b1974c59fab720b
+      internalID: 556012700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx-elevator-screen_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ced69c293f74326aba29e171e768416
+      internalID: 56319139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 99d278715d594a9c9897b2973c94a30c
-      internalID: 4006268369
+      internalID: -7490165893266743219
       vertices: []
       indices: 
       edges: []
@@ -117,7 +1016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7547f081de404e418d03f6c260637da3
-      internalID: 1442498183
+      internalID: -4635697103040280670
       vertices: []
       indices: 
       edges: []
@@ -139,7 +1038,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0c854cceea444455bd5ecb8d6df1d27c
-      internalID: 3470657903
+      internalID: 4603206120452867182
       vertices: []
       indices: 
       edges: []
@@ -161,7 +1060,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e3226d43a28a48f58fc8f7d6ea267257
-      internalID: 1771446783
+      internalID: -11166987097047737
       vertices: []
       indices: 
       edges: []
@@ -183,7 +1082,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 03759dcb4f2c41ac9bca622699058b5a
-      internalID: 4006544930
+      internalID: 8468578870696483639
       vertices: []
       indices: 
       edges: []
@@ -205,7 +1104,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0924a6381bfc426ebecdb473c0becd2e
-      internalID: 2535039273
+      internalID: 2665073238723474343
       vertices: []
       indices: 
       edges: []
@@ -227,7 +1126,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9a77ede10b5f4d089d73937c867db32a
-      internalID: 1522772926
+      internalID: -624619290658440278
       vertices: []
       indices: 
       edges: []
@@ -249,7 +1148,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 24d5709e36ee4edf81c7a01077dc8189
-      internalID: 2205515683
+      internalID: -2861120704613401244
       vertices: []
       indices: 
       edges: []
@@ -271,7 +1170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0e33877ac5be4f28abc156e6217931a6
-      internalID: 4213329983
+      internalID: 9152178119016061427
       vertices: []
       indices: 
       edges: []
@@ -293,7 +1192,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4e31ffbb303143d98bc7fd37e1892989
-      internalID: 4064324166
+      internalID: -5301063611882469680
       vertices: []
       indices: 
       edges: []
@@ -315,7 +1214,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 805a213dc19847e8ae585df3e77fb33d
-      internalID: 1425568847
+      internalID: 6666982040726821441
       vertices: []
       indices: 
       edges: []
@@ -337,7 +1236,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5834aeb041824c58a43d3bb6b4879fb2
-      internalID: 3310466872
+      internalID: 2801185508762606070
       vertices: []
       indices: 
       edges: []
@@ -359,7 +1258,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ee21d251e59e494fa1ac365d0f8e9cdb
-      internalID: 2875473867
+      internalID: 1850135377929176676
       vertices: []
       indices: 
       edges: []
@@ -381,7 +1280,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 31f9ae24ac1a4bb9882042199a855946
-      internalID: 3644038392
+      internalID: -3599159780911491880
       vertices: []
       indices: 
       edges: []
@@ -403,7 +1302,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bd74880185f34f638570a3e51ba3c3d8
-      internalID: 1917834845
+      internalID: -2158315123926248212
       vertices: []
       indices: 
       edges: []
@@ -425,7 +1324,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c9cd8b20b7ba476fb444be6ebc98752f
-      internalID: 1577223042
+      internalID: -7122968050309112879
       vertices: []
       indices: 
       edges: []
@@ -447,7 +1346,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0b0e479768984c6e8b4b7bf4d0b8f389
-      internalID: 1510190263
+      internalID: -479736330023209017
       vertices: []
       indices: 
       edges: []
@@ -469,7 +1368,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 981d397793754fb5830fc208d61f1d8f
-      internalID: 1255339168
+      internalID: 8910568299078009602
       vertices: []
       indices: 
       edges: []
@@ -491,7 +1390,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a3418c9b4084e84a10d986f79a6b34b
-      internalID: 1037619415
+      internalID: -2424237831449973949
       vertices: []
       indices: 
       edges: []
@@ -513,7 +1412,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4efd483f594e4313a25cb9a8c2dc7453
-      internalID: 504699223
+      internalID: 203001664469152258
       vertices: []
       indices: 
       edges: []
@@ -535,7 +1434,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1aa0ed0dbdbb455b92feea1189f9d870
-      internalID: 853991826
+      internalID: 2724490300600002832
       vertices: []
       indices: 
       edges: []
@@ -557,7 +1456,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 414b875752e24589811337828d9628e2
-      internalID: 1028773426
+      internalID: 1906433405678568677
       vertices: []
       indices: 
       edges: []
@@ -579,7 +1478,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7d03fb1144e34d898fbbe682d998a7e2
-      internalID: 1263069478
+      internalID: 3618988990811089044
       vertices: []
       indices: 
       edges: []
@@ -601,7 +1500,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 41502e0866de469e8684940e8c2a32ea
-      internalID: 2563729362
+      internalID: -7954622257773468193
       vertices: []
       indices: 
       edges: []
@@ -623,7 +1522,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b24f8896fa6a461ca5f5fb7a680a4310
-      internalID: 3672327126
+      internalID: 2266650582677246846
       vertices: []
       indices: 
       edges: []
@@ -645,7 +1544,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f03a5c2d8949423eadfe3689e8153245
-      internalID: 4210624533
+      internalID: 2897808866455201866
       vertices: []
       indices: 
       edges: []
@@ -667,7 +1566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4855926a1da84aa5836fce6eccacf9f7
-      internalID: 1704652873
+      internalID: 5714918034996800816
       vertices: []
       indices: 
       edges: []
@@ -689,7 +1588,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 62f4ab579a144cd3b7d1164558dbe704
-      internalID: 2999303257
+      internalID: 317181635657829447
       vertices: []
       indices: 
       edges: []
@@ -711,7 +1610,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aaded14d79804af88e041dfa3185b080
-      internalID: 3299165945
+      internalID: 3821573972195676661
       vertices: []
       indices: 
       edges: []
@@ -733,7 +1632,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 45093d36473c49f6b77079f07819ada9
-      internalID: 2887193616
+      internalID: -3200739427159340744
       vertices: []
       indices: 
       edges: []
@@ -755,7 +1654,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1847f4b933514ff6a9f73e576cb0d7c6
-      internalID: 2439882332
+      internalID: 7128647833299203460
       vertices: []
       indices: 
       edges: []
@@ -777,7 +1676,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a406a1c52493486ea30db6dbd94ff7b2
-      internalID: 775598098
+      internalID: -2665516354736618961
       vertices: []
       indices: 
       edges: []
@@ -799,7 +1698,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3405e3daae1e4c85851c7786060193c9
-      internalID: 1078212597
+      internalID: -1354354986587722144
       vertices: []
       indices: 
       edges: []
@@ -821,7 +1720,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6b0591c6b3284bf5ae781afdb86e746c
-      internalID: 397036015
+      internalID: -4601602390833193784
       vertices: []
       indices: 
       edges: []
@@ -843,7 +1742,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d23ec05f592544c4b98471947fd0711b
-      internalID: 4110468110
+      internalID: -3935239848022141331
       vertices: []
       indices: 
       edges: []
@@ -865,7 +1764,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e9313adbc1e54e4089280a45ec0e0df5
-      internalID: 885282875
+      internalID: 6926909640910857226
       vertices: []
       indices: 
       edges: []
@@ -887,7 +1786,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7d27562035864c449d962206e9fee592
-      internalID: 623755625
+      internalID: 6389444771820372388
       vertices: []
       indices: 
       edges: []
@@ -909,7 +1808,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a7cf05c6cfc143eaa4e4e70b3b2b8bdb
-      internalID: 850723483
+      internalID: 7470796799568520593
       vertices: []
       indices: 
       edges: []
@@ -931,7 +1830,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: de47fe3b46504ae9830b63196269578d
-      internalID: 3166062632
+      internalID: 365874610626732193
       vertices: []
       indices: 
       edges: []
@@ -953,11 +1852,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4841d98811e54c8e96887d0a234fc679
-      internalID: 3275106369
+      internalID: 6288888121513883473
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -967,9 +1868,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx-elevator-screen_0: -7490165893266743219
+      fx-elevator-screen_1: -4635697103040280670
+      fx-elevator-screen_10: 6666982040726821441
+      fx-elevator-screen_11: 2801185508762606070
+      fx-elevator-screen_12: 1850135377929176676
+      fx-elevator-screen_13: -3599159780911491880
+      fx-elevator-screen_14: -2158315123926248212
+      fx-elevator-screen_15: -7122968050309112879
+      fx-elevator-screen_16: -479736330023209017
+      fx-elevator-screen_17: 8910568299078009602
+      fx-elevator-screen_18: -2424237831449973949
+      fx-elevator-screen_19: 203001664469152258
+      fx-elevator-screen_2: 4603206120452867182
+      fx-elevator-screen_20: 2724490300600002832
+      fx-elevator-screen_21: 1906433405678568677
+      fx-elevator-screen_22: 3618988990811089044
+      fx-elevator-screen_23: -7954622257773468193
+      fx-elevator-screen_24: 2266650582677246846
+      fx-elevator-screen_25: 2897808866455201866
+      fx-elevator-screen_26: 5714918034996800816
+      fx-elevator-screen_27: 317181635657829447
+      fx-elevator-screen_28: 3821573972195676661
+      fx-elevator-screen_29: -3200739427159340744
+      fx-elevator-screen_3: -11166987097047737
+      fx-elevator-screen_30: 7128647833299203460
+      fx-elevator-screen_31: -2665516354736618961
+      fx-elevator-screen_32: -1354354986587722144
+      fx-elevator-screen_33: -4601602390833193784
+      fx-elevator-screen_34: -3935239848022141331
+      fx-elevator-screen_35: 6926909640910857226
+      fx-elevator-screen_36: 6389444771820372388
+      fx-elevator-screen_37: 7470796799568520593
+      fx-elevator-screen_38: 365874610626732193
+      fx-elevator-screen_39: 6288888121513883473
+      fx-elevator-screen_4: 8468578870696483639
+      fx-elevator-screen_5: 2665073238723474343
+      fx-elevator-screen_6: -624619290658440278
+      fx-elevator-screen_7: -2861120704613401244
+      fx-elevator-screen_8: 9152178119016061427
+      fx-elevator-screen_9: -5301063611882469680
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

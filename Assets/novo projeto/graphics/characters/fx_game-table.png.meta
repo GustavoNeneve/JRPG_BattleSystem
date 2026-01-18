@@ -3,7 +3,7 @@ guid: ca0d8facae5f7494a9c348d21f601bd4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,788 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: b02f2dc9701442ed866f40d08303ec51
+      internalID: 902011657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd6ac2a95544678a4f4b8fa39318bf4
+      internalID: 1054858629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437ea4032218466891be41a9c523c3aa
+      internalID: 2241894569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698c7c8458854a8fb6221f15068eb3b3
+      internalID: 328610571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00de73063a2844b6a2bac479adc2e796
+      internalID: 111399897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12b5c591094496596bd7affe19c395f
+      internalID: 3760057241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973a8a37e5c8457aae6bc6af7674f9f5
+      internalID: 2687989232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3e962b80bd47d4bee4aa00430b5fb9
+      internalID: 3995416986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5917b6bde543c0b27e938db7c138ea
+      internalID: 598985147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45e2c2ee9cd4939b31eb217cb9d96cd
+      internalID: 249629878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca897cc165140a08bedea31a5d7d979
+      internalID: 3432287299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69156ea0143043b6b822ef74ce642260
+      internalID: 2614704750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260e8a037bef4159ada97515e593fe0e
+      internalID: 2202728762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc197a924954c9db6c81fffe578dc0a
+      internalID: 1509660347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1579f9a75e44054af92b5f404da902d
+      internalID: 1781028245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca355fd668644848d49224846ef7931
+      internalID: 1540613597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56a18a4cf6c4277944d74da87cc34e1
+      internalID: 554847487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c2831d447e4ee5afeda7ad899398db
+      internalID: 2905828613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775529c040384e8496ba52c78de63db4
+      internalID: 2767033986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0647c32d0384475c8088eb125b34fe38
+      internalID: 889467789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb3de2fefac40c5845ecfeca73580a3
+      internalID: 375841330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841bbb8589d94b7e8132b8bb6980896a
+      internalID: 3606059508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6704baa632f7442b949482194b46d656
+      internalID: 251704864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4ee2d22b54415f9e1da993a4d29074
+      internalID: 3530902753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a584a3c74c4e08beefbc6a468939b0
+      internalID: 94002430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81836f7f18340c292bd024b9f5d74c8
+      internalID: 980289891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d658a65ef84e21900aa098e31fd11d
+      internalID: 689828757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535c3a8ce6df465284662f3903ac1d04
+      internalID: 4068704518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98005704b8f240d5beb5b0a192784994
+      internalID: 454513721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb1f64cdf5441ca8a367076b64a2efa
+      internalID: 630452461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17a13e92a7d44b1881747707b672a71
+      internalID: 706597315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6375f41ea1814a068bfcb55bf24e9629
+      internalID: 3246675450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d8edc956e5f41939689307a7016363b
+      internalID: 1520944576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df05c8912164921af3c23934e0dd074
+      internalID: 4279095810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d3f694674a4ef9a174d023e80a6546
+      internalID: 3435425316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_game-table_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8120b257fb374f6f8f43bc0114e793b1
+      internalID: 1983848080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 4aa502b03419470b82f8a6aeb3d73ded
-      internalID: 738926328
+      internalID: 3806381340140486029
       vertices: []
       indices: 
       edges: []
@@ -117,7 +928,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1509c10eb9bc4a0193105907adb1dcb8
-      internalID: 625369334
+      internalID: -6827169492521504243
       vertices: []
       indices: 
       edges: []
@@ -139,7 +950,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0c2c93d54e8e40cf99dcbff87d4bdf29
-      internalID: 3198438926
+      internalID: -1761965036245985532
       vertices: []
       indices: 
       edges: []
@@ -161,7 +972,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4436f957f42b4b42bf01640d16ea4b75
-      internalID: 2844186046
+      internalID: -2223897349691490062
       vertices: []
       indices: 
       edges: []
@@ -183,7 +994,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 63f88c45c5714a939a04ca9334a818d1
-      internalID: 659804449
+      internalID: 1473767879942000619
       vertices: []
       indices: 
       edges: []
@@ -205,7 +1016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dcbfc6226db542149b3b3bfd3d52711b
-      internalID: 3561801513
+      internalID: 9078585855353772789
       vertices: []
       indices: 
       edges: []
@@ -227,7 +1038,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bd899eeca3bc4bcfac41db04d889112f
-      internalID: 2617826580
+      internalID: 7490363097715201805
       vertices: []
       indices: 
       edges: []
@@ -249,7 +1060,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4ada759574374efd9fd42e43b14bd97c
-      internalID: 3980993745
+      internalID: -5985324268781388112
       vertices: []
       indices: 
       edges: []
@@ -271,7 +1082,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 41cb31d98478454c9a622365110a8439
-      internalID: 1297836478
+      internalID: -3930750231877057726
       vertices: []
       indices: 
       edges: []
@@ -293,7 +1104,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a5b16d4f15974896ab6bdca78f28a47a
-      internalID: 597139748
+      internalID: -3914972330901200216
       vertices: []
       indices: 
       edges: []
@@ -315,7 +1126,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4db6c6add3744d1aba9a5ab47e3fb6ad
-      internalID: 1323362857
+      internalID: 7412623437098871156
       vertices: []
       indices: 
       edges: []
@@ -337,7 +1148,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 03c6b4b4790046f689864e473aa24e7e
-      internalID: 3096451863
+      internalID: -124149273195979992
       vertices: []
       indices: 
       edges: []
@@ -359,7 +1170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 0b806f1b9a864a82b4e3f38436cbb00f
-      internalID: 720228036
+      internalID: 2898749916480675154
       vertices: []
       indices: 
       edges: []
@@ -381,7 +1192,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 16eec6043ea348f2b71cbd21b46e328a
-      internalID: 2342941522
+      internalID: -5714774831589376176
       vertices: []
       indices: 
       edges: []
@@ -403,7 +1214,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9b05fa4f6a0d4b9dbd7245e675f6a81d
-      internalID: 546098310
+      internalID: -610732603229251906
       vertices: []
       indices: 
       edges: []
@@ -425,7 +1236,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e94da17d698440d698b8e8a5933d3a94
-      internalID: 3483858741
+      internalID: -7651616069865529508
       vertices: []
       indices: 
       edges: []
@@ -447,7 +1258,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 973ff1de50a14327a9eac807efd97016
-      internalID: 4063251915
+      internalID: -247564608827187588
       vertices: []
       indices: 
       edges: []
@@ -469,7 +1280,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e0e5b5181530493d8b50736087ed38a2
-      internalID: 2691106177
+      internalID: 3236649773306550927
       vertices: []
       indices: 
       edges: []
@@ -491,7 +1302,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b8c61c05ab94442bb473a443288c3d10
-      internalID: 2341079915
+      internalID: 3402324783453536
       vertices: []
       indices: 
       edges: []
@@ -513,7 +1324,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 60ac41b92f2b4a558a041815456efd86
-      internalID: 3851222438
+      internalID: -2224497197914622727
       vertices: []
       indices: 
       edges: []
@@ -535,7 +1346,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 014639d460c046d29e4d3ed091c9d415
-      internalID: 1373691738
+      internalID: -2601266634541853967
       vertices: []
       indices: 
       edges: []
@@ -557,7 +1368,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f6df4916ef4a43c9a08aa41f7992e315
-      internalID: 3611669177
+      internalID: 8388758156992279728
       vertices: []
       indices: 
       edges: []
@@ -579,7 +1390,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ef153de576a84b9db3b2c6002d506cee
-      internalID: 1906321297
+      internalID: 8835691118870382885
       vertices: []
       indices: 
       edges: []
@@ -601,7 +1412,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b2feaefb6c6c48a09d9a28b0bbaf0684
-      internalID: 3166893774
+      internalID: -7314624924478463851
       vertices: []
       indices: 
       edges: []
@@ -623,7 +1434,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6aa001fd5b77415498e5525246405834
-      internalID: 1007629062
+      internalID: 3341410967891022536
       vertices: []
       indices: 
       edges: []
@@ -645,7 +1456,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1324e8360a0343e8a0f32fb06b7886e3
-      internalID: 3153162088
+      internalID: -2198290041467370723
       vertices: []
       indices: 
       edges: []
@@ -667,7 +1478,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4fc00a9d583e459e8c020645da20eb6c
-      internalID: 3276374469
+      internalID: 4584604266511968720
       vertices: []
       indices: 
       edges: []
@@ -689,7 +1500,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a76b54682d344a3387157422f08a2d0c
-      internalID: 657812357
+      internalID: 5968549423868863859
       vertices: []
       indices: 
       edges: []
@@ -711,7 +1522,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c3dfa099c5f549929f53f4bf2fa49e4b
-      internalID: 4155676708
+      internalID: 3731302439741114205
       vertices: []
       indices: 
       edges: []
@@ -733,7 +1544,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 78fcb482809f4e0f954a14d613ca987b
-      internalID: 1020898606
+      internalID: -782307014263466060
       vertices: []
       indices: 
       edges: []
@@ -755,7 +1566,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: be352034f5a14039befc3fa216ef34f2
-      internalID: 2942476261
+      internalID: -3591186095968288454
       vertices: []
       indices: 
       edges: []
@@ -777,7 +1588,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3a961f97bc2946578f2e956304c0f831
-      internalID: 1067354822
+      internalID: -3134410487364235429
       vertices: []
       indices: 
       edges: []
@@ -799,7 +1610,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 68dcd59009ab45d1a327fd4ed95bf0a0
-      internalID: 3437723755
+      internalID: 6828795470928424488
       vertices: []
       indices: 
       edges: []
@@ -821,7 +1632,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b421534cb9144636bd29cf00ed175a00
-      internalID: 1630175060
+      internalID: -4041698256598297839
       vertices: []
       indices: 
       edges: []
@@ -843,7 +1654,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4a798fa918154f599aa8d540a0987c97
-      internalID: 2967956358
+      internalID: -4809886639873661740
       vertices: []
       indices: 
       edges: []
@@ -865,11 +1676,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 09683f5fe2024940b94b6f8960d7a4d3
-      internalID: 819776825
+      internalID: -4150314559124313013
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -879,9 +1692,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx_game-table_0: 3806381340140486029
+      fx_game-table_1: -6827169492521504243
+      fx_game-table_10: 7412623437098871156
+      fx_game-table_11: -124149273195979992
+      fx_game-table_12: 2898749916480675154
+      fx_game-table_13: -5714774831589376176
+      fx_game-table_14: -610732603229251906
+      fx_game-table_15: -7651616069865529508
+      fx_game-table_16: -247564608827187588
+      fx_game-table_17: 3236649773306550927
+      fx_game-table_18: 3402324783453536
+      fx_game-table_19: -2224497197914622727
+      fx_game-table_2: -1761965036245985532
+      fx_game-table_20: -2601266634541853967
+      fx_game-table_21: 8388758156992279728
+      fx_game-table_22: 8835691118870382885
+      fx_game-table_23: -7314624924478463851
+      fx_game-table_24: 3341410967891022536
+      fx_game-table_25: -2198290041467370723
+      fx_game-table_26: 4584604266511968720
+      fx_game-table_27: 5968549423868863859
+      fx_game-table_28: 3731302439741114205
+      fx_game-table_29: -782307014263466060
+      fx_game-table_3: -2223897349691490062
+      fx_game-table_30: -3591186095968288454
+      fx_game-table_31: -3134410487364235429
+      fx_game-table_32: 6828795470928424488
+      fx_game-table_33: -4041698256598297839
+      fx_game-table_34: -4809886639873661740
+      fx_game-table_35: -4150314559124313013
+      fx_game-table_4: 1473767879942000619
+      fx_game-table_5: 9078585855353772789
+      fx_game-table_6: 7490363097715201805
+      fx_game-table_7: -5985324268781388112
+      fx_game-table_8: -3930750231877057726
+      fx_game-table_9: -3914972330901200216
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

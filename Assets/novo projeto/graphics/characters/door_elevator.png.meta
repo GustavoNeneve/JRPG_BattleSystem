@@ -3,7 +3,7 @@ guid: dec78cf5f1f3c2e4391e890208365844
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 7e71f493d4c94406a171c48434debb6f
+      internalID: 1419159049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620bd4ded1b247689461e94282a17e2d
+      internalID: 1664945579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73db7e93f75c421f972e6b2d63cd9cb3
+      internalID: 3630064871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab1562488b743d8aa75656a06742b08
+      internalID: 762913231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0aa4fb2a97d4db3a5b0a03e1eee8d69
+      internalID: 2517721266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e7f0ce5d0542e3ace7afbb945c92e4
+      internalID: 2742189916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdfd9146c484a868b16c8d228ff512a
+      internalID: 2875351579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5104019a554c0d83bd378a1bce5f7a
+      internalID: 3612381402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933f21968e054a1aae065e83df3c4a7f
+      internalID: 446338420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7a14d50ea64dae95e1fe328e0d02ff
+      internalID: 1545365990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86a1a641d3b496f8e5affaac059cd20
+      internalID: 991084891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door_elevator_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316f85c889d44ad7938c3915bbc320b8
+      internalID: 2497343656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 0233428721584e208069da5d364ecf1e
-      internalID: 3641402246
+      internalID: -7643490817703366112
       vertices: []
       indices: 
       edges: []
@@ -117,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 959539af1f5947fc85f8da1059d3a73e
-      internalID: 2343981745
+      internalID: 5868940190428497896
       vertices: []
       indices: 
       edges: []
@@ -139,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3fc8c17e63b942bf8bad8f8de88dfe7e
-      internalID: 3463086901
+      internalID: -6962811090399713705
       vertices: []
       indices: 
       edges: []
@@ -161,7 +444,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bfc91d27b72f4930b0d5c58dbdc34d81
-      internalID: 449586922
+      internalID: -290019302833485953
       vertices: []
       indices: 
       edges: []
@@ -183,7 +466,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c88613137c124af191b4878b92c9f7d6
-      internalID: 3142562857
+      internalID: -7517778335055163568
       vertices: []
       indices: 
       edges: []
@@ -205,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d65e97067d9e4e5b8e66f985d784f931
-      internalID: 144661442
+      internalID: 2512730724867304629
       vertices: []
       indices: 
       edges: []
@@ -227,7 +510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ebaef85af953463a99e79eb68ade57fa
-      internalID: 2311270721
+      internalID: -377734164701279664
       vertices: []
       indices: 
       edges: []
@@ -249,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a51e0bf42c704ce8b4edd367e9a9e29c
-      internalID: 1188177825
+      internalID: 4716112393457157881
       vertices: []
       indices: 
       edges: []
@@ -271,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 40216ff7ac3342c0b42910edb15ce87b
-      internalID: 3344036274
+      internalID: 380038333669382543
       vertices: []
       indices: 
       edges: []
@@ -293,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a83cc0a5ee94077b37753e42b9f0e1a
-      internalID: 4213830411
+      internalID: -5774612710192060816
       vertices: []
       indices: 
       edges: []
@@ -315,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 157f63eb4dac488697bfa81c0ea9b5b7
-      internalID: 3785529871
+      internalID: -3054086096312760184
       vertices: []
       indices: 
       edges: []
@@ -337,11 +620,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a9c01012b87a471093841fe49d0c83c4
-      internalID: 1487778983
+      internalID: 4984452786635184799
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -351,9 +636,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      door_elevator_0: -7643490817703366112
+      door_elevator_1: 5868940190428497896
+      door_elevator_10: -3054086096312760184
+      door_elevator_11: 4984452786635184799
+      door_elevator_2: -6962811090399713705
+      door_elevator_3: -290019302833485953
+      door_elevator_4: -7517778335055163568
+      door_elevator_5: 2512730724867304629
+      door_elevator_6: -377734164701279664
+      door_elevator_7: 4716112393457157881
+      door_elevator_8: 380038333669382543
+      door_elevator_9: -5774612710192060816
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

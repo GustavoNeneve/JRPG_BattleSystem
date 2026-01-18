@@ -3,7 +3,7 @@ guid: 20dc43b7651bd0f4196afbaf993a3bfb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,172 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 7a010a30abbf402092e94a07f3b95399
+      internalID: 2498258175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9507f119f5e84c47965ae0283b434908
+      internalID: 1551022997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8150698cdd76495bad4910861b98413c
+      internalID: 1248701304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7748a7e7bc3743529be0aafaf4905c0c
+      internalID: 1263951086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a167fae21e4058a973cd9b6d2682e3
+      internalID: 4075982605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be9d6c241a74495abcad6baff9d8058
+      internalID: 963118124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4627d139fc734a01a2ab2c29345e14c0
+      internalID: 4240085012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fx_warp-01_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbda0250e1a5434884ddc1672ed066c4
+      internalID: 1211160445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 2070a27a8449437f8f48aa7c6da27411
-      internalID: 1687601039
+      internalID: -8465833076674492063
       vertices: []
       indices: 
       edges: []
@@ -117,7 +312,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dbd4c9c752594b659afebc0dbb455749
-      internalID: 983065526
+      internalID: 7991992570735703074
       vertices: []
       indices: 
       edges: []
@@ -139,7 +334,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a88b2636d7a34669a45dd40df5cc1e79
-      internalID: 291701347
+      internalID: -3303070272132604673
       vertices: []
       indices: 
       edges: []
@@ -161,7 +356,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 55c4d02061d44cc8929047daf2ab4acc
-      internalID: 405240419
+      internalID: 4197821908237559107
       vertices: []
       indices: 
       edges: []
@@ -183,7 +378,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b89c4ba86ce6435c953bd2a2ffd84e8b
-      internalID: 3160376726
+      internalID: -2903984510412146740
       vertices: []
       indices: 
       edges: []
@@ -205,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 629734348a444a868a63c6d70866a17a
-      internalID: 2491027897
+      internalID: -5636342570245203887
       vertices: []
       indices: 
       edges: []
@@ -227,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c882e7e66b9d4a4a979a271140fe2e48
-      internalID: 2651962754
+      internalID: -2923280433008244723
       vertices: []
       indices: 
       edges: []
@@ -249,11 +444,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7e83da1204ec441bb31feead3d38ceff
-      internalID: 183983032
+      internalID: 234936929415215440
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -263,9 +460,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fx_warp-01_0: -8465833076674492063
+      fx_warp-01_1: 7991992570735703074
+      fx_warp-01_2: -3303070272132604673
+      fx_warp-01_3: 4197821908237559107
+      fx_warp-01_4: -2903984510412146740
+      fx_warp-01_5: -5636342570245203887
+      fx_warp-01_6: -2923280433008244723
+      fx_warp-01_7: 234936929415215440
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

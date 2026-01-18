@@ -3,7 +3,7 @@ guid: c6b8f2cda52a9814e925db7e88cd4126
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,10 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -62,9 +64,24 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -73,6 +90,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -94,8 +125,260 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+      spriteID: 24f51b1a985a44019bc880588cc227bc
+      internalID: 2749931234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07845e894a294dd5a9eb95ca5e4398b4
+      internalID: 2103431882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c4f4468f3244b88e2f1d0c91597806
+      internalID: 335001265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9268996add6548d68cc1bd49cced48dd
+      internalID: 497619637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb070adecce45778048ad94557fca4f
+      internalID: 1154211655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934c085438de425a9d17423824d373fc
+      internalID: 3589175099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d1eef082604c0e981858a59c13063c
+      internalID: 2743374652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306f5fea60e54767a0dc4b1b3f8b919b
+      internalID: 2530741114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a86d3290ff4e4db4fb1f477a63cfb3
+      internalID: 1335586173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062fd5ded15746a5b89f6b01c6391c7f
+      internalID: 911031630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffb9f22c3a6494cbebf3dd5968dd601
+      internalID: 3385393150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_01_red_m_deep_swamp_sinking_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8668464256244ef920c4cf8ff2633e3
+      internalID: 2983759857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []    customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
       spriteID: 6f5ec00bba284aa5a151bff60df6dc85
-      internalID: 3162945651
+      internalID: -5489188090608219110
       vertices: []
       indices: 
       edges: []
@@ -117,7 +400,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7ca994ad30b744198c929219691acaad
-      internalID: 3713674056
+      internalID: -6907547198347985837
       vertices: []
       indices: 
       edges: []
@@ -139,7 +422,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b1f7b431eded490aa761b3ebf54f802c
-      internalID: 507915072
+      internalID: 1717763833318839381
       vertices: []
       indices: 
       edges: []
@@ -161,7 +444,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3d5ec3ebc05b49188ad976409e68df7e
-      internalID: 1393164111
+      internalID: 2365616700817955370
       vertices: []
       indices: 
       edges: []
@@ -183,7 +466,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b46dbce994294aca80da7c4253a5406e
-      internalID: 652764751
+      internalID: 272753746410433905
       vertices: []
       indices: 
       edges: []
@@ -205,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5c22f3cb72b34a0c81e205b7552bc0ca
-      internalID: 1551657713
+      internalID: -5131686232781521915
       vertices: []
       indices: 
       edges: []
@@ -227,7 +510,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8be9160ef4f441ec9f1f9704fe7aa11e
-      internalID: 1105602126
+      internalID: 1799644256183034422
       vertices: []
       indices: 
       edges: []
@@ -249,7 +532,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ce4ac68438dd478e83f4c1536515e3d7
-      internalID: 2978874186
+      internalID: 7579928446024174922
       vertices: []
       indices: 
       edges: []
@@ -271,7 +554,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5cce19834e854f93bc701bb680a0d45c
-      internalID: 3357826092
+      internalID: -6485059147669491817
       vertices: []
       indices: 
       edges: []
@@ -293,7 +576,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7c90792ae6ac45fe9108492ad38cd5cb
-      internalID: 983324312
+      internalID: 1608427720675726722
       vertices: []
       indices: 
       edges: []
@@ -315,7 +598,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cdbae1c08aab46e38d51a760e6ba73aa
-      internalID: 2864802366
+      internalID: -3814576178580911037
       vertices: []
       indices: 
       edges: []
@@ -337,11 +620,13 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7f354fb1b64149abadc18b97bbb8f021
-      internalID: 3377344198
+      internalID: -7683905088396552854
       vertices: []
       indices: 
       edges: []
-      weights: []    outline: []
+      weights: []
+    outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -351,9 +636,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hero_01_red_m_deep_swamp_sinking_0: -5489188090608219110
+      hero_01_red_m_deep_swamp_sinking_1: -6907547198347985837
+      hero_01_red_m_deep_swamp_sinking_10: -3814576178580911037
+      hero_01_red_m_deep_swamp_sinking_11: -7683905088396552854
+      hero_01_red_m_deep_swamp_sinking_2: 1717763833318839381
+      hero_01_red_m_deep_swamp_sinking_3: 2365616700817955370
+      hero_01_red_m_deep_swamp_sinking_4: 272753746410433905
+      hero_01_red_m_deep_swamp_sinking_5: -5131686232781521915
+      hero_01_red_m_deep_swamp_sinking_6: 1799644256183034422
+      hero_01_red_m_deep_swamp_sinking_7: 7579928446024174922
+      hero_01_red_m_deep_swamp_sinking_8: -6485059147669491817
+      hero_01_red_m_deep_swamp_sinking_9: 1608427720675726722
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

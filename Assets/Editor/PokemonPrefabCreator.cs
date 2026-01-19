@@ -2,7 +2,8 @@ using UnityEngine;
 using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
-using NewBark.Data;
+using NewBark.Data; // Assuming SpecieData is here or we parse manually if namespace issues arise.
+using NewBark.Support; // For UniquePersistent if needed, though likely not for prefab gen.
 
 public class PokemonPrefabCreator : EditorWindow
 {
@@ -95,9 +96,12 @@ public class PokemonPrefabCreator : EditorWindow
                 SpriteRenderer sr = null;
                 Animator anim = null;
 
+
+
                 if (spriteInfoTransform != null)
                 {
-                    sr = spriteInfoTransform.GetComponent<SpriteRenderer>();
+                    //set sprite render.sprite get a component with name "Sprite"
+                    sr = instance.transform.Find("Sprite").GetComponent<SpriteRenderer>();
                     anim = spriteInfoTransform.GetComponent<Animator>();
 
                     if (sr != null)

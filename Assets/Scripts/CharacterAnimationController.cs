@@ -23,12 +23,26 @@ public class CharacterAnimationController : MonoBehaviour
     public Transform ProjectileSpawnPoint => projectileSpawnPoint;
     [SerializeField] ParticleSystem healingEffect;
 
+    private void Start()
+    {
+        EnableAnimator();
+    }
 
-    public void PlayAnimation(string animName) => myAnim.Play(animName);
-    
-    public void EnableAnimator() => myAnim.enabled = true;
 
-    public void DisableAnimator() => myAnim.enabled = false;
+    public void PlayAnimation(string animName)
+    {
+        if (myAnim != null && myAnim.gameObject.activeInHierarchy) myAnim.Play(animName);
+    }
+
+    public void EnableAnimator()
+    {
+        if (myAnim != null) myAnim.enabled = true;
+    }
+
+    public void DisableAnimator()
+    {
+        if (myAnim != null) myAnim.enabled = false;
+    }
 
     public void PlayHealingEffect() => healingEffect.Play();
 }

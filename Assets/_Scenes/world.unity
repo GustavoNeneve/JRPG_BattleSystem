@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 1
-  m_ApplyToSortingLayers: 000000009df8cce54f0636fab5cf6d77
+  m_ApplyToSortingLayers: 000000009df8cce54f0636fa2738c151
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -48341,7 +48341,7 @@ Transform:
   m_GameObject: {fileID: 352196779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2999034, y: 4.5, z: 10}
+  m_LocalPosition: {x: 1.2997096, y: 4.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100942,6 +100942,7 @@ GameObject:
   - component: {fileID: 1683139083}
   - component: {fileID: 1683139084}
   - component: {fileID: 1683139085}
+  - component: {fileID: 1683139086}
   m_Layer: 0
   m_Name: Dex
   m_TagString: Untagged
@@ -100980,6 +100981,8 @@ MonoBehaviour:
   - {fileID: 8900923260625967869, guid: cf3cdf112fbaba846a8b9f356457b99c, type: 3}
   - {fileID: 537072853643609338, guid: affefd7bb3bb6a4488555b314ccbf51d, type: 3}
   - {fileID: 8008911636120275913, guid: be61edd0f1e6987458a583e3605a33c3, type: 3}
+  - {fileID: 1858090432851322571, guid: 631fc1447ccf20e419ace9c205ceab94, type: 3}
+  - {fileID: 8484781438748598323, guid: cadeb5bd019f320458be49c8ccb6b2b1, type: 3}
 --- !u!114 &1683139085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101001,6 +101004,18 @@ MonoBehaviour:
   hospitalPosition: {x: 0, y: 0, z: 0}
   CurrentEnemyParty: []
   CurrentEncounterAILevel: 1
+--- !u!114 &1683139086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683139082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77779a020200f4e4a9aa60a9487c3e5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewBark.Data.GameDatabase
 --- !u!4 &1703834550
 Transform:
   m_ObjectHideFlags: 0
@@ -102611,7 +102626,7 @@ Transform:
   m_GameObject: {fileID: 2028657184}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81, y: -0.45, z: 0}
+  m_LocalPosition: {x: -7.5, y: 17.5, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -102630,14 +102645,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewBark.World.NPCController
   trainerId: trainer_0
+  targetTag: Player
   viewDistance: 32.25
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
   moveSpeed: 3
   stopDistance: 1.5
   isTrainer: 1
-  hasBattled: 1
+  hasBattled: 0
   isChasing: 0
 --- !u!61 &2028657187
 BoxCollider2D:
@@ -102812,7 +102825,7 @@ Transform:
   m_GameObject: {fileID: 2131464617}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2999034, y: 4.5, z: 10}
+  m_LocalPosition: {x: 1.2997096, y: 4.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -66,6 +66,11 @@ public class PokemonPrefabCreator : EditorWindow
             foreach (string file in files)
             {
                 string json = File.ReadAllText(file);
+                // Simple parsing to avoid complex dependency if SpecieData fails, 
+                // but let's try to infer structure. 
+                // We need 'id' and 'dbSymbol'.
+
+                // Using a light wrapper to extract just what we need if full parsing fails
                 SimpleSpecieData data = JsonUtility.FromJson<SimpleSpecieData>(json);
 
                 if (data == null || string.IsNullOrEmpty(data.dbSymbol)) continue;
@@ -80,104 +85,37 @@ public class PokemonPrefabCreator : EditorWindow
 
                 if (sprite == null)
                 {
+                    // Try looking for files that start with the ID (e.g. 0168_ariados.png or just 0168.png)
+                    // But user confirmed 0168.png exists.
+                    // Let's tolerate missing sprites but warn.
                     Debug.LogWarning($"Sprite not found for {data.dbSymbol} (ID: {spriteName}) at {spriteFullPath}");
-                }
-                else
-                {
-                    Debug.Log($"Sprite found for {data.dbSymbol} (ID: {spriteName}) at {spriteFullPath}");
+                    // Continue anyway to create the prefab (placeholders are better than crash)
                 }
 
                 // Create Instance
                 GameObject instance = (GameObject)PrefabUtility.InstantiatePrefab(template);
                 instance.name = data.dbSymbol;
 
-                // DIRECTLY find the "Sprite" child object to ensure we get the correct components
-                Transform spriteInfoTransform = instance.transform.Find("Sprite");
-                SpriteRenderer sr = null;
-                Animator anim = null;
+                // Set Sprite
+                // Use GetComponentInChildren because the SpriteRenderer might be on a child object (e.g. 'MainContent' or similar)
+                var sr = instance.GetComponentInChildren<SpriteRenderer>();
 
-
-
-                if (spriteInfoTransform != null)
+                if (sr != null)
                 {
-                    //set sprite render.sprite get a component with name "Sprite"
-                    sr = instance.transform.Find("Sprite").GetComponent<SpriteRenderer>();
-                    anim = spriteInfoTransform.GetComponent<Animator>();
-
-                    if (sr != null)
+                    if (sprite != null)
                     {
-                        if (sprite != null)
-                        {
-                            sr.sprite = sprite;
-                            // Verification log
-                            Debug.Log($"Replacing sprite on {instance.name}/Sprite. New: {sprite.name}");
-                        }
-                    }
-                    else
-                    {
-                        Debug.LogWarning($"SpriteRenderer not found on 'Sprite' child of {instance.name}");
+                        sr.sprite = sprite;
+                        // Debug.Log($"Assigned sprite {sprite.name} to {instance.name}");
                     }
                 }
                 else
                 {
-                    Debug.LogWarning($"'Sprite' child object not found in template {instance.name}, falling back to InChildren");
-                    sr = instance.GetComponentInChildren<SpriteRenderer>();
-                    anim = instance.GetComponentInChildren<Animator>();
+                    Debug.LogWarning($"SpriteRenderer component not found on {instance.name} or children!");
                 }
 
-                // Animator Override Logic
-                if (anim != null && anim.runtimeAnimatorController != null)
-                {
-                    // Create Animations Directory
-                    string animFolder = Path.Combine(outputPath, "Animations");
-                    if (!Directory.Exists(animFolder)) Directory.CreateDirectory(animFolder);
-
-                    // 1. Create a Static Animation Clip for this Sprite
-                    AnimationClip clip = new AnimationClip();
-                    clip.frameRate = 12;
-
-                    // Set Sprite Curve
-                    EditorCurveBinding curveBinding = new EditorCurveBinding();
-                    curveBinding.type = typeof(SpriteRenderer);
-
-                    // IF we found the anim on the "Sprite" object where the renderer is, path is empty.
-                    curveBinding.path = "";
-
-                    curveBinding.propertyName = "m_Sprite";
-
-                    ObjectReferenceKeyframe[] keys = new ObjectReferenceKeyframe[1];
-                    keys[0] = new ObjectReferenceKeyframe();
-                    keys[0].time = 0f;
-                    keys[0].value = sprite;
-
-                    AnimationUtility.SetObjectReferenceCurve(clip, curveBinding, keys);
-
-                    // Save Clip
-                    string clipPath = Path.Combine(animFolder, data.dbSymbol + "_idle.anim");
-                    AssetDatabase.CreateAsset(clip, clipPath);
-
-                    // 2. Create Override Controller
-                    AnimatorOverrideController overrideController = new AnimatorOverrideController(anim.runtimeAnimatorController);
-
-                    // Replace ALL clips with our static clip
-                    var overrides = new List<KeyValuePair<AnimationClip, AnimationClip>>();
-                    foreach (var originalClip in overrideController.animationClips)
-                    {
-                        overrides.Add(new KeyValuePair<AnimationClip, AnimationClip>(originalClip, clip));
-                    }
-                    overrideController.ApplyOverrides(overrides);
-
-                    // Save Controller
-                    string controllerPath = Path.Combine(animFolder, data.dbSymbol + "_controller.overrideController");
-                    AssetDatabase.CreateAsset(overrideController, controllerPath);
-
-                    // Assign
-                    anim.runtimeAnimatorController = overrideController;
-
-                    // Disable Animator by default so the Editor Preview uses the SpriteRenderer's static sprite.
-                    // IMPORTANT: CharacterAnimationController.Start() must re-enable it!
-                    anim.enabled = false;
-                }
+                // Animator is required by CharacterAnimationController, so we keep it.
+                // If it overrides the sprite, we might need a workaround later (like an empty controller).
+                // For now, we restore it to prevent crashes.
 
                 // Save as Prefab
                 string prefabPath = Path.Combine(outputPath, data.dbSymbol + ".prefab");

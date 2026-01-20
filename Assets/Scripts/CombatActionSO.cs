@@ -13,6 +13,7 @@ public enum DamageType
     HARMFUL,
     HEALING,
     MANA,
+    CAPTURE,
     UNDEFINED
 }
 

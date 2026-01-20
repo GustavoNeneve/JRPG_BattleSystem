@@ -51,9 +51,34 @@ namespace NewBark.Data
             LoadAbilities();
             LoadNatures();
             LoadTypes();
+            LoadTypes();
             LoadTrainers();
+            LoadItems();
             
-            Debug.Log($"[GameDatabase] Loaded {Moves.Count} Moves, {Species.Count} Species, {Trainers.Count} Trainers.");
+            Debug.Log($"[GameDatabase] Loaded {Moves.Count} Moves, {Species.Count} Species, {Trainers.Count} Trainers, {Items.Count} Items.");
+        }
+
+        public Dictionary<string, ItemData> Items = new Dictionary<string, ItemData>();
+
+        private void LoadItems()
+        {
+            string path = Path.Combine(BASE_PATH, "items");
+            if (!Directory.Exists(path)) return;
+
+            foreach (var file in Directory.GetFiles(path, "*.json"))
+            {
+                try
+                {
+                    string json = File.ReadAllText(file);
+                    ItemData data = JsonUtility.FromJson<ItemData>(json);
+                    if (data != null && !string.IsNullOrEmpty(data.dbSymbol))
+                    {
+                        if (!Items.ContainsKey(data.dbSymbol))
+                            Items.Add(data.dbSymbol, data);
+                    }
+                }
+                catch (System.Exception e) { Debug.LogError($"Error loading item {file}: {e.Message}"); }
+            }
         }
 
         private void LoadMoves()

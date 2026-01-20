@@ -35,6 +35,12 @@ namespace NewBark.World
             {
                 myData = GameDatabase.Instance.Trainers[trainerId];
             }
+
+            // Check Persistence
+            if (GameManager.Data != null && GameManager.Data.beatenTrainers.Contains(trainerId))
+            {
+                hasBattled = true;
+            }
         }
 
         private void Update()

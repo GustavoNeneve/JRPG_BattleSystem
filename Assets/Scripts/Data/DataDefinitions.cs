@@ -171,4 +171,34 @@ namespace NewBark.Data
         public string defensiveType;
         public float factor;
     }
+
+    [Serializable]
+    public class ItemData
+    {
+        public string klass;
+        public int id;
+        public string dbSymbol;
+        public string icon;
+        public int price;
+        public string description; // Often in a separate text file, but keeping placeholder
+        public bool isBattleUsable;
+        public bool isMapUsable;
+        public bool isHoldable;
+        public bool isLimited;
+        
+        // Specifics
+        public int hpCount; // For Potions
+        public int catchRate; // For Balls
+        public string spriteFilename; // For Balls
+        public ItemColor color; // For Balls
+    }
+
+    [Serializable]
+    public class ItemColor
+    {
+        public int red;
+        public int green;
+        public int blue;
+        public int alpha;
+    }
 }

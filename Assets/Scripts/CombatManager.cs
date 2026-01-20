@@ -94,6 +94,162 @@ public class CombatManager : NetworkBehaviour
                     audioCtrl.PlayBgmTransition(EncounterManager.instance.CurrentBattleMusic);
                 }
             }
+
+            // Spawn Player Party
+            SetupPlayerParty();
+        }
+    }
+
+    [SerializeField] List<Transform> playerSpawnSpots;
+
+    private void SetupPlayerParty()
+    {
+        if (EncounterManager.instance == null) return;
+        var party = EncounterManager.instance.CurrentPlayerParty;
+        if (party == null || party.Count == 0)
+        {
+            Debug.LogWarning("Player Party is Empty! Cannot spawn player.");
+            return;
+        }
+
+        // Find first healthy
+        NewBark.Runtime.PokemonInstance leader = null;
+        foreach (var p in party)
+        {
+            if (p.CurrentHP > 0)
+            {
+                leader = p;
+                break;
+            }
+        }
+
+        if (leader == null)
+        {
+            Debug.LogWarning("All party data is dead! Sending out the first one anyway.");
+            leader = party[0];
+        }
+
+        // Validate Spots
+        if (playerSpawnSpots == null || playerSpawnSpots.Count == 0)
+        {
+            playerSpawnSpots = new List<Transform>();
+            var s1 = playersParent.Find("Spot 1");
+            if (s1) playerSpawnSpots.Add(s1);
+        }
+
+        // Resolve Prefab
+        GameObject realPrefab = null;
+        if (dex_prefab.instance != null)
+        {
+            realPrefab = dex_prefab.instance.GetEnemyPrefab(leader.SpeciesID);
+        }
+
+        if (realPrefab != null && playerSpawnSpots.Count > 0)
+        {
+            // Spawn
+            GameObject spawned = Instantiate(realPrefab, playerSpawnSpots[0].position, Quaternion.identity, playersParent);
+            spawned.name = "Player_" + leader.Nickname;
+
+            // Ensure it has NetworkObject if online (skipping for now as we are offline mostly)
+
+            // Strip EnemyBehaviour if present and replace? Or just disable AI?
+            var enemyAI = spawned.GetComponent<EnemyBehaviour>();
+            if (enemyAI)
+            {
+                // We CAN reuse EnemyBehaviour but we must disable its AI and set it as Player ownership
+                // EnemyBehaviour inherits CharacterBehaviour.
+                // We need to inject data.
+                // EnemyBehaviour.Setup(data, aiLevel) exists.
+                // If we call Setup, it sets up stats. 
+                // But we need to ensure AI doesn't run.
+                // We can set aiLevel to 0 or manual?
+                // Let's look at EnemyBehaviour to see if we can disable AI.
+                enemyAI.Setup(leader, 0); // AI 0 = Manual?
+
+                // Force ownership?
+                // CharacterBehaviour has 'IsOwner'. In offline, everything is owner locally.
+                // CombatManager decides whose turn it is.
+
+                // IMPORTANT: Players list needs to be populated.
+                AddPlayerOnField(enemyAI);
+            }
+        }
+    }
+
+    [SerializeField] List<Transform> playerSpawnSpots;
+
+    private void SetupPlayerParty()
+    {
+        if (EncounterManager.instance == null) return;
+        var party = EncounterManager.instance.CurrentPlayerParty;
+        if (party == null || party.Count == 0) return;
+
+        NewBark.Runtime.PokemonInstance leader = null;
+        foreach (var p in party) { if (p.CurrentHP > 0) { leader = p; break; } }
+        if (leader == null) leader = party[0];
+
+        if (playerSpawnSpots == null || playerSpawnSpots.Count == 0)
+        {
+            playerSpawnSpots = new List<Transform>();
+            var s1 = playersParent.Find("Spot 1");
+            if (s1) playerSpawnSpots.Add(s1);
+        }
+
+        GameObject realPrefab = null;
+        if (dex_prefab.instance != null) realPrefab = dex_prefab.instance.GetEnemyPrefab(leader.SpeciesID);
+
+        if (realPrefab != null && playerSpawnSpots.Count > 0)
+        {
+            GameObject spawned = Instantiate(realPrefab, playerSpawnSpots[0].position, Quaternion.identity, playersParent);
+            spawned.name = "Player_" + leader.Nickname;
+
+            var enemyAI = spawned.GetComponent<EnemyBehaviour>();
+            if (enemyAI)
+            {
+                enemyAI.Setup(leader, 0);
+                AddPlayerOnField(enemyAI);
+            }
+        }
+    }
+
+    public void AttemptCapture(CharacterBehaviour target, int catchRateBonus)
+    {
+        StartCoroutine(CaptureCoroutine(target, catchRateBonus));
+    }
+
+    IEnumerator CaptureCoroutine(CharacterBehaviour target, int catchRateBonus)
+    {
+        int maxHP = target.MyStats.baseHP;
+        int curHP = target.CurrentHP;
+        int specieRate = 45;
+
+        float catchVal = ((3f * maxHP - 2f * curHP) * specieRate * catchRateBonus) / (3f * maxHP);
+        if (curHP == 1) catchVal *= 1.5f;
+
+        Debug.Log($"[Capture] Chance: {catchVal} (Bonus: {catchRateBonus})");
+        yield return new WaitForSeconds(1f);
+
+        bool caught = (UnityEngine.Random.Range(0, 255) < catchVal) || catchRateBonus >= 255;
+
+        if (caught)
+        {
+            Debug.Log("Caught!");
+            int enemyIndex = enemiesOnField.IndexOf(target as EnemyBehaviour);
+            if (enemyIndex != -1 && EncounterManager.instance != null && EncounterManager.instance.CurrentEnemyParty.Count > enemyIndex)
+            {
+                var caughtMon = EncounterManager.instance.CurrentEnemyParty[enemyIndex];
+                caughtMon.CurrentHP = curHP;
+                if (NewBark.GameManager.Data.party.Count < 6)
+                {
+                    NewBark.GameManager.Data.party.Add(caughtMon);
+                }
+                GameManager.instance.EndGame();
+                if (EncounterManager.instance != null) EncounterManager.instance.EndEncounter(true);
+            }
+        }
+        else
+        {
+            Debug.Log("Broke free!");
         }
     }
 

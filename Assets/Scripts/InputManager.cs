@@ -19,11 +19,15 @@ public class InputManager : MonoBehaviour
         {
             if (_activePlayer.CurrentPreAction.IsHarmful)
             {
-                _activePlayer.ExecuteActionOn(CombatManager.instance.EnemiesOnField[CombatManager.instance.CurrentTargetEnemyIndex]);
+                int idx = CombatManager.instance.CurrentTargetEnemyIndex;
+                if (idx >= 0 && idx < CombatManager.instance.EnemiesOnField.Count)
+                    _activePlayer.ExecuteActionOn(CombatManager.instance.EnemiesOnField[idx]);
             }
             else
             {
-                _activePlayer.ExecuteActionOn(CombatManager.instance.PlayersOnField[CombatManager.instance.CurrentFriendlyTargetIndex]);
+                int idx = CombatManager.instance.CurrentFriendlyTargetIndex;
+                if (idx >= 0 && idx < CombatManager.instance.PlayersOnField.Count)
+                    _activePlayer.ExecuteActionOn(CombatManager.instance.PlayersOnField[idx]);
             }
         }
     }

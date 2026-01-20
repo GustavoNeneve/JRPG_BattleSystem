@@ -16,5 +16,11 @@ namespace NewBark.State
         public string areaTitleTrigger;
         public SerializableVector2 playerPosition;
         public SerializableVector2 playerDirection;
+        
+        // Added list to track defeated trainers
+        public System.Collections.Generic.List<string> beatenTrainers = new System.Collections.Generic.List<string>();
+
+        // Player Party
+        public System.Collections.Generic.List<NewBark.Runtime.PokemonInstance> party = new System.Collections.Generic.List<NewBark.Runtime.PokemonInstance>();
     }
 }

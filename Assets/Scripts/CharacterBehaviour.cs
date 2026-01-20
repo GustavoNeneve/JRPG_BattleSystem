@@ -461,7 +461,16 @@ public class CharacterBehaviour : NetworkBehaviour
         if (currentExecutingAction.actionType == ActionType.ITEM)
         {
             inventory.ConsumeItem(currentConsumableItemIndex);
-            target.myAnimController.PlayHealingEffect();
+            
+            if (currentExecutingAction.damageType == DamageType.CAPTURE)
+            {
+                  // Capture Logic
+                  CombatManager.instance.AttemptCapture(target, currentExecutingAction.damageMultiplier > 0 ? (int)currentExecutingAction.damageMultiplier : 1);
+            }
+            else
+            {
+                target.myAnimController.PlayHealingEffect();
+            }
         }
 
         yield return new WaitForSeconds(0.25f);

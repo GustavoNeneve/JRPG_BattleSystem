@@ -35,7 +35,9 @@ public class EncounterManager : MonoBehaviour
 
     // Data Transfer for Battle
     public List<NewBark.Runtime.PokemonInstance> CurrentEnemyParty = new List<NewBark.Runtime.PokemonInstance>();
+    public List<NewBark.Runtime.PokemonInstance> CurrentPlayerParty = new List<NewBark.Runtime.PokemonInstance>();
     public int CurrentEncounterAILevel = 1;
+    private NewBark.Data.TrainerData currentTrainer; // Track who we are fighting
 
     private void Awake()
     {
@@ -58,6 +60,11 @@ public class EncounterManager : MonoBehaviour
     public void StartEncounter(EncounterData data)
     {
         currentEncounterData = data;
+
+        // Prepare Player Party
+        CurrentPlayerParty.Clear();
+        if (NewBark.GameManager.Data != null)
+            CurrentPlayerParty.AddRange(NewBark.GameManager.Data.party);
 
         // Save Position & Player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -106,8 +113,14 @@ public class EncounterManager : MonoBehaviour
     public void StartTrainerBattle(NewBark.Data.TrainerData trainer)
     {
         currentEncounterData = null; // Clear wild data
+        currentTrainer = trainer; // Store reference
         if (trainer != null) CurrentEncounterAILevel = trainer.ai;
         else CurrentEncounterAILevel = 1;
+
+        // Prepare Player Party
+        CurrentPlayerParty.Clear();
+        if (NewBark.GameManager.Data != null)
+            CurrentPlayerParty.AddRange(NewBark.GameManager.Data.party);
 
         // Save Position & Player (Reuse logic, maybe refactor later to 'SaveWorldState')
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -260,6 +273,21 @@ public class EncounterManager : MonoBehaviour
     {
         if (playerWon)
         {
+            // Save Trainer Victory
+            if (currentTrainer != null && NewBark.GameManager.Data != null)
+            {
+                if (NewBark.GameManager.Data.beatenTrainers == null)
+                {
+                    NewBark.GameManager.Data.beatenTrainers = new System.Collections.Generic.List<string>();
+                }
+
+                if (!NewBark.GameManager.Data.beatenTrainers.Contains(currentTrainer.dbSymbol))
+                {
+                    NewBark.GameManager.Data.beatenTrainers.Add(currentTrainer.dbSymbol);
+                    Debug.Log($"[EncounterManager] Victory against {currentTrainer.dbSymbol} recorded!");
+                }
+            }
+
             // If preloading is active, finish it.
             if (preloadOperation != null)
             {

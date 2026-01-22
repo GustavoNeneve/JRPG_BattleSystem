@@ -12,7 +12,7 @@ public class CharacterBehaviour : NetworkBehaviour
 {
     [field: SerializeField] public Transform GetAttackedPos { get; private set; }
     [SerializeField] protected SpriteEffects combatEffects;
-    
+
     /// <summary>
     /// The current state of the character in the Battle State Machine.
     /// O estado atual do personagem na Máquina de Estados da Batalha.
@@ -61,6 +61,9 @@ public class CharacterBehaviour : NetworkBehaviour
     public CombatActionSO CurrentPreAction => currentPreAction;
     public bool IsBusy() => isBusy;
     public bool IsDoingCritDamageAction => isDoingCritDamageAction;
+
+    public void SetStats(CharacterStats stats) => myStats = stats;
+    public void SetCurrentHP(int hp) => currentHP = hp; // Allow overriding HP after initialization
 
     public CharacterBehaviour CurrentTarget
     {
@@ -134,7 +137,7 @@ public class CharacterBehaviour : NetworkBehaviour
     {
         currentMP += amount;
 
-        if (currentMP > myStats.baseMP) 
+        if (currentMP > myStats.baseMP)
             currentMP = myStats.baseMP;
 
         characterUIController.RefreshHPMP();
@@ -461,11 +464,11 @@ public class CharacterBehaviour : NetworkBehaviour
         if (currentExecutingAction.actionType == ActionType.ITEM)
         {
             inventory.ConsumeItem(currentConsumableItemIndex);
-            
+
             if (currentExecutingAction.damageType == DamageType.CAPTURE)
             {
-                  // Capture Logic
-                  CombatManager.instance.AttemptCapture(target, currentExecutingAction.damageMultiplier > 0 ? (int)currentExecutingAction.damageMultiplier : 1);
+                // Capture Logic
+                CombatManager.instance.AttemptCapture(target, currentExecutingAction.damageMultiplier > 0 ? (int)currentExecutingAction.damageMultiplier : 1);
             }
             else
             {
@@ -481,7 +484,7 @@ public class CharacterBehaviour : NetworkBehaviour
         isDoingCritDamageAction = false;
         ChangeBattleState(BattleState.RECHARGING);
     }
-    
+
     /// <summary>
     /// Changes the character's battle state.
     /// Altera o estado de batalha do personagem.

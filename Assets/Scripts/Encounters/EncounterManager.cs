@@ -6,6 +6,13 @@ using UnityEngine.Rendering.Universal;
 
 public class EncounterManager : MonoBehaviour
 {
+    public enum BattleMode
+    {
+        Single, // 1v1
+        Double, // 2v2
+        Horde   // 1v3 or rarely 2v3
+    }
+
     public static EncounterManager instance;
 
     [Header("Runtime Info")]
@@ -14,6 +21,10 @@ public class EncounterManager : MonoBehaviour
     [SerializeField] Vector3 lastWorldPosition;
     [SerializeField] string lastWorldSceneName;
     [SerializeField] AudioClip lastWorldMusic;
+
+    // Battle Rules
+    public BattleMode CurrentBattleMode = BattleMode.Single;
+    public int AllowedPlayerSlots = 1; // Limit of active pokemon for player (1 or 2)
 
     // Keep reference to the camera we disabled
     private GameObject preservedCamera;
@@ -63,17 +74,35 @@ public class EncounterManager : MonoBehaviour
 
         // Prepare Player Party
         CurrentPlayerParty.Clear();
-        if (NewBark.GameManager.Data != null)
-            CurrentPlayerParty.AddRange(NewBark.GameManager.Data.party);
+
+        // Use live Party if available, otherwise fallback to Data
+        if (NewBark.Runtime.PlayerParty.Instance != null && NewBark.Runtime.PlayerParty.Instance.ActiveParty != null)
+        {
+            foreach (var p in NewBark.Runtime.PlayerParty.Instance.ActiveParty)
+            {
+                if (p != null && !string.IsNullOrEmpty(p.SpeciesID))
+                    CurrentPlayerParty.Add(p);
+            }
+        }
+        else if (NewBark.GameManager.Data != null && NewBark.GameManager.Data.party != null)
+        {
+            foreach (var p in NewBark.GameManager.Data.party)
+            {
+                if (p != null && !string.IsNullOrEmpty(p.SpeciesID))
+                    CurrentPlayerParty.Add(p);
+            }
+        }
+
+        // Fallback: Kañyby 404
+        if (CurrentPlayerParty.Count == 0)
+        {
+            CreateFallbackPokemon();
+        }
 
         // Save Position & Player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         // Find Camera explicitly by Name as requested
-        // Find Camera explicitly by Name as requested
         GameObject mainCamera = GameObject.Find("MainCameraWorld");
-        // Ensure we handle AudioListener if present
-        AudioListener listener = null;
-        if (mainCamera) listener = mainCamera.GetComponent<AudioListener>();
 
         if (player)
         {
@@ -119,8 +148,29 @@ public class EncounterManager : MonoBehaviour
 
         // Prepare Player Party
         CurrentPlayerParty.Clear();
-        if (NewBark.GameManager.Data != null)
-            CurrentPlayerParty.AddRange(NewBark.GameManager.Data.party);
+
+        if (NewBark.Runtime.PlayerParty.Instance != null && NewBark.Runtime.PlayerParty.Instance.ActiveParty != null)
+        {
+            foreach (var p in NewBark.Runtime.PlayerParty.Instance.ActiveParty)
+            {
+                if (p != null && !string.IsNullOrEmpty(p.SpeciesID))
+                    CurrentPlayerParty.Add(p);
+            }
+        }
+        else if (NewBark.GameManager.Data != null && NewBark.GameManager.Data.party != null)
+        {
+            foreach (var p in NewBark.GameManager.Data.party)
+            {
+                if (p != null && !string.IsNullOrEmpty(p.SpeciesID))
+                    CurrentPlayerParty.Add(p);
+            }
+        }
+
+        // Fallback: Kañyby 404
+        if (CurrentPlayerParty.Count == 0)
+        {
+            CreateFallbackPokemon();
+        }
 
         // Save Position & Player (Reuse logic, maybe refactor later to 'SaveWorldState')
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -150,6 +200,27 @@ public class EncounterManager : MonoBehaviour
 
         // Generate Enemy List from Trainer
         GenerateTrainerEnemyList(trainer);
+
+        // Define Battle Rules for Trainer
+        // TODO: Trainer Data could specify "Double Battle" or "Triple Battle"
+        // For now:
+        if (enemiesToSpawn.Count >= 2)
+        {
+            // If trainer has 2+ mons, maybe they want double? 
+            // Standard pokemon logic: Trainer establishes the rule.
+            // Let's assume Single unless specified. 
+            // But user said: "se o oponente querer".
+            // Implementation: We will default to Single unless we add a flag to TrainerData later.
+            // But if we want to test multi, let's keep Single for safety or matching count?
+            // "1x1 o limite é 1... ela pode ser 2x2 se o oponente querer"
+            CurrentBattleMode = BattleMode.Single;
+            AllowedPlayerSlots = 1;
+        }
+        else
+        {
+            CurrentBattleMode = BattleMode.Single;
+            AllowedPlayerSlots = 1;
+        }
 
         // Load Battle
         SceneManager.LoadScene("Main_Offline");
@@ -209,7 +280,51 @@ public class EncounterManager : MonoBehaviour
         enemiesToSpawn.Clear();
         if (currentEncounterData == null) return;
 
-        int enemyCount = Random.Range(currentEncounterData.minEnemies, currentEncounterData.maxEnemies + 1);
+        // Determine Battle Mode & Count based on RNG and Rules
+        // Default: Single 1v1
+        CurrentBattleMode = BattleMode.Single;
+        AllowedPlayerSlots = 1;
+
+        int enemyCount = 1;
+
+        // RNG for Battle Mode (Wild)
+        float modeRoll = Random.Range(0f, 100f);
+
+        // Example Rates:
+        // 85% Single (1v1)
+        // 10% Double (2v2) 
+        // 5% Horde (1v3)
+        // Note: Actual enemy count logic implies we loop.
+
+        if (modeRoll < 5f) // 5% Horde
+        {
+            CurrentBattleMode = BattleMode.Horde;
+            enemyCount = 3;
+            // Horde rule: small chance 2v3, mostly 1v3
+            if (Random.value < 0.2f) AllowedPlayerSlots = 2; // 20% chance of 2v3
+            else AllowedPlayerSlots = 1;
+        }
+        else if (modeRoll < 15f) // 10% Double (5 to 15)
+        {
+            CurrentBattleMode = BattleMode.Double;
+            enemyCount = 2;
+            AllowedPlayerSlots = 2;
+        }
+        else // Single
+        {
+            CurrentBattleMode = BattleMode.Single;
+            enemyCount = 1;
+            AllowedPlayerSlots = 1;
+        }
+
+        // Clamp by EncounterData limits if they are strict (e.g. min/max enemies)
+        // If data says max 1, we force 1.
+        enemyCount = Mathf.Clamp(enemyCount, currentEncounterData.minEnemies, currentEncounterData.maxEnemies);
+        if (enemyCount == 1)
+        {
+            CurrentBattleMode = BattleMode.Single;
+            AllowedPlayerSlots = 1;
+        }
 
         // Prepare weights
         int totalWeight = 0;
@@ -228,6 +343,11 @@ public class EncounterManager : MonoBehaviour
                 {
                     // Find the real prefab in the Dex to ensure we are using the "system" prefab
                     // Using the name of the assigned object in EncounterData as the key
+                    if (enemy.enemyIdentifier == null)
+                    {
+                        Debug.LogError("[EncounterManager] Enemy Identifier in Data is missing or destroyed!");
+                        continue;
+                    }
                     string idName = enemy.enemyIdentifier.name;
                     Debug.Log($"[EncounterManager] Spawning Enemy: Requesting '{idName}' from Dex.");
 
@@ -453,6 +573,70 @@ public class EncounterManager : MonoBehaviour
             var audioCtrl = FindFirstObjectByType<NewBark.Audio.AudioController>();
             if (audioCtrl)
                 audioCtrl.PlayBgmTransition(lastWorldMusic);
+        }
+    }
+
+    private void Start()
+    {
+        // Clean up listeners on start if any are lingering from previous scenes
+        var camera = GameObject.Find("MainCameraWorld");
+        CleanupDuplicates(camera);
+    }
+
+    private void CreateFallbackPokemon()
+    {
+        Debug.LogWarning("[EncounterManager] Player has no party! Spawning 'Kañyby 404'...");
+        EnsureFallbackPokemonData();
+
+        var kanyby = new NewBark.Runtime.PokemonInstance("000", 1);
+        kanyby.Nickname = "Kañyby 404";
+
+        // Force stats to 1 as requested
+        kanyby.MaxHP = 1;
+        kanyby.CurrentHP = 1;
+        kanyby.Attack = 1;
+        kanyby.Defense = 1;
+        kanyby.SpAttack = 1;
+        kanyby.SpDefense = 1;
+        kanyby.Speed = 1;
+
+        // Add to current battle party
+        CurrentPlayerParty.Add(kanyby);
+
+        // Add to persistent party to avoid this next time (or keep it as a punishment/feature)
+        if (NewBark.Runtime.PlayerParty.Instance != null)
+        {
+            NewBark.Runtime.PlayerParty.Instance.AddMember(kanyby);
+        }
+    }
+
+    private void EnsureFallbackPokemonData()
+    {
+        if (NewBark.Data.GameDatabase.Instance == null) return;
+
+        if (!NewBark.Data.GameDatabase.Instance.Species.ContainsKey("000"))
+        {
+            var data = new NewBark.Data.SpecieData();
+            data.dbSymbol = "000";
+            data.id = 0;
+            data.forms = new System.Collections.Generic.List<NewBark.Data.SpecieForm>();
+
+            var form = new NewBark.Data.SpecieForm();
+            form.baseHp = 1;
+            form.baseAtk = 1;
+            form.baseDfe = 1;
+            form.baseAts = 1;
+            form.baseDfs = 1;
+            form.baseSpd = 1;
+            form.type1 = "ghost";
+            form.type2 = null;
+            form.moveSet = new System.Collections.Generic.List<NewBark.Data.LearnableMove>();
+            form.resources = new NewBark.Data.SpecieResources();
+            form.resources.back = "000"; // Assuming filename is 000.png
+
+            data.forms.Add(form);
+            NewBark.Data.GameDatabase.Instance.Species.Add("000", data);
+            Debug.Log("[EncounterManager] Injected '000' (Kañyby 404) data into GameDatabase.");
         }
     }
 }

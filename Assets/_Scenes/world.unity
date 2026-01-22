@@ -48341,7 +48341,7 @@ Transform:
   m_GameObject: {fileID: 352196779}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2997096, y: 4.5, z: 10}
+  m_LocalPosition: {x: 1.2999034, y: 4.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100943,6 +100943,9 @@ GameObject:
   - component: {fileID: 1683139084}
   - component: {fileID: 1683139085}
   - component: {fileID: 1683139086}
+  - component: {fileID: 1683139089}
+  - component: {fileID: 1683139088}
+  - component: {fileID: 1683139087}
   m_Layer: 0
   m_Name: Dex
   m_TagString: Untagged
@@ -100978,9 +100981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   enemyPrefabs:
-  - {fileID: 8900923260625967869, guid: cf3cdf112fbaba846a8b9f356457b99c, type: 3}
-  - {fileID: 537072853643609338, guid: affefd7bb3bb6a4488555b314ccbf51d, type: 3}
-  - {fileID: 8008911636120275913, guid: be61edd0f1e6987458a583e3605a33c3, type: 3}
   - {fileID: 1858090432851322571, guid: 631fc1447ccf20e419ace9c205ceab94, type: 3}
   - {fileID: 8484781438748598323, guid: cadeb5bd019f320458be49c8ccb6b2b1, type: 3}
 --- !u!114 &1683139085
@@ -101000,9 +101000,12 @@ MonoBehaviour:
   lastWorldPosition: {x: 0, y: 0, z: 0}
   lastWorldSceneName: 
   lastWorldMusic: {fileID: 0}
+  CurrentBattleMode: 0
+  AllowedPlayerSlots: 1
   hospitalSceneName: World
   hospitalPosition: {x: 0, y: 0, z: 0}
   CurrentEnemyParty: []
+  CurrentPlayerParty: []
   CurrentEncounterAILevel: 1
 --- !u!114 &1683139086
 MonoBehaviour:
@@ -101016,6 +101019,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77779a020200f4e4a9aa60a9487c3e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewBark.Data.GameDatabase
+--- !u!114 &1683139087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683139082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4fbfa0fd4df0d4a8eaf166f5b1c42b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewBark.Runtime.InventoryManager
+--- !u!114 &1683139088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683139082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31786c94af197f4ea77dff3e34e6fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewBark.Runtime.StorageSystem
+  StoredPokemon: []
+--- !u!114 &1683139089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683139082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62f2d675f8daa284095c37932404d0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewBark.Runtime.PlayerParty
+  ActiveParty:
+  - UniqueID: 
+    SpeciesID: 
+    Nickname: 
+    Level: 0
+    CurrentHP: 0
+    CurrentMP: 0
+    Gender: 
+    Rarity: 0
+    MaxHP: 0
+    Attack: 0
+    Defense: 0
+    SpAttack: 0
+    SpDefense: 0
+    Speed: 0
+    IV_HP: 0
+    IV_Atk: 0
+    IV_Def: 0
+    IV_SpA: 0
+    IV_SpD: 0
+    IV_Spe: 0
+    EV_HP: 0
+    EV_Atk: 0
+    EV_Def: 0
+    EV_SpA: 0
+    EV_SpD: 0
+    EV_Spe: 0
+    NatureID: 
+    AbilityID: 
+    ItemID: 
+    Moves: []
 --- !u!4 &1703834550
 Transform:
   m_ObjectHideFlags: 0
@@ -102826,7 +102897,7 @@ Transform:
   m_GameObject: {fileID: 2131464617}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2997096, y: 4.5, z: 10}
+  m_LocalPosition: {x: 1.2999034, y: 4.5, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

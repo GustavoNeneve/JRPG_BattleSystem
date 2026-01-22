@@ -40,6 +40,20 @@ public class CharacterAnimationController : MonoBehaviour
     }
 
     public void PlayHealingEffect() => healingEffect.Play();
+
+    public void SetAnimatorController(RuntimeAnimatorController controller)
+    {
+        Debug.Log($"[CharAnimCtrl] Setting Controller: {controller.name}");
+        if (myAnim != null)
+        {
+            myAnim.runtimeAnimatorController = controller;
+            Debug.Log($"[CharAnimCtrl] Controller assigned successfully to Animator on {myAnim.gameObject.name}");
+        }
+        else
+        {
+             Debug.LogError("[CharAnimCtrl] myAnim is NULL! Cannot assign controller.");
+        }
+    }
 }
 
 

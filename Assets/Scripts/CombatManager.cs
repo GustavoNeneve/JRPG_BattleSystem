@@ -100,33 +100,19 @@ public class CombatManager : NetworkBehaviour
         }
     }
 
-    [SerializeField] List<Transform> playerSpawnSpots;
+    [SerializeField] GameObject playerPokemonTemplate;
+    [SerializeField] List<Transform> playerSpawnSpots; // Restored missing field
 
     private void SetupPlayerParty()
     {
         if (EncounterManager.instance == null) return;
         var party = EncounterManager.instance.CurrentPlayerParty;
+        int allowedSlots = EncounterManager.instance.AllowedPlayerSlots;
+
         if (party == null || party.Count == 0)
         {
             Debug.LogWarning("Player Party is Empty! Cannot spawn player.");
             return;
-        }
-
-        // Find first healthy
-        NewBark.Runtime.PokemonInstance leader = null;
-        foreach (var p in party)
-        {
-            if (p.CurrentHP > 0)
-            {
-                leader = p;
-                break;
-            }
-        }
-
-        if (leader == null)
-        {
-            Debug.LogWarning("All party data is dead! Sending out the first one anyway.");
-            leader = party[0];
         }
 
         // Validate Spots
@@ -134,80 +120,139 @@ public class CombatManager : NetworkBehaviour
         {
             playerSpawnSpots = new List<Transform>();
             var s1 = playersParent.Find("Spot 1");
+            var s2 = playersParent.Find("Spot 2");
             if (s1) playerSpawnSpots.Add(s1);
+            if (s2) playerSpawnSpots.Add(s2);
         }
 
-        // Resolve Prefab
-        GameObject realPrefab = null;
-        if (dex_prefab.instance != null)
+        int spawnCount = 0;
+
+        foreach (var member in party)
         {
-            realPrefab = dex_prefab.instance.GetEnemyPrefab(leader.SpeciesID);
-        }
+            if (spawnCount >= allowedSlots) break;
+            if (spawnCount >= playerSpawnSpots.Count) break;
 
-        if (realPrefab != null && playerSpawnSpots.Count > 0)
-        {
-            // Spawn
-            GameObject spawned = Instantiate(realPrefab, playerSpawnSpots[0].position, Quaternion.identity, playersParent);
-            spawned.name = "Player_" + leader.Nickname;
+            if (member.CurrentHP <= 0 && !AllPlayersDead())
+                continue;
 
-            // Ensure it has NetworkObject if online (skipping for now as we are offline mostly)
-
-            // Strip EnemyBehaviour if present and replace? Or just disable AI?
-            var enemyAI = spawned.GetComponent<EnemyBehaviour>();
-            if (enemyAI)
+            if (member.CurrentHP > 0 || (spawnCount == 0 && member.CurrentHP <= 0)) // Fallback logic included
             {
-                // We CAN reuse EnemyBehaviour but we must disable its AI and set it as Player ownership
-                // EnemyBehaviour inherits CharacterBehaviour.
-                // We need to inject data.
-                // EnemyBehaviour.Setup(data, aiLevel) exists.
-                // If we call Setup, it sets up stats. 
-                // But we need to ensure AI doesn't run.
-                // We can set aiLevel to 0 or manual?
-                // Let's look at EnemyBehaviour to see if we can disable AI.
-                enemyAI.Setup(leader, 0); // AI 0 = Manual?
-
-                // Force ownership?
-                // CharacterBehaviour has 'IsOwner'. In offline, everything is owner locally.
-                // CombatManager decides whose turn it is.
-
-                // IMPORTANT: Players list needs to be populated.
-                AddPlayerOnField(enemyAI);
+                SpawnPlayerAlly(member, spawnCount);
+                spawnCount++;
             }
         }
     }
 
-    [SerializeField] List<Transform> playerSpawnSpots;
-
-    private void SetupPlayerParty()
+    private void SpawnPlayerAlly(NewBark.Runtime.PokemonInstance data, int spotIndex)
     {
-        if (EncounterManager.instance == null) return;
-        var party = EncounterManager.instance.CurrentPlayerParty;
-        if (party == null || party.Count == 0) return;
-
-        NewBark.Runtime.PokemonInstance leader = null;
-        foreach (var p in party) { if (p.CurrentHP > 0) { leader = p; break; } }
-        if (leader == null) leader = party[0];
-
-        if (playerSpawnSpots == null || playerSpawnSpots.Count == 0)
+        Debug.Log($"[CombatManager] Spawning Ally: {data.Nickname} (ID: {data.SpeciesID}) at Spot {spotIndex}");
+        if (spotIndex >= playerSpawnSpots.Count)
         {
-            playerSpawnSpots = new List<Transform>();
-            var s1 = playersParent.Find("Spot 1");
-            if (s1) playerSpawnSpots.Add(s1);
+            Debug.LogError($"[CombatManager] Invalid Spot Index {spotIndex}! Spots count: {playerSpawnSpots.Count}");
+            return;
+        }
+        Transform spot = playerSpawnSpots[spotIndex];
+
+        GameObject templateToUse = playerPokemonTemplate;
+
+        if (templateToUse == null)
+        {
+            Debug.LogWarning("[CombatManager] playerPokemonTemplate is missing! Trying to find 'Player_1' in Resources or Scene...");
+            return;
         }
 
-        GameObject realPrefab = null;
-        if (dex_prefab.instance != null) realPrefab = dex_prefab.instance.GetEnemyPrefab(leader.SpeciesID);
+        GameObject spawned = Instantiate(templateToUse, spot.position, Quaternion.identity, playersParent);
+        spawned.name = "Player_" + data.Nickname;
 
-        if (realPrefab != null && playerSpawnSpots.Count > 0)
+        var charBehavior = spawned.GetComponent<CharacterBehaviour>();
+
+        if (charBehavior != null)
         {
-            GameObject spawned = Instantiate(realPrefab, playerSpawnSpots[0].position, Quaternion.identity, playersParent);
-            spawned.name = "Player_" + leader.Nickname;
-
+            // Try to use EnemyBehaviour Setup if available
             var enemyAI = spawned.GetComponent<EnemyBehaviour>();
             if (enemyAI)
             {
-                enemyAI.Setup(leader, 0);
+                enemyAI.Setup(data, 0); // AI Level 0 = Manual/Player
                 AddPlayerOnField(enemyAI);
+            }
+            else
+            {
+                // Correctly create ScriptableObject instance for stats
+                CharacterStats newStats = ScriptableObject.CreateInstance<CharacterStats>();
+                newStats.baseHP = data.MaxHP;
+                newStats.baseMP = data.CurrentMP; // If applicable
+                                                  // Map other stats generically if not using EnemyBehaviour's mapping logic
+                                                  // newStats.baseDamage... 
+                                                  // Since we don't have exact mapping here without duplication, this is a fallback.
+                                                  // ideally Player_1 prefab has EnemyBehaviour attached.
+
+                charBehavior.SetStats(newStats);
+                // Initialize checks myStats.baseHP. To keep CurrentHP correct:
+                charBehavior.SetCurrentHP(data.CurrentHP);
+
+                Debug.Log($"[CombatManager] Stats Set: HP={data.CurrentHP}/{data.MaxHP}");
+                AddPlayerOnField(charBehavior);
+            }
+
+            // Setup Resource (Sprite)
+            // Access fixed: BaseData -> forms[0] -> resources
+            if (data.BaseData != null &&
+                data.BaseData.forms != null &&
+                data.BaseData.forms.Count > 0 &&
+                data.BaseData.forms[0].resources != null)
+            {
+                var res = data.BaseData.forms[0].resources;
+
+                // Load Sprite using 'res.back' 
+                // Assumption: Sprites are at Resources/Pokemon/Back/[filename]
+                // If the user has a different path, we might need to adjust.
+                if (!string.IsNullOrEmpty(res.back))
+                {
+                    // 1. Try to Load Animator Override
+                    string animPath = $"Pokemon/Animations/{res.back}";
+                    Debug.Log($"[CombatManager] Attempting to load Animator at '{animPath}'...");
+                    var loadedAnim = Resources.Load<RuntimeAnimatorController>(animPath);
+
+                    if (loadedAnim != null)
+                    {
+                        Debug.Log($"[CombatManager] Loading Animator: {res.back}");
+                        var animCtrl = spawned.GetComponentInChildren<CharacterAnimationController>();
+                        if (animCtrl != null)
+                        {
+                            animCtrl.SetAnimatorController(loadedAnim);
+                        }
+                        else
+                        {
+                            // Fallback: Check for Animator directly if Controller script is missing
+                            Debug.LogWarning($"[CombatManager] CharacterAnimationController not found on {spawned.name}, trying direct Animator.");
+                            var anim = spawned.GetComponentInChildren<Animator>();
+                            if (anim != null)
+                            {
+                                anim.runtimeAnimatorController = loadedAnim;
+                                Debug.Log($"[CombatManager] Applied Animator directly to {anim.gameObject.name}");
+                            }
+                            else
+                            {
+                                Debug.LogError($"[CombatManager] No Animator found on {spawned.name} or children!");
+                            }
+                        }
+                    }
+
+                    // 2. Load Sprite (Back)
+                    Debug.Log($"[CombatManager] Loading Back Sprite: {res.back}");
+                    var loadedSprite = Resources.Load<Sprite>($"Pokemon/Back/{res.back}");
+
+                    if (loadedSprite != null)
+                    {
+                        var sr = spawned.GetComponentInChildren<SpriteRenderer>();
+                        if (sr != null) sr.sprite = loadedSprite;
+                        else Debug.LogWarning("[CombatManager] No SpriteRenderer found on Player Prefab children!");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"[CombatManager] Failed to load sprite at 'Resources/Pokemon/Back/{res.back}'");
+                    }
+                }
             }
         }
     }
@@ -222,6 +267,16 @@ public class CombatManager : NetworkBehaviour
         int maxHP = target.MyStats.baseHP;
         int curHP = target.CurrentHP;
         int specieRate = 45;
+
+        // Use new CaptureMechanic logic or keep this simple visual one?
+        // This existing logic uses a simplified formula. 
+        // We implemented a robust one in CaptureMechanic. 
+        // However, this coroutine handles the visual/game flow.
+
+        // Let's use CaptureMechanic if possible, or at least update the success handling.
+
+        // For now, keeping the formula here consistent with what was there, 
+        // but updating the ON SUCCESS part to use PlayerParty.
 
         float catchVal = ((3f * maxHP - 2f * curHP) * specieRate * catchRateBonus) / (3f * maxHP);
         if (curHP == 1) catchVal *= 1.5f;
@@ -239,10 +294,16 @@ public class CombatManager : NetworkBehaviour
             {
                 var caughtMon = EncounterManager.instance.CurrentEnemyParty[enemyIndex];
                 caughtMon.CurrentHP = curHP;
-                if (NewBark.GameManager.Data.party.Count < 6)
+
+                // USE NEW PLAYER PARTY SYSTEM
+                bool added = NewBark.Runtime.PlayerParty.Instance.AddMember(caughtMon);
+                if (!added)
                 {
-                    NewBark.GameManager.Data.party.Add(caughtMon);
+                    // It was sent to storage automatically by AddMember if full.
+                    // Or failed if something else.
+                    Debug.Log("Capture: Sent to Storage or Party.");
                 }
+
                 GameManager.instance.EndGame();
                 if (EncounterManager.instance != null) EncounterManager.instance.EndEncounter(true);
             }
